@@ -1,0 +1,6319 @@
+local G2L = {};
+
+-- StarterGui.Gui
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["IgnoreGuiInset"] = true;
+G2L["1"]["ScreenInsets"] = Enum.ScreenInsets.DeviceSafeInsets;
+G2L["1"]["Name"] = [[Gui]];
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+G2L["1"]["ResetOnSpawn"] = false;
+
+
+-- StarterGui.Gui.Mint
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["ZIndex"] = 2;
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(60, 60, 60);
+G2L["2"]["Size"] = UDim2.new(0.28232, 0, 0.44496, 0);
+G2L["2"]["Position"] = UDim2.new(0.63462, 0, 0.2283, 0);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["Name"] = [[Mint]];
+G2L["2"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.Gui.Mint.Top
+G2L["3"] = Instance.new("Frame", G2L["2"]);
+G2L["3"]["ZIndex"] = 2;
+G2L["3"]["BorderSizePixel"] = 0;
+G2L["3"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
+G2L["3"]["Size"] = UDim2.new(1, 0, 0.05203, 0);
+G2L["3"]["Position"] = UDim2.new(0, 0, 0, 0);
+G2L["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3"]["Name"] = [[Top]];
+
+
+-- StarterGui.Gui.Mint.Top.UIStroke
+G2L["4"] = Instance.new("UIStroke", G2L["3"]);
+G2L["4"]["Color"] = Color3.fromRGB(148, 203, 59);
+G2L["4"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Gui.Mint.Top.TextLabel
+G2L["5"] = Instance.new("TextLabel", G2L["3"]);
+G2L["5"]["TextWrapped"] = true;
+G2L["5"]["ZIndex"] = 2;
+G2L["5"]["BorderSizePixel"] = 0;
+G2L["5"]["TextSize"] = 14;
+G2L["5"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["5"]["TextScaled"] = true;
+G2L["5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5"]["FontFace"] = Font.new([[rbxasset://fonts/families/Roboto.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["5"]["TextColor3"] = Color3.fromRGB(179, 242, 70);
+G2L["5"]["BackgroundTransparency"] = 1;
+G2L["5"]["RichText"] = true;
+G2L["5"]["Size"] = UDim2.new(0.34415, 0, 0.99423, 0);
+G2L["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5"]["Text"] = [[Matcha <font color="rgb(0, 202, 24)" face="Michroma">Internal</font>]];
+G2L["5"]["Position"] = UDim2.new(0.01715, 0, 0.00577, 0);
+
+
+-- StarterGui.Gui.Mint.UIStroke
+G2L["6"] = Instance.new("UIStroke", G2L["2"]);
+G2L["6"]["Color"] = Color3.fromRGB(148, 203, 59);
+G2L["6"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Gui.Mint.fol
+G2L["7"] = Instance.new("Folder", G2L["2"]);
+G2L["7"]["Name"] = [[fol]];
+
+
+-- StarterGui.Gui.Mint.fol.AimSettings
+G2L["8"] = Instance.new("Folder", G2L["7"]);
+G2L["8"]["Name"] = [[AimSettings]];
+
+
+-- StarterGui.Gui.Mint.fol.AimSettings.Legit
+G2L["9"] = Instance.new("BoolValue", G2L["8"]);
+G2L["9"]["Name"] = [[Legit]];
+
+
+-- StarterGui.Gui.Mint.fol.AimSettings.Accuracy
+G2L["a"] = Instance.new("NumberValue", G2L["8"]);
+G2L["a"]["Name"] = [[Accuracy]];
+G2L["a"]["Value"] = 100;
+
+
+-- StarterGui.Gui.Mint.fol.AimSettings.Smoothness
+G2L["b"] = Instance.new("NumberValue", G2L["8"]);
+G2L["b"]["Name"] = [[Smoothness]];
+G2L["b"]["Value"] = 1;
+
+
+-- StarterGui.Gui.Mint.fol.AimSettings.MouseDetection
+G2L["c"] = Instance.new("StringValue", G2L["8"]);
+G2L["c"]["Name"] = [[MouseDetection]];
+G2L["c"]["Value"] = [[MouseButton2]];
+
+
+-- StarterGui.Gui.Mint.fol.AimSettings.Active
+G2L["d"] = Instance.new("BoolValue", G2L["8"]);
+G2L["d"]["Name"] = [[Active]];
+
+
+-- StarterGui.Gui.Mint.fol.AimSettings.PartDetection
+G2L["e"] = Instance.new("StringValue", G2L["8"]);
+G2L["e"]["Name"] = [[PartDetection]];
+G2L["e"]["Value"] = [[Head]];
+
+
+-- StarterGui.Gui.Mint.fol.AimSettings.Fov
+G2L["f"] = Instance.new("NumberValue", G2L["8"]);
+G2L["f"]["Name"] = [[Fov]];
+G2L["f"]["Value"] = 120;
+
+
+-- StarterGui.Gui.Mint.fol.AimSettings.Debug
+G2L["10"] = Instance.new("BoolValue", G2L["8"]);
+G2L["10"]["Name"] = [[Debug]];
+
+
+-- StarterGui.Gui.Mint.fol.AimSettings.TeamCheck
+G2L["11"] = Instance.new("BoolValue", G2L["8"]);
+G2L["11"]["Name"] = [[TeamCheck]];
+
+
+-- StarterGui.Gui.Mint.fol.AimSettings.WallCheck
+G2L["12"] = Instance.new("BoolValue", G2L["8"]);
+G2L["12"]["Name"] = [[WallCheck]];
+
+
+-- StarterGui.Gui.Mint.fol.AimSettings.Prediction
+G2L["13"] = Instance.new("NumberValue", G2L["8"]);
+G2L["13"]["Name"] = [[Prediction]];
+G2L["13"]["Value"] = 1;
+
+
+-- StarterGui.Gui.Mint.fol.AimSettings.ShakeIntensity
+G2L["14"] = Instance.new("NumberValue", G2L["8"]);
+G2L["14"]["Name"] = [[ShakeIntensity]];
+G2L["14"]["Value"] = 20;
+
+
+-- StarterGui.Gui.Mint.fol.Scripts
+G2L["15"] = Instance.new("Folder", G2L["7"]);
+G2L["15"]["Name"] = [[Scripts]];
+
+
+-- StarterGui.Gui.Mint.fol.Scripts.Aimbot
+G2L["16"] = Instance.new("LocalScript", G2L["15"]);
+G2L["16"]["Name"] = [[Aimbot]];
+
+
+-- StarterGui.Gui.Mint.fol.Scripts.Rage
+G2L["17"] = Instance.new("LocalScript", G2L["15"]);
+G2L["17"]["Name"] = [[Rage]];
+
+
+-- StarterGui.Gui.Mint.fol.Scripts.FunCarStuff
+G2L["18"] = Instance.new("LocalScript", G2L["15"]);
+G2L["18"]["Name"] = [[FunCarStuff]];
+
+
+-- StarterGui.Gui.Mint.fol.Scripts.FunCarStuff.Flymoving
+G2L["19"] = Instance.new("BoolValue", G2L["18"]);
+G2L["19"]["Name"] = [[Flymoving]];
+
+
+-- StarterGui.Gui.Mint.fol.Scripts.FunCarStuff.BodyGyro
+G2L["1a"] = Instance.new("BodyGyro", G2L["18"]);
+
+
+
+-- StarterGui.Gui.Mint.fol.Scripts.FunCarStuff.BodyVelocity
+G2L["1b"] = Instance.new("BodyVelocity", G2L["18"]);
+
+
+
+-- StarterGui.Gui.Mint.fol.Scripts.AntiHandcuff
+G2L["1c"] = Instance.new("LocalScript", G2L["15"]);
+G2L["1c"]["Name"] = [[AntiHandcuff]];
+
+
+-- StarterGui.Gui.Mint.fol.Scripts.FarmQuidz
+G2L["1d"] = Instance.new("LocalScript", G2L["15"]);
+G2L["1d"]["Name"] = [[FarmQuidz]];
+
+
+-- StarterGui.Gui.Mint.fol.Scripts.Jerk
+G2L["1e"] = Instance.new("LocalScript", G2L["15"]);
+G2L["1e"]["Name"] = [[Jerk]];
+
+
+-- StarterGui.Gui.Mint.fol.Scripts.sp
+G2L["1f"] = Instance.new("Folder", G2L["15"]);
+G2L["1f"]["Name"] = [[sp]];
+
+
+-- StarterGui.Gui.Mint.fol.Scripts.sp.ESP-CLIENT
+G2L["20"] = Instance.new("LocalScript", G2L["1f"]);
+G2L["20"]["Name"] = [[ESP-CLIENT]];
+
+
+-- StarterGui.Gui.Mint.fol.RageSettings
+G2L["21"] = Instance.new("Folder", G2L["7"]);
+G2L["21"]["Name"] = [[RageSettings]];
+
+
+-- StarterGui.Gui.Mint.fol.RageSettings.Active
+G2L["22"] = Instance.new("BoolValue", G2L["21"]);
+G2L["22"]["Name"] = [[Active]];
+
+
+-- StarterGui.Gui.Mint.fol.RageSettings.PosAbove
+G2L["23"] = Instance.new("CFrameValue", G2L["21"]);
+G2L["23"]["Name"] = [[PosAbove]];
+G2L["23"]["Value"] = CFrame.new(Vector3.new(0, 20, 0), Vector3.new(0, 0, -1));
+
+
+-- StarterGui.Gui.Mint.fol.CarSillyz
+G2L["24"] = Instance.new("Folder", G2L["7"]);
+G2L["24"]["Name"] = [[CarSillyz]];
+
+
+-- StarterGui.Gui.Mint.fol.CarSillyz.Bools
+G2L["25"] = Instance.new("Folder", G2L["24"]);
+G2L["25"]["Name"] = [[Bools]];
+
+
+-- StarterGui.Gui.Mint.fol.CarSillyz.Bools.Anti Handcuff
+G2L["26"] = Instance.new("BoolValue", G2L["25"]);
+G2L["26"]["Name"] = [[Anti Handcuff]];
+
+
+-- StarterGui.Gui.Mint.fol.CarSillyz.Bools.Boost
+G2L["27"] = Instance.new("BoolValue", G2L["25"]);
+G2L["27"]["Name"] = [[Boost]];
+
+
+-- StarterGui.Gui.Mint.fol.CarSillyz.Bools.Bouncy
+G2L["28"] = Instance.new("BoolValue", G2L["25"]);
+G2L["28"]["Name"] = [[Bouncy]];
+
+
+-- StarterGui.Gui.Mint.fol.CarSillyz.Bools.ByeCar
+G2L["29"] = Instance.new("BoolValue", G2L["25"]);
+G2L["29"]["Name"] = [[ByeCar]];
+
+
+-- StarterGui.Gui.Mint.fol.CarSillyz.Bools.Fling
+G2L["2a"] = Instance.new("BoolValue", G2L["25"]);
+G2L["2a"]["Name"] = [[Fling]];
+
+
+-- StarterGui.Gui.Mint.fol.CarSillyz.Bools.FlyCar
+G2L["2b"] = Instance.new("BoolValue", G2L["25"]);
+G2L["2b"]["Name"] = [[FlyCar]];
+
+
+-- StarterGui.Gui.Mint.fol.CarSillyz.Bools.SpinCar
+G2L["2c"] = Instance.new("BoolValue", G2L["25"]);
+G2L["2c"]["Name"] = [[SpinCar]];
+
+
+-- StarterGui.Gui.Mint.fol.CarSillyz.Bools.GetCar
+G2L["2d"] = Instance.new("BoolValue", G2L["25"]);
+G2L["2d"]["Name"] = [[GetCar]];
+
+
+-- StarterGui.Gui.Mint.fol.CarSillyz.Bools.Farm Quidz
+G2L["2e"] = Instance.new("BoolValue", G2L["25"]);
+G2L["2e"]["Name"] = [[Farm Quidz]];
+
+
+-- StarterGui.Gui.Mint.fol.CarSillyz.Bools.Kidnap
+G2L["2f"] = Instance.new("BoolValue", G2L["25"]);
+G2L["2f"]["Name"] = [[Kidnap]];
+
+
+-- StarterGui.Gui.Mint.fol.CarSillyz.Bools.Flingcar
+G2L["30"] = Instance.new("BoolValue", G2L["25"]);
+G2L["30"]["Name"] = [[Flingcar]];
+
+
+-- StarterGui.Gui.Mint.fol.CarSillyz.FlySpeed
+G2L["31"] = Instance.new("NumberValue", G2L["24"]);
+G2L["31"]["Name"] = [[FlySpeed]];
+G2L["31"]["Value"] = 50;
+
+
+-- StarterGui.Gui.Mint.fol.CarSillyz.KidnapTarget
+G2L["32"] = Instance.new("StringValue", G2L["24"]);
+G2L["32"]["Name"] = [[KidnapTarget]];
+G2L["32"]["Value"] = [[blitzo602]];
+
+
+-- StarterGui.Gui.Mint.fol.EspSettings
+G2L["33"] = Instance.new("Folder", G2L["7"]);
+G2L["33"]["Name"] = [[EspSettings]];
+
+
+-- StarterGui.Gui.Mint.fol.EspSettings.BoxEsp
+G2L["34"] = Instance.new("BoolValue", G2L["33"]);
+G2L["34"]["Name"] = [[BoxEsp]];
+
+
+-- StarterGui.Gui.Mint.fol.EspSettings.Tracers
+G2L["35"] = Instance.new("BoolValue", G2L["33"]);
+G2L["35"]["Name"] = [[Tracers]];
+
+
+-- StarterGui.Gui.Mint.fol.EspSettings.Debug
+G2L["36"] = Instance.new("BoolValue", G2L["33"]);
+G2L["36"]["Name"] = [[Debug]];
+
+
+-- StarterGui.Gui.Mint.fol.EspSettings.Toggle
+G2L["37"] = Instance.new("BoolValue", G2L["33"]);
+G2L["37"]["Name"] = [[Toggle]];
+
+
+-- StarterGui.Gui.Mint.fol.EspSettings.InventoryEsp
+G2L["38"] = Instance.new("BoolValue", G2L["33"]);
+G2L["38"]["Name"] = [[InventoryEsp]];
+
+
+-- StarterGui.Gui.Mint.fol.EspSettings.Rainbow
+G2L["39"] = Instance.new("BoolValue", G2L["33"]);
+G2L["39"]["Name"] = [[Rainbow]];
+
+
+-- StarterGui.Gui.Mint.fol.EspSettings.Hitbox Esp
+G2L["3a"] = Instance.new("BoolValue", G2L["33"]);
+G2L["3a"]["Name"] = [[Hitbox Esp]];
+
+
+-- StarterGui.Gui.Mint.fol.EspSettings.TeamCheck
+G2L["3b"] = Instance.new("BoolValue", G2L["33"]);
+G2L["3b"]["Name"] = [[TeamCheck]];
+
+
+-- StarterGui.Gui.Mint.fol.NotificationsWhenFired
+G2L["3c"] = Instance.new("BoolValue", G2L["7"]);
+G2L["3c"]["Name"] = [[NotificationsWhenFired]];
+G2L["3c"]["Value"] = true;
+
+
+-- StarterGui.Gui.Mint.fol.Sussy
+G2L["3d"] = Instance.new("Folder", G2L["7"]);
+G2L["3d"]["Name"] = [[Sussy]];
+
+
+-- StarterGui.Gui.Mint.fol.Sussy.Jerk
+G2L["3e"] = Instance.new("BoolValue", G2L["3d"]);
+G2L["3e"]["Name"] = [[Jerk]];
+
+
+-- StarterGui.Gui.Mint.Holder
+G2L["3f"] = Instance.new("Frame", G2L["2"]);
+G2L["3f"]["BorderSizePixel"] = 0;
+G2L["3f"]["BackgroundColor3"] = Color3.fromRGB(60, 60, 60);
+G2L["3f"]["Size"] = UDim2.new(0.99824, 0, 0.94628, 0);
+G2L["3f"]["Position"] = UDim2.new(0, 0, 0.05203, 0);
+G2L["3f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3f"]["Name"] = [[Holder]];
+
+
+-- StarterGui.Gui.Mint.Holder.Home
+G2L["40"] = Instance.new("Frame", G2L["3f"]);
+G2L["40"]["BorderSizePixel"] = 0;
+G2L["40"]["BackgroundColor3"] = Color3.fromRGB(60, 60, 60);
+G2L["40"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["40"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["40"]["Name"] = [[Home]];
+G2L["40"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.Gui.Mint.Holder.Home.TextLabel
+G2L["41"] = Instance.new("TextLabel", G2L["40"]);
+G2L["41"]["TextWrapped"] = true;
+G2L["41"]["ZIndex"] = 2;
+G2L["41"]["BorderSizePixel"] = 0;
+G2L["41"]["TextSize"] = 14;
+G2L["41"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["41"]["TextScaled"] = true;
+G2L["41"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["41"]["FontFace"] = Font.new([[rbxasset://fonts/families/Roboto.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["41"]["TextColor3"] = Color3.fromRGB(179, 242, 70);
+G2L["41"]["BackgroundTransparency"] = 1;
+G2L["41"]["RichText"] = true;
+G2L["41"]["Size"] = UDim2.new(0.64115, 0, 0.49112, 0);
+G2L["41"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["41"]["Text"] = [[Matcha <font color="rgb(0, 202, 24)" face="Michroma">Internal</font> was made by lolcat hitz. Oringinal creator is: (idk). But matcha internal is made by me lolcat hitz  this is free and keyless till then please enjoy while using Matcha Internal :) ]];
+G2L["41"]["Position"] = UDim2.new(0.01715, 0, 0.02272, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Home.TextLabel.UIStroke
+G2L["42"] = Instance.new("UIStroke", G2L["41"]);
+G2L["42"]["Color"] = Color3.fromRGB(148, 203, 59);
+G2L["42"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Gui.Mint.Holder.Home.TextBox
+G2L["43"] = Instance.new("TextBox", G2L["40"]);
+G2L["43"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["43"]["BorderSizePixel"] = 0;
+G2L["43"]["TextSize"] = 14;
+G2L["43"]["TextColor3"] = Color3.fromRGB(179, 242, 70);
+G2L["43"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
+G2L["43"]["RichText"] = true;
+G2L["43"]["FontFace"] = Font.new([[rbxasset://fonts/families/Roboto.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["43"]["Size"] = UDim2.new(0.90663, 0, 0.07625, 0);
+G2L["43"]["Position"] = UDim2.new(0.0469, 0, 0.90086, 0);
+G2L["43"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["43"]["Text"] = [[Buy matcha external: <font color="rgb(37, 197, 255)" face="Michroma">https://buymatcha.xyz/</font>]];
+
+
+-- StarterGui.Gui.Mint.Holder.Home.TextBox.UIStroke
+G2L["44"] = Instance.new("UIStroke", G2L["43"]);
+G2L["44"]["Color"] = Color3.fromRGB(148, 203, 59);
+G2L["44"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Gui.Mint.Holder.Home.TextBox.UICorner
+G2L["45"] = Instance.new("UICorner", G2L["43"]);
+G2L["45"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Home.TextLabel
+G2L["46"] = Instance.new("TextLabel", G2L["40"]);
+G2L["46"]["TextWrapped"] = true;
+G2L["46"]["ZIndex"] = 2;
+G2L["46"]["BorderSizePixel"] = 0;
+G2L["46"]["TextSize"] = 14;
+G2L["46"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["46"]["TextScaled"] = true;
+G2L["46"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["46"]["FontFace"] = Font.new([[rbxasset://fonts/families/Roboto.json]], Enum.FontWeight.Regular, Enum.FontStyle.Italic);
+G2L["46"]["TextColor3"] = Color3.fromRGB(179, 242, 70);
+G2L["46"]["BackgroundTransparency"] = 1;
+G2L["46"]["RichText"] = true;
+G2L["46"]["Size"] = UDim2.new(0.29949, 0, 0.19742, 0);
+G2L["46"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["46"]["Text"] = [[Click one of these buttons on this side to switch pages!]];
+G2L["46"]["Position"] = UDim2.new(0.68484, 0, 0.02272, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Home.TextLabel.UIStroke
+G2L["47"] = Instance.new("UIStroke", G2L["46"]);
+G2L["47"]["Color"] = Color3.fromRGB(148, 203, 59);
+G2L["47"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Gui.Mint.Holder.Home.TextLabel
+G2L["48"] = Instance.new("TextLabel", G2L["40"]);
+G2L["48"]["TextWrapped"] = true;
+G2L["48"]["ZIndex"] = 2;
+G2L["48"]["BorderSizePixel"] = 0;
+G2L["48"]["TextSize"] = 14;
+G2L["48"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["48"]["TextTransparency"] = 0.56;
+G2L["48"]["TextScaled"] = true;
+G2L["48"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["48"]["FontFace"] = Font.new([[rbxasset://fonts/families/Roboto.json]], Enum.FontWeight.Regular, Enum.FontStyle.Italic);
+G2L["48"]["TextColor3"] = Color3.fromRGB(179, 242, 70);
+G2L["48"]["BackgroundTransparency"] = 1;
+G2L["48"]["RichText"] = true;
+G2L["48"]["Size"] = UDim2.new(0.2481, 0, 0.04492, 0);
+G2L["48"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["48"]["Text"] = [[actual link btw]];
+G2L["48"]["Position"] = UDim2.new(0.04621, 0, 0.83885, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Home.ImageLabel
+G2L["49"] = Instance.new("ImageLabel", G2L["40"]);
+G2L["49"]["ZIndex"] = 0;
+G2L["49"]["BorderSizePixel"] = 0;
+G2L["49"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["49"]["ImageTransparency"] = 0.88;
+G2L["49"]["Image"] = [[rbxassetid://16998685275]];
+G2L["49"]["Size"] = UDim2.new(1.00176, 0, 1, 0);
+G2L["49"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["49"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.Gui.Mint.Holder.Car
+G2L["4a"] = Instance.new("Frame", G2L["3f"]);
+G2L["4a"]["Visible"] = false;
+G2L["4a"]["BorderSizePixel"] = 0;
+G2L["4a"]["BackgroundColor3"] = Color3.fromRGB(60, 60, 60);
+G2L["4a"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["4a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4a"]["Name"] = [[Car]];
+G2L["4a"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.Gui.Mint.Holder.Car.Settings
+G2L["4b"] = Instance.new("Frame", G2L["4a"]);
+G2L["4b"]["BorderSizePixel"] = 0;
+G2L["4b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4b"]["Size"] = UDim2.new(0.49574, 0, 0.96082, 0);
+G2L["4b"]["Position"] = UDim2.new(0.48905, 0, 0.01977, 0);
+G2L["4b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4b"]["Name"] = [[Settings]];
+G2L["4b"]["BackgroundTransparency"] = 0.93;
+
+
+-- StarterGui.Gui.Mint.Holder.Car.Settings.UICorner
+G2L["4c"] = Instance.new("UICorner", G2L["4b"]);
+G2L["4c"]["CornerRadius"] = UDim.new(0.01, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Car.Settings.UIStroke
+G2L["4d"] = Instance.new("UIStroke", G2L["4b"]);
+G2L["4d"]["Transparency"] = 0.43;
+G2L["4d"]["Color"] = Color3.fromRGB(148, 203, 59);
+G2L["4d"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Gui.Mint.Holder.Car.Settings.ScrollingFrame
+G2L["4e"] = Instance.new("ScrollingFrame", G2L["4b"]);
+G2L["4e"]["Active"] = true;
+G2L["4e"]["BorderSizePixel"] = 0;
+G2L["4e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4e"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["4e"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4e"]["ScrollBarThickness"] = 0;
+G2L["4e"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.Gui.Mint.Holder.Car.Settings.ScrollingFrame.UIPadding
+G2L["4f"] = Instance.new("UIPadding", G2L["4e"]);
+G2L["4f"]["PaddingTop"] = UDim.new(0, 6);
+
+
+-- StarterGui.Gui.Mint.Holder.Car.Settings.ScrollingFrame.UIListLayout
+G2L["50"] = Instance.new("UIListLayout", G2L["4e"]);
+G2L["50"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["50"]["Padding"] = UDim.new(0, 5);
+G2L["50"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+
+-- StarterGui.Gui.Mint.Holder.Car.Settings.ScrollingFrame.Spinningcar
+G2L["51"] = Instance.new("TextButton", G2L["4e"]);
+G2L["51"]["TextWrapped"] = true;
+G2L["51"]["BorderSizePixel"] = 0;
+G2L["51"]["TextSize"] = 14;
+G2L["51"]["TextScaled"] = true;
+G2L["51"]["TextColor3"] = Color3.fromRGB(179, 242, 70);
+G2L["51"]["BackgroundColor3"] = Color3.fromRGB(174, 255, 156);
+G2L["51"]["FontFace"] = Font.new([[rbxasset://fonts/families/Roboto.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["51"]["BackgroundTransparency"] = 0.65;
+G2L["51"]["Size"] = UDim2.new(0.95074, 0, 0.04663, 0);
+G2L["51"]["LayoutOrder"] = 1;
+G2L["51"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["51"]["Text"] = [[Spin Car: Off]];
+G2L["51"]["Name"] = [[Spinningcar]];
+G2L["51"]["Position"] = UDim2.new(0.02463, 0, 0, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Car.Settings.ScrollingFrame.Spinningcar.LocalScript
+G2L["52"] = Instance.new("LocalScript", G2L["51"]);
+
+
+
+-- StarterGui.Gui.Mint.Holder.Car.Settings.ScrollingFrame.Spinningcar.UICorner
+G2L["53"] = Instance.new("UICorner", G2L["51"]);
+G2L["53"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Car.Settings.ScrollingFrame.Spinningcar.UIStroke
+G2L["54"] = Instance.new("UIStroke", G2L["51"]);
+G2L["54"]["Color"] = Color3.fromRGB(148, 203, 59);
+G2L["54"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Gui.Mint.Holder.Car.Settings.ScrollingFrame.Fly
+G2L["55"] = Instance.new("TextButton", G2L["4e"]);
+G2L["55"]["TextWrapped"] = true;
+G2L["55"]["BorderSizePixel"] = 0;
+G2L["55"]["TextSize"] = 14;
+G2L["55"]["TextScaled"] = true;
+G2L["55"]["TextColor3"] = Color3.fromRGB(179, 242, 70);
+G2L["55"]["BackgroundColor3"] = Color3.fromRGB(174, 255, 156);
+G2L["55"]["FontFace"] = Font.new([[rbxasset://fonts/families/Roboto.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["55"]["BackgroundTransparency"] = 0.65;
+G2L["55"]["Size"] = UDim2.new(0.95074, 0, 0.04663, 0);
+G2L["55"]["LayoutOrder"] = 2;
+G2L["55"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["55"]["Text"] = [[Flying Car: Off]];
+G2L["55"]["Name"] = [[Fly]];
+G2L["55"]["Position"] = UDim2.new(0.02463, 0, 0, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Car.Settings.ScrollingFrame.Fly.LocalScript
+G2L["56"] = Instance.new("LocalScript", G2L["55"]);
+
+
+
+-- StarterGui.Gui.Mint.Holder.Car.Settings.ScrollingFrame.Fly.UICorner
+G2L["57"] = Instance.new("UICorner", G2L["55"]);
+G2L["57"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Car.Settings.ScrollingFrame.Fly.UIStroke
+G2L["58"] = Instance.new("UIStroke", G2L["55"]);
+G2L["58"]["Color"] = Color3.fromRGB(148, 203, 59);
+G2L["58"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Gui.Mint.Holder.Car.Settings.ScrollingFrame.Bye
+G2L["59"] = Instance.new("TextButton", G2L["4e"]);
+G2L["59"]["TextWrapped"] = true;
+G2L["59"]["BorderSizePixel"] = 0;
+G2L["59"]["TextSize"] = 14;
+G2L["59"]["TextScaled"] = true;
+G2L["59"]["TextColor3"] = Color3.fromRGB(179, 242, 70);
+G2L["59"]["BackgroundColor3"] = Color3.fromRGB(174, 255, 156);
+G2L["59"]["FontFace"] = Font.new([[rbxasset://fonts/families/Roboto.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["59"]["BackgroundTransparency"] = 0.65;
+G2L["59"]["Size"] = UDim2.new(0.95074, 0, 0.04663, 0);
+G2L["59"]["LayoutOrder"] = 3;
+G2L["59"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["59"]["Text"] = [[Bye Car]];
+G2L["59"]["Name"] = [[Bye]];
+G2L["59"]["Position"] = UDim2.new(0.02463, 0, 0, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Car.Settings.ScrollingFrame.Bye.LocalScript
+G2L["5a"] = Instance.new("LocalScript", G2L["59"]);
+
+
+
+-- StarterGui.Gui.Mint.Holder.Car.Settings.ScrollingFrame.Bye.UICorner
+G2L["5b"] = Instance.new("UICorner", G2L["59"]);
+G2L["5b"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Car.Settings.ScrollingFrame.Bye.UIStroke
+G2L["5c"] = Instance.new("UIStroke", G2L["59"]);
+G2L["5c"]["Color"] = Color3.fromRGB(148, 203, 59);
+G2L["5c"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Gui.Mint.Holder.Car.Settings.ScrollingFrame.Fling
+G2L["5d"] = Instance.new("TextButton", G2L["4e"]);
+G2L["5d"]["TextWrapped"] = true;
+G2L["5d"]["BorderSizePixel"] = 0;
+G2L["5d"]["TextSize"] = 14;
+G2L["5d"]["TextScaled"] = true;
+G2L["5d"]["TextColor3"] = Color3.fromRGB(179, 242, 70);
+G2L["5d"]["BackgroundColor3"] = Color3.fromRGB(174, 255, 156);
+G2L["5d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Roboto.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["5d"]["BackgroundTransparency"] = 0.65;
+G2L["5d"]["Size"] = UDim2.new(0.95074, 0, 0.04663, 0);
+G2L["5d"]["LayoutOrder"] = 4;
+G2L["5d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5d"]["Text"] = [[Fling Car]];
+G2L["5d"]["Name"] = [[Fling]];
+G2L["5d"]["Position"] = UDim2.new(0.02463, 0, 0, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Car.Settings.ScrollingFrame.Fling.LocalScript
+G2L["5e"] = Instance.new("LocalScript", G2L["5d"]);
+
+
+
+-- StarterGui.Gui.Mint.Holder.Car.Settings.ScrollingFrame.Fling.UICorner
+G2L["5f"] = Instance.new("UICorner", G2L["5d"]);
+G2L["5f"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Car.Settings.ScrollingFrame.Fling.UIStroke
+G2L["60"] = Instance.new("UIStroke", G2L["5d"]);
+G2L["60"]["Color"] = Color3.fromRGB(148, 203, 59);
+G2L["60"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Gui.Mint.Holder.Car.Settings.ScrollingFrame.bounce
+G2L["61"] = Instance.new("TextButton", G2L["4e"]);
+G2L["61"]["TextWrapped"] = true;
+G2L["61"]["BorderSizePixel"] = 0;
+G2L["61"]["TextSize"] = 14;
+G2L["61"]["TextScaled"] = true;
+G2L["61"]["TextColor3"] = Color3.fromRGB(179, 242, 70);
+G2L["61"]["BackgroundColor3"] = Color3.fromRGB(174, 255, 156);
+G2L["61"]["FontFace"] = Font.new([[rbxasset://fonts/families/Roboto.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["61"]["BackgroundTransparency"] = 0.65;
+G2L["61"]["Size"] = UDim2.new(0.95074, 0, 0.04663, 0);
+G2L["61"]["LayoutOrder"] = 4;
+G2L["61"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["61"]["Text"] = [[Bounce Car: Off]];
+G2L["61"]["Name"] = [[bounce]];
+G2L["61"]["Position"] = UDim2.new(0.02463, 0, 0, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Car.Settings.ScrollingFrame.bounce.LocalScript
+G2L["62"] = Instance.new("LocalScript", G2L["61"]);
+
+
+
+-- StarterGui.Gui.Mint.Holder.Car.Settings.ScrollingFrame.bounce.UICorner
+G2L["63"] = Instance.new("UICorner", G2L["61"]);
+G2L["63"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Car.Settings.ScrollingFrame.bounce.UIStroke
+G2L["64"] = Instance.new("UIStroke", G2L["61"]);
+G2L["64"]["Color"] = Color3.fromRGB(148, 203, 59);
+G2L["64"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Gui.Mint.Holder.Car.Settings.ScrollingFrame.Boost
+G2L["65"] = Instance.new("TextButton", G2L["4e"]);
+G2L["65"]["TextWrapped"] = true;
+G2L["65"]["BorderSizePixel"] = 0;
+G2L["65"]["TextSize"] = 14;
+G2L["65"]["TextScaled"] = true;
+G2L["65"]["TextColor3"] = Color3.fromRGB(179, 242, 70);
+G2L["65"]["BackgroundColor3"] = Color3.fromRGB(174, 255, 156);
+G2L["65"]["FontFace"] = Font.new([[rbxasset://fonts/families/Roboto.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["65"]["BackgroundTransparency"] = 0.65;
+G2L["65"]["Size"] = UDim2.new(0.95074, 0, 0.04663, 0);
+G2L["65"]["LayoutOrder"] = 5;
+G2L["65"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["65"]["Text"] = [[Boost Car: Off]];
+G2L["65"]["Name"] = [[Boost]];
+G2L["65"]["Position"] = UDim2.new(0.02463, 0, 0, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Car.Settings.ScrollingFrame.Boost.LocalScript
+G2L["66"] = Instance.new("LocalScript", G2L["65"]);
+
+
+
+-- StarterGui.Gui.Mint.Holder.Car.Settings.ScrollingFrame.Boost.UICorner
+G2L["67"] = Instance.new("UICorner", G2L["65"]);
+G2L["67"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Car.Settings.ScrollingFrame.Boost.UIStroke
+G2L["68"] = Instance.new("UIStroke", G2L["65"]);
+G2L["68"]["Color"] = Color3.fromRGB(148, 203, 59);
+G2L["68"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Gui.Mint.Holder.Car.Settings.ScrollingFrame.TP to a vehicle
+G2L["69"] = Instance.new("TextButton", G2L["4e"]);
+G2L["69"]["TextWrapped"] = true;
+G2L["69"]["BorderSizePixel"] = 0;
+G2L["69"]["TextSize"] = 14;
+G2L["69"]["TextScaled"] = true;
+G2L["69"]["TextColor3"] = Color3.fromRGB(179, 242, 70);
+G2L["69"]["BackgroundColor3"] = Color3.fromRGB(174, 255, 156);
+G2L["69"]["FontFace"] = Font.new([[rbxasset://fonts/families/Roboto.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["69"]["BackgroundTransparency"] = 0.65;
+G2L["69"]["Size"] = UDim2.new(0.95074, 0, 0.04663, 0);
+G2L["69"]["LayoutOrder"] = 6;
+G2L["69"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["69"]["Text"] = [[Get Car]];
+G2L["69"]["Name"] = [[TP to a vehicle]];
+G2L["69"]["Position"] = UDim2.new(0.02463, 0, 0, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Car.Settings.ScrollingFrame.TP to a vehicle.LocalScript
+G2L["6a"] = Instance.new("LocalScript", G2L["69"]);
+
+
+
+-- StarterGui.Gui.Mint.Holder.Car.Settings.ScrollingFrame.TP to a vehicle.UICorner
+G2L["6b"] = Instance.new("UICorner", G2L["69"]);
+G2L["6b"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Car.Settings.ScrollingFrame.TP to a vehicle.UIStroke
+G2L["6c"] = Instance.new("UIStroke", G2L["69"]);
+G2L["6c"]["Color"] = Color3.fromRGB(148, 203, 59);
+G2L["6c"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Gui.Mint.Holder.Car.Settings.ScrollingFrame.fling
+G2L["6d"] = Instance.new("TextButton", G2L["4e"]);
+G2L["6d"]["TextWrapped"] = true;
+G2L["6d"]["BorderSizePixel"] = 0;
+G2L["6d"]["TextSize"] = 14;
+G2L["6d"]["TextScaled"] = true;
+G2L["6d"]["TextColor3"] = Color3.fromRGB(179, 242, 70);
+G2L["6d"]["BackgroundColor3"] = Color3.fromRGB(174, 255, 156);
+G2L["6d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Roboto.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["6d"]["BackgroundTransparency"] = 0.65;
+G2L["6d"]["Size"] = UDim2.new(0.95074, 0, 0.04663, 0);
+G2L["6d"]["LayoutOrder"] = 7;
+G2L["6d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6d"]["Text"] = [[FlingCar: Off]];
+G2L["6d"]["Name"] = [[fling]];
+G2L["6d"]["Position"] = UDim2.new(0.02463, 0, 0, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Car.Settings.ScrollingFrame.fling.LocalScript
+G2L["6e"] = Instance.new("LocalScript", G2L["6d"]);
+
+
+
+-- StarterGui.Gui.Mint.Holder.Car.Settings.ScrollingFrame.fling.UICorner
+G2L["6f"] = Instance.new("UICorner", G2L["6d"]);
+G2L["6f"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Car.Settings.ScrollingFrame.fling.UIStroke
+G2L["70"] = Instance.new("UIStroke", G2L["6d"]);
+G2L["70"]["Color"] = Color3.fromRGB(148, 203, 59);
+G2L["70"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Gui.Mint.Holder.Car.ImageLabel
+G2L["71"] = Instance.new("ImageLabel", G2L["4a"]);
+G2L["71"]["BorderSizePixel"] = 0;
+G2L["71"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["71"]["ImageTransparency"] = 0.2;
+G2L["71"]["Image"] = [[rbxassetid://1155200653]];
+G2L["71"]["Size"] = UDim2.new(0.45332, 0, 0.48855, 0);
+G2L["71"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["71"]["BackgroundTransparency"] = 1;
+G2L["71"]["Position"] = UDim2.new(0.01563, 0, 0.49138, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Car.ImageLabel.UIStroke
+G2L["72"] = Instance.new("UIStroke", G2L["71"]);
+G2L["72"]["Transparency"] = 0.43;
+G2L["72"]["Color"] = Color3.fromRGB(148, 203, 59);
+G2L["72"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Gui.Mint.Holder.Car.ImageLabel.UICorner
+G2L["73"] = Instance.new("UICorner", G2L["71"]);
+G2L["73"]["CornerRadius"] = UDim.new(0.01, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Car.Notice
+G2L["74"] = Instance.new("Frame", G2L["4a"]);
+G2L["74"]["BorderSizePixel"] = 0;
+G2L["74"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["74"]["Size"] = UDim2.new(0.45332, 0, 0.46031, 0);
+G2L["74"]["Position"] = UDim2.new(0.01563, 0, 0.01977, 0);
+G2L["74"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["74"]["Name"] = [[Notice]];
+G2L["74"]["BackgroundTransparency"] = 0.93;
+
+
+-- StarterGui.Gui.Mint.Holder.Car.Notice.UICorner
+G2L["75"] = Instance.new("UICorner", G2L["74"]);
+G2L["75"]["CornerRadius"] = UDim.new(0.01, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Car.Notice.UIStroke
+G2L["76"] = Instance.new("UIStroke", G2L["74"]);
+G2L["76"]["Transparency"] = 0.43;
+G2L["76"]["Color"] = Color3.fromRGB(148, 203, 59);
+G2L["76"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Gui.Mint.Holder.Car.Notice.TextLabel
+G2L["77"] = Instance.new("TextLabel", G2L["74"]);
+G2L["77"]["TextWrapped"] = true;
+G2L["77"]["ZIndex"] = 2;
+G2L["77"]["BorderSizePixel"] = 0;
+G2L["77"]["TextSize"] = 14;
+G2L["77"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["77"]["TextScaled"] = true;
+G2L["77"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["77"]["FontFace"] = Font.new([[rbxasset://fonts/families/Roboto.json]], Enum.FontWeight.Bold, Enum.FontStyle.Italic);
+G2L["77"]["TextColor3"] = Color3.fromRGB(179, 242, 70);
+G2L["77"]["BackgroundTransparency"] = 1;
+G2L["77"]["RichText"] = true;
+G2L["77"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["77"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["77"]["Text"] = [[Car Abuse: Abuse the physics of cars in any game with a vehicle seat. Try on blox fruits fuck idk.]];
+G2L["77"]["Position"] = UDim2.new(0.01715, 0, 0.00577, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Car.ImageLabel
+G2L["78"] = Instance.new("ImageLabel", G2L["4a"]);
+G2L["78"]["ZIndex"] = 0;
+G2L["78"]["BorderSizePixel"] = 0;
+G2L["78"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["78"]["ImageTransparency"] = 0.88;
+G2L["78"]["Image"] = [[rbxassetid://100821522559070]];
+G2L["78"]["Size"] = UDim2.new(1.00176, 0, 1, 0);
+G2L["78"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["78"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.Gui.Mint.Holder.Aimbot
+G2L["79"] = Instance.new("Frame", G2L["3f"]);
+G2L["79"]["Visible"] = false;
+G2L["79"]["BorderSizePixel"] = 0;
+G2L["79"]["BackgroundColor3"] = Color3.fromRGB(60, 60, 60);
+G2L["79"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["79"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["79"]["Name"] = [[Aimbot]];
+G2L["79"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.Gui.Mint.Holder.Aimbot.ImageLabel
+G2L["7a"] = Instance.new("ImageLabel", G2L["79"]);
+G2L["7a"]["ZIndex"] = 0;
+G2L["7a"]["BorderSizePixel"] = 0;
+G2L["7a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7a"]["ImageTransparency"] = 0.88;
+G2L["7a"]["Image"] = [[rbxassetid://18693682910]];
+G2L["7a"]["Size"] = UDim2.new(1.00176, 0, 1, 0);
+G2L["7a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7a"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.Gui.Mint.Holder.Aimbot.Toggles
+G2L["7b"] = Instance.new("Frame", G2L["79"]);
+G2L["7b"]["BorderSizePixel"] = 0;
+G2L["7b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7b"]["Size"] = UDim2.new(0.45332, 0, 0.46031, 0);
+G2L["7b"]["Position"] = UDim2.new(0.01563, 0, 0.01977, 0);
+G2L["7b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7b"]["Name"] = [[Toggles]];
+G2L["7b"]["BackgroundTransparency"] = 0.93;
+
+
+-- StarterGui.Gui.Mint.Holder.Aimbot.Toggles.UICorner
+G2L["7c"] = Instance.new("UICorner", G2L["7b"]);
+G2L["7c"]["CornerRadius"] = UDim.new(0.01, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Aimbot.Toggles.UIStroke
+G2L["7d"] = Instance.new("UIStroke", G2L["7b"]);
+G2L["7d"]["Transparency"] = 0.43;
+G2L["7d"]["Color"] = Color3.fromRGB(148, 203, 59);
+G2L["7d"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Gui.Mint.Holder.Aimbot.Toggles.UIListLayout
+G2L["7e"] = Instance.new("UIListLayout", G2L["7b"]);
+G2L["7e"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["7e"]["Padding"] = UDim.new(0, 5);
+G2L["7e"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+
+-- StarterGui.Gui.Mint.Holder.Aimbot.Toggles.Aimbot
+G2L["7f"] = Instance.new("TextButton", G2L["7b"]);
+G2L["7f"]["TextWrapped"] = true;
+G2L["7f"]["BorderSizePixel"] = 0;
+G2L["7f"]["TextSize"] = 14;
+G2L["7f"]["TextScaled"] = true;
+G2L["7f"]["TextColor3"] = Color3.fromRGB(179, 242, 70);
+G2L["7f"]["BackgroundColor3"] = Color3.fromRGB(174, 255, 156);
+G2L["7f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Roboto.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["7f"]["BackgroundTransparency"] = 0.65;
+G2L["7f"]["Size"] = UDim2.new(0.95074, 0, 0.15951, 0);
+G2L["7f"]["LayoutOrder"] = 1;
+G2L["7f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7f"]["Text"] = [[Aimbot: Off]];
+G2L["7f"]["Name"] = [[Aimbot]];
+G2L["7f"]["Position"] = UDim2.new(0.02463, 0, 0, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Aimbot.Toggles.Aimbot.LocalScript
+G2L["80"] = Instance.new("LocalScript", G2L["7f"]);
+
+
+
+-- StarterGui.Gui.Mint.Holder.Aimbot.Toggles.Aimbot.UICorner
+G2L["81"] = Instance.new("UICorner", G2L["7f"]);
+G2L["81"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Aimbot.Toggles.Aimbot.UIStroke
+G2L["82"] = Instance.new("UIStroke", G2L["7f"]);
+G2L["82"]["Color"] = Color3.fromRGB(148, 203, 59);
+G2L["82"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Gui.Mint.Holder.Aimbot.Toggles.UIPadding
+G2L["83"] = Instance.new("UIPadding", G2L["7b"]);
+G2L["83"]["PaddingTop"] = UDim.new(0, 6);
+
+
+-- StarterGui.Gui.Mint.Holder.Aimbot.Toggles.Legit
+G2L["84"] = Instance.new("TextButton", G2L["7b"]);
+G2L["84"]["TextWrapped"] = true;
+G2L["84"]["BorderSizePixel"] = 0;
+G2L["84"]["TextSize"] = 14;
+G2L["84"]["TextScaled"] = true;
+G2L["84"]["TextColor3"] = Color3.fromRGB(179, 242, 70);
+G2L["84"]["BackgroundColor3"] = Color3.fromRGB(174, 255, 156);
+G2L["84"]["FontFace"] = Font.new([[rbxasset://fonts/families/Roboto.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["84"]["BackgroundTransparency"] = 0.65;
+G2L["84"]["Size"] = UDim2.new(0.95074, 0, 0.15951, 0);
+G2L["84"]["LayoutOrder"] = 2;
+G2L["84"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["84"]["Text"] = [[Legit: Off]];
+G2L["84"]["Name"] = [[Legit]];
+G2L["84"]["Position"] = UDim2.new(0.02463, 0, 0, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Aimbot.Toggles.Legit.LocalScript
+G2L["85"] = Instance.new("LocalScript", G2L["84"]);
+
+
+
+-- StarterGui.Gui.Mint.Holder.Aimbot.Toggles.Legit.UICorner
+G2L["86"] = Instance.new("UICorner", G2L["84"]);
+G2L["86"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Aimbot.Toggles.Legit.UIStroke
+G2L["87"] = Instance.new("UIStroke", G2L["84"]);
+G2L["87"]["Color"] = Color3.fromRGB(148, 203, 59);
+G2L["87"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Gui.Mint.Holder.Aimbot.Toggles.Teamcheck
+G2L["88"] = Instance.new("TextButton", G2L["7b"]);
+G2L["88"]["TextWrapped"] = true;
+G2L["88"]["BorderSizePixel"] = 0;
+G2L["88"]["TextSize"] = 14;
+G2L["88"]["TextScaled"] = true;
+G2L["88"]["TextColor3"] = Color3.fromRGB(179, 242, 70);
+G2L["88"]["BackgroundColor3"] = Color3.fromRGB(174, 255, 156);
+G2L["88"]["FontFace"] = Font.new([[rbxasset://fonts/families/Roboto.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["88"]["BackgroundTransparency"] = 0.65;
+G2L["88"]["Size"] = UDim2.new(0.95074, 0, 0.15951, 0);
+G2L["88"]["LayoutOrder"] = 3;
+G2L["88"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["88"]["Text"] = [[Teamcheck: Off]];
+G2L["88"]["Name"] = [[Teamcheck]];
+G2L["88"]["Position"] = UDim2.new(0.02463, 0, 0, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Aimbot.Toggles.Teamcheck.LocalScript
+G2L["89"] = Instance.new("LocalScript", G2L["88"]);
+
+
+
+-- StarterGui.Gui.Mint.Holder.Aimbot.Toggles.Teamcheck.UICorner
+G2L["8a"] = Instance.new("UICorner", G2L["88"]);
+G2L["8a"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Aimbot.Toggles.Teamcheck.UIStroke
+G2L["8b"] = Instance.new("UIStroke", G2L["88"]);
+G2L["8b"]["Color"] = Color3.fromRGB(148, 203, 59);
+G2L["8b"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Gui.Mint.Holder.Aimbot.Toggles.Wallcheck
+G2L["8c"] = Instance.new("TextButton", G2L["7b"]);
+G2L["8c"]["TextWrapped"] = true;
+G2L["8c"]["BorderSizePixel"] = 0;
+G2L["8c"]["TextSize"] = 14;
+G2L["8c"]["TextScaled"] = true;
+G2L["8c"]["TextColor3"] = Color3.fromRGB(179, 242, 70);
+G2L["8c"]["BackgroundColor3"] = Color3.fromRGB(174, 255, 156);
+G2L["8c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Roboto.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["8c"]["BackgroundTransparency"] = 0.65;
+G2L["8c"]["Size"] = UDim2.new(0.95074, 0, 0.15951, 0);
+G2L["8c"]["LayoutOrder"] = 3;
+G2L["8c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8c"]["Text"] = [[Wallcheck: Off]];
+G2L["8c"]["Name"] = [[Wallcheck]];
+G2L["8c"]["Position"] = UDim2.new(0.02463, 0, 0, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Aimbot.Toggles.Wallcheck.LocalScript
+G2L["8d"] = Instance.new("LocalScript", G2L["8c"]);
+
+
+
+-- StarterGui.Gui.Mint.Holder.Aimbot.Toggles.Wallcheck.UICorner
+G2L["8e"] = Instance.new("UICorner", G2L["8c"]);
+G2L["8e"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Aimbot.Toggles.Wallcheck.UIStroke
+G2L["8f"] = Instance.new("UIStroke", G2L["8c"]);
+G2L["8f"]["Color"] = Color3.fromRGB(148, 203, 59);
+G2L["8f"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Gui.Mint.Holder.Aimbot.Toggles.Debug
+G2L["90"] = Instance.new("TextButton", G2L["7b"]);
+G2L["90"]["TextWrapped"] = true;
+G2L["90"]["BorderSizePixel"] = 0;
+G2L["90"]["TextSize"] = 14;
+G2L["90"]["TextScaled"] = true;
+G2L["90"]["TextColor3"] = Color3.fromRGB(179, 242, 70);
+G2L["90"]["BackgroundColor3"] = Color3.fromRGB(174, 255, 156);
+G2L["90"]["FontFace"] = Font.new([[rbxasset://fonts/families/Roboto.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["90"]["BackgroundTransparency"] = 0.65;
+G2L["90"]["Size"] = UDim2.new(0.95074, 0, 0.15951, 0);
+G2L["90"]["LayoutOrder"] = 3;
+G2L["90"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["90"]["Text"] = [[Debug: Off]];
+G2L["90"]["Name"] = [[Debug]];
+G2L["90"]["Position"] = UDim2.new(0.02463, 0, 0, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Aimbot.Toggles.Debug.LocalScript
+G2L["91"] = Instance.new("LocalScript", G2L["90"]);
+
+
+
+-- StarterGui.Gui.Mint.Holder.Aimbot.Toggles.Debug.UICorner
+G2L["92"] = Instance.new("UICorner", G2L["90"]);
+G2L["92"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Aimbot.Toggles.Debug.UIStroke
+G2L["93"] = Instance.new("UIStroke", G2L["90"]);
+G2L["93"]["Color"] = Color3.fromRGB(148, 203, 59);
+G2L["93"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Gui.Mint.Holder.Aimbot.Settings
+G2L["94"] = Instance.new("Frame", G2L["79"]);
+G2L["94"]["BorderSizePixel"] = 0;
+G2L["94"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["94"]["Size"] = UDim2.new(0.49574, 0, 0.96082, 0);
+G2L["94"]["Position"] = UDim2.new(0.48905, 0, 0.01977, 0);
+G2L["94"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["94"]["Name"] = [[Settings]];
+G2L["94"]["BackgroundTransparency"] = 0.93;
+
+
+-- StarterGui.Gui.Mint.Holder.Aimbot.Settings.UICorner
+G2L["95"] = Instance.new("UICorner", G2L["94"]);
+G2L["95"]["CornerRadius"] = UDim.new(0.01, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Aimbot.Settings.UIStroke
+G2L["96"] = Instance.new("UIStroke", G2L["94"]);
+G2L["96"]["Transparency"] = 0.43;
+G2L["96"]["Color"] = Color3.fromRGB(148, 203, 59);
+G2L["96"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Gui.Mint.Holder.Aimbot.Settings.UIListLayout
+G2L["97"] = Instance.new("UIListLayout", G2L["94"]);
+G2L["97"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["97"]["Padding"] = UDim.new(0, 5);
+G2L["97"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+
+-- StarterGui.Gui.Mint.Holder.Aimbot.Settings.UIPadding
+G2L["98"] = Instance.new("UIPadding", G2L["94"]);
+G2L["98"]["PaddingTop"] = UDim.new(0, 6);
+
+
+-- StarterGui.Gui.Mint.Holder.Aimbot.Settings.Fov
+G2L["99"] = Instance.new("TextBox", G2L["94"]);
+G2L["99"]["Name"] = [[Fov]];
+G2L["99"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["99"]["BorderSizePixel"] = 0;
+G2L["99"]["TextWrapped"] = true;
+G2L["99"]["TextSize"] = 14;
+G2L["99"]["TextColor3"] = Color3.fromRGB(179, 242, 70);
+G2L["99"]["TextScaled"] = true;
+G2L["99"]["BackgroundColor3"] = Color3.fromRGB(174, 255, 156);
+G2L["99"]["FontFace"] = Font.new([[rbxasset://fonts/families/Roboto.json]], Enum.FontWeight.Bold, Enum.FontStyle.Italic);
+G2L["99"]["ClearTextOnFocus"] = false;
+G2L["99"]["PlaceholderText"] = [[FOV]];
+G2L["99"]["Size"] = UDim2.new(0.91441, 0, 0.12252, 0);
+G2L["99"]["Position"] = UDim2.new(0.04955, 0, 0, 0);
+G2L["99"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["99"]["Text"] = [[120]];
+G2L["99"]["LayoutOrder"] = 1;
+G2L["99"]["BackgroundTransparency"] = 0.65;
+
+
+-- StarterGui.Gui.Mint.Holder.Aimbot.Settings.Fov.LocalScript
+G2L["9a"] = Instance.new("LocalScript", G2L["99"]);
+
+
+
+-- StarterGui.Gui.Mint.Holder.Aimbot.Settings.Fov.UICorner
+G2L["9b"] = Instance.new("UICorner", G2L["99"]);
+G2L["9b"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Aimbot.Settings.Fov.UIStroke
+G2L["9c"] = Instance.new("UIStroke", G2L["99"]);
+G2L["9c"]["Color"] = Color3.fromRGB(148, 203, 59);
+G2L["9c"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Gui.Mint.Holder.Aimbot.Settings.Accuracy
+G2L["9d"] = Instance.new("TextBox", G2L["94"]);
+G2L["9d"]["Name"] = [[Accuracy]];
+G2L["9d"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9d"]["BorderSizePixel"] = 0;
+G2L["9d"]["TextWrapped"] = true;
+G2L["9d"]["TextSize"] = 14;
+G2L["9d"]["TextColor3"] = Color3.fromRGB(179, 242, 70);
+G2L["9d"]["TextScaled"] = true;
+G2L["9d"]["BackgroundColor3"] = Color3.fromRGB(174, 255, 156);
+G2L["9d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Roboto.json]], Enum.FontWeight.Bold, Enum.FontStyle.Italic);
+G2L["9d"]["ClearTextOnFocus"] = false;
+G2L["9d"]["PlaceholderText"] = [[Accuracy]];
+G2L["9d"]["Size"] = UDim2.new(0.91441, 0, 0.12252, 0);
+G2L["9d"]["Position"] = UDim2.new(0.04955, 0, 0.13748, 0);
+G2L["9d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9d"]["Text"] = [[100]];
+G2L["9d"]["LayoutOrder"] = 2;
+G2L["9d"]["BackgroundTransparency"] = 0.65;
+
+
+-- StarterGui.Gui.Mint.Holder.Aimbot.Settings.Accuracy.LocalScript
+G2L["9e"] = Instance.new("LocalScript", G2L["9d"]);
+
+
+
+-- StarterGui.Gui.Mint.Holder.Aimbot.Settings.Accuracy.UICorner
+G2L["9f"] = Instance.new("UICorner", G2L["9d"]);
+G2L["9f"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Aimbot.Settings.Accuracy.UIStroke
+G2L["a0"] = Instance.new("UIStroke", G2L["9d"]);
+G2L["a0"]["Color"] = Color3.fromRGB(148, 203, 59);
+G2L["a0"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Gui.Mint.Holder.Aimbot.Settings.Prediction
+G2L["a1"] = Instance.new("TextBox", G2L["94"]);
+G2L["a1"]["Name"] = [[Prediction]];
+G2L["a1"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a1"]["BorderSizePixel"] = 0;
+G2L["a1"]["TextWrapped"] = true;
+G2L["a1"]["TextSize"] = 14;
+G2L["a1"]["TextColor3"] = Color3.fromRGB(179, 242, 70);
+G2L["a1"]["TextScaled"] = true;
+G2L["a1"]["BackgroundColor3"] = Color3.fromRGB(174, 255, 156);
+G2L["a1"]["FontFace"] = Font.new([[rbxasset://fonts/families/Roboto.json]], Enum.FontWeight.Bold, Enum.FontStyle.Italic);
+G2L["a1"]["ClearTextOnFocus"] = false;
+G2L["a1"]["Size"] = UDim2.new(0.91441, 0, 0.12252, 0);
+G2L["a1"]["Position"] = UDim2.new(0.04955, 0, 0.27497, 0);
+G2L["a1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a1"]["Text"] = [[5]];
+G2L["a1"]["LayoutOrder"] = 3;
+G2L["a1"]["BackgroundTransparency"] = 0.65;
+
+
+-- StarterGui.Gui.Mint.Holder.Aimbot.Settings.Prediction.LocalScript
+G2L["a2"] = Instance.new("LocalScript", G2L["a1"]);
+
+
+
+-- StarterGui.Gui.Mint.Holder.Aimbot.Settings.Prediction.UICorner
+G2L["a3"] = Instance.new("UICorner", G2L["a1"]);
+G2L["a3"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Aimbot.Settings.Prediction.UIStroke
+G2L["a4"] = Instance.new("UIStroke", G2L["a1"]);
+G2L["a4"]["Color"] = Color3.fromRGB(148, 203, 59);
+G2L["a4"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Gui.Mint.Holder.Aimbot.Settings.Smooth
+G2L["a5"] = Instance.new("TextBox", G2L["94"]);
+G2L["a5"]["Name"] = [[Smooth]];
+G2L["a5"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a5"]["BorderSizePixel"] = 0;
+G2L["a5"]["TextWrapped"] = true;
+G2L["a5"]["TextSize"] = 14;
+G2L["a5"]["TextColor3"] = Color3.fromRGB(179, 242, 70);
+G2L["a5"]["TextScaled"] = true;
+G2L["a5"]["BackgroundColor3"] = Color3.fromRGB(174, 255, 156);
+G2L["a5"]["FontFace"] = Font.new([[rbxasset://fonts/families/Roboto.json]], Enum.FontWeight.Bold, Enum.FontStyle.Italic);
+G2L["a5"]["ClearTextOnFocus"] = false;
+G2L["a5"]["Size"] = UDim2.new(0.91441, 0, 0.11203, 0);
+G2L["a5"]["Position"] = UDim2.new(0.04955, 0, 0.41245, 0);
+G2L["a5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a5"]["Text"] = [[5]];
+G2L["a5"]["LayoutOrder"] = 4;
+G2L["a5"]["BackgroundTransparency"] = 0.65;
+
+
+-- StarterGui.Gui.Mint.Holder.Aimbot.Settings.Smooth.LocalScript
+G2L["a6"] = Instance.new("LocalScript", G2L["a5"]);
+
+
+
+-- StarterGui.Gui.Mint.Holder.Aimbot.Settings.Smooth.UICorner
+G2L["a7"] = Instance.new("UICorner", G2L["a5"]);
+G2L["a7"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Aimbot.Settings.Smooth.UIStroke
+G2L["a8"] = Instance.new("UIStroke", G2L["a5"]);
+G2L["a8"]["Color"] = Color3.fromRGB(148, 203, 59);
+G2L["a8"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Gui.Mint.Holder.Aimbot.Settings.target
+G2L["a9"] = Instance.new("TextBox", G2L["94"]);
+G2L["a9"]["Name"] = [[target]];
+G2L["a9"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a9"]["BorderSizePixel"] = 0;
+G2L["a9"]["TextWrapped"] = true;
+G2L["a9"]["TextSize"] = 14;
+G2L["a9"]["TextColor3"] = Color3.fromRGB(179, 242, 70);
+G2L["a9"]["TextScaled"] = true;
+G2L["a9"]["BackgroundColor3"] = Color3.fromRGB(174, 255, 156);
+G2L["a9"]["FontFace"] = Font.new([[rbxasset://fonts/families/Roboto.json]], Enum.FontWeight.Bold, Enum.FontStyle.Italic);
+G2L["a9"]["ClearTextOnFocus"] = false;
+G2L["a9"]["Size"] = UDim2.new(0.91441, 0, 0.11203, 0);
+G2L["a9"]["Position"] = UDim2.new(0.04955, 0, 0.53944, 0);
+G2L["a9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a9"]["Text"] = [[Head]];
+G2L["a9"]["LayoutOrder"] = 5;
+G2L["a9"]["BackgroundTransparency"] = 0.65;
+
+
+-- StarterGui.Gui.Mint.Holder.Aimbot.Settings.target.LocalScript
+G2L["aa"] = Instance.new("LocalScript", G2L["a9"]);
+
+
+
+-- StarterGui.Gui.Mint.Holder.Aimbot.Settings.target.UICorner
+G2L["ab"] = Instance.new("UICorner", G2L["a9"]);
+G2L["ab"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Aimbot.Settings.target.UIStroke
+G2L["ac"] = Instance.new("UIStroke", G2L["a9"]);
+G2L["ac"]["Color"] = Color3.fromRGB(148, 203, 59);
+G2L["ac"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Gui.Mint.Holder.Aimbot.ImageLabel
+G2L["ad"] = Instance.new("ImageLabel", G2L["79"]);
+G2L["ad"]["BorderSizePixel"] = 0;
+G2L["ad"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["ad"]["ImageTransparency"] = 0.2;
+G2L["ad"]["Image"] = [[rbxassetid://130270992823678]];
+G2L["ad"]["Size"] = UDim2.new(0.45332, 0, 0.48855, 0);
+G2L["ad"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["ad"]["BackgroundTransparency"] = 1;
+G2L["ad"]["Position"] = UDim2.new(0.01563, 0, 0.49138, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Aimbot.ImageLabel.UIStroke
+G2L["ae"] = Instance.new("UIStroke", G2L["ad"]);
+G2L["ae"]["Transparency"] = 0.43;
+G2L["ae"]["Color"] = Color3.fromRGB(148, 203, 59);
+G2L["ae"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Gui.Mint.Holder.Aimbot.ImageLabel.UICorner
+G2L["af"] = Instance.new("UICorner", G2L["ad"]);
+G2L["af"]["CornerRadius"] = UDim.new(0.01, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Extra
+G2L["b0"] = Instance.new("Frame", G2L["3f"]);
+G2L["b0"]["Visible"] = false;
+G2L["b0"]["BorderSizePixel"] = 0;
+G2L["b0"]["BackgroundColor3"] = Color3.fromRGB(60, 60, 60);
+G2L["b0"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["b0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b0"]["Name"] = [[Extra]];
+G2L["b0"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.Gui.Mint.Holder.Extra.Settings
+G2L["b1"] = Instance.new("Frame", G2L["b0"]);
+G2L["b1"]["BorderSizePixel"] = 0;
+G2L["b1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b1"]["Size"] = UDim2.new(0.55623, 0, 0.96082, 0);
+G2L["b1"]["Position"] = UDim2.new(0.42856, 0, 0.01977, 0);
+G2L["b1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b1"]["Name"] = [[Settings]];
+G2L["b1"]["BackgroundTransparency"] = 0.93;
+
+
+-- StarterGui.Gui.Mint.Holder.Extra.Settings.UICorner
+G2L["b2"] = Instance.new("UICorner", G2L["b1"]);
+G2L["b2"]["CornerRadius"] = UDim.new(0.01, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Extra.Settings.UIStroke
+G2L["b3"] = Instance.new("UIStroke", G2L["b1"]);
+G2L["b3"]["Transparency"] = 0.43;
+G2L["b3"]["Color"] = Color3.fromRGB(148, 203, 59);
+G2L["b3"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Gui.Mint.Holder.Extra.Settings.ScrollingFrame
+G2L["b4"] = Instance.new("ScrollingFrame", G2L["b1"]);
+G2L["b4"]["Active"] = true;
+G2L["b4"]["BorderSizePixel"] = 0;
+G2L["b4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b4"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["b4"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b4"]["ScrollBarThickness"] = 0;
+G2L["b4"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.Gui.Mint.Holder.Extra.Settings.ScrollingFrame.UIPadding
+G2L["b5"] = Instance.new("UIPadding", G2L["b4"]);
+G2L["b5"]["PaddingTop"] = UDim.new(0, 6);
+
+
+-- StarterGui.Gui.Mint.Holder.Extra.Settings.ScrollingFrame.UIListLayout
+G2L["b6"] = Instance.new("UIListLayout", G2L["b4"]);
+G2L["b6"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["b6"]["Wraps"] = true;
+G2L["b6"]["Padding"] = UDim.new(0, 5);
+G2L["b6"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["b6"]["FillDirection"] = Enum.FillDirection.Horizontal;
+
+
+-- StarterGui.Gui.Mint.Holder.Extra.Settings.ScrollingFrame.Button
+G2L["b7"] = Instance.new("TextButton", G2L["b4"]);
+G2L["b7"]["TextWrapped"] = true;
+G2L["b7"]["BorderSizePixel"] = 0;
+G2L["b7"]["TextSize"] = 14;
+G2L["b7"]["TextScaled"] = true;
+G2L["b7"]["TextColor3"] = Color3.fromRGB(179, 242, 70);
+G2L["b7"]["BackgroundColor3"] = Color3.fromRGB(174, 255, 156);
+G2L["b7"]["FontFace"] = Font.new([[rbxasset://fonts/families/Roboto.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["b7"]["BackgroundTransparency"] = 0.65;
+G2L["b7"]["Size"] = UDim2.new(0.45171, 0, 0.08773, 0);
+G2L["b7"]["LayoutOrder"] = 1;
+G2L["b7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b7"]["Text"] = [[Jerk Off: FE]];
+G2L["b7"]["Name"] = [[Button]];
+G2L["b7"]["Position"] = UDim2.new(0.03822, 0, 0, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Extra.Settings.ScrollingFrame.Button.UICorner
+G2L["b8"] = Instance.new("UICorner", G2L["b7"]);
+G2L["b8"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Extra.Settings.ScrollingFrame.Button.UIStroke
+G2L["b9"] = Instance.new("UIStroke", G2L["b7"]);
+G2L["b9"]["Color"] = Color3.fromRGB(148, 203, 59);
+G2L["b9"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Gui.Mint.Holder.Extra.Settings.ScrollingFrame.Button.LocalScript
+G2L["ba"] = Instance.new("LocalScript", G2L["b7"]);
+
+
+
+-- StarterGui.Gui.Mint.Holder.Extra.Settings.ScrollingFrame.Button
+G2L["bb"] = Instance.new("TextButton", G2L["b4"]);
+G2L["bb"]["TextWrapped"] = true;
+G2L["bb"]["BorderSizePixel"] = 0;
+G2L["bb"]["TextSize"] = 14;
+G2L["bb"]["TextScaled"] = true;
+G2L["bb"]["TextColor3"] = Color3.fromRGB(179, 242, 70);
+G2L["bb"]["BackgroundColor3"] = Color3.fromRGB(174, 255, 156);
+G2L["bb"]["FontFace"] = Font.new([[rbxasset://fonts/families/Roboto.json]], Enum.FontWeight.Regular, Enum.FontStyle.Italic);
+G2L["bb"]["BackgroundTransparency"] = 0.65;
+G2L["bb"]["Size"] = UDim2.new(0.45171, 0, 0.08773, 0);
+G2L["bb"]["LayoutOrder"] = 2;
+G2L["bb"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["bb"]["Text"] = [[Rainbow Holding Tool: CS]];
+G2L["bb"]["Name"] = [[Button]];
+G2L["bb"]["Position"] = UDim2.new(0.03822, 0, 0, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Extra.Settings.ScrollingFrame.Button.UICorner
+G2L["bc"] = Instance.new("UICorner", G2L["bb"]);
+G2L["bc"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Extra.Settings.ScrollingFrame.Button.UIStroke
+G2L["bd"] = Instance.new("UIStroke", G2L["bb"]);
+G2L["bd"]["Color"] = Color3.fromRGB(148, 203, 59);
+G2L["bd"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Gui.Mint.Holder.Extra.Settings.ScrollingFrame.Button.LocalScript
+G2L["be"] = Instance.new("LocalScript", G2L["bb"]);
+
+
+
+-- StarterGui.Gui.Mint.Holder.Extra.Settings.ScrollingFrame.Button
+G2L["bf"] = Instance.new("TextButton", G2L["b4"]);
+G2L["bf"]["TextWrapped"] = true;
+G2L["bf"]["BorderSizePixel"] = 0;
+G2L["bf"]["TextSize"] = 14;
+G2L["bf"]["TextScaled"] = true;
+G2L["bf"]["TextColor3"] = Color3.fromRGB(179, 242, 70);
+G2L["bf"]["BackgroundColor3"] = Color3.fromRGB(174, 255, 156);
+G2L["bf"]["FontFace"] = Font.new([[rbxasset://fonts/families/Roboto.json]], Enum.FontWeight.Regular, Enum.FontStyle.Italic);
+G2L["bf"]["BackgroundTransparency"] = 0.65;
+G2L["bf"]["Size"] = UDim2.new(0.45171, 0, 0.08773, 0);
+G2L["bf"]["LayoutOrder"] = 3;
+G2L["bf"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["bf"]["Text"] = [[Welding Hub: FE]];
+G2L["bf"]["Name"] = [[Button]];
+G2L["bf"]["Position"] = UDim2.new(0.03822, 0, 0, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Extra.Settings.ScrollingFrame.Button.UICorner
+G2L["c0"] = Instance.new("UICorner", G2L["bf"]);
+G2L["c0"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Extra.Settings.ScrollingFrame.Button.UIStroke
+G2L["c1"] = Instance.new("UIStroke", G2L["bf"]);
+G2L["c1"]["Color"] = Color3.fromRGB(148, 203, 59);
+G2L["c1"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Gui.Mint.Holder.Extra.Settings.ScrollingFrame.Button.LocalScript
+G2L["c2"] = Instance.new("LocalScript", G2L["bf"]);
+
+
+
+-- StarterGui.Gui.Mint.Holder.Extra.Settings.ScrollingFrame.Button
+G2L["c3"] = Instance.new("TextButton", G2L["b4"]);
+G2L["c3"]["TextWrapped"] = true;
+G2L["c3"]["BorderSizePixel"] = 0;
+G2L["c3"]["TextSize"] = 14;
+G2L["c3"]["TextScaled"] = true;
+G2L["c3"]["TextColor3"] = Color3.fromRGB(179, 242, 70);
+G2L["c3"]["BackgroundColor3"] = Color3.fromRGB(174, 255, 156);
+G2L["c3"]["FontFace"] = Font.new([[rbxasset://fonts/families/Roboto.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["c3"]["BackgroundTransparency"] = 0.65;
+G2L["c3"]["Size"] = UDim2.new(0.45171, 0, 0.08773, 0);
+G2L["c3"]["LayoutOrder"] = 4;
+G2L["c3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c3"]["Text"] = [[CK: FE & CS]];
+G2L["c3"]["Name"] = [[Button]];
+G2L["c3"]["Position"] = UDim2.new(0.51007, 0, 0.09811, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Extra.Settings.ScrollingFrame.Button.UICorner
+G2L["c4"] = Instance.new("UICorner", G2L["c3"]);
+G2L["c4"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Extra.Settings.ScrollingFrame.Button.UIStroke
+G2L["c5"] = Instance.new("UIStroke", G2L["c3"]);
+G2L["c5"]["Color"] = Color3.fromRGB(148, 203, 59);
+G2L["c5"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Gui.Mint.Holder.Extra.Settings.ScrollingFrame.Button.LocalScript
+G2L["c6"] = Instance.new("LocalScript", G2L["c3"]);
+
+
+
+-- StarterGui.Gui.Mint.Holder.Extra.Settings.ScrollingFrame.Button
+G2L["c7"] = Instance.new("TextButton", G2L["b4"]);
+G2L["c7"]["TextWrapped"] = true;
+G2L["c7"]["BorderSizePixel"] = 0;
+G2L["c7"]["TextSize"] = 14;
+G2L["c7"]["TextScaled"] = true;
+G2L["c7"]["TextColor3"] = Color3.fromRGB(179, 242, 70);
+G2L["c7"]["BackgroundColor3"] = Color3.fromRGB(174, 255, 156);
+G2L["c7"]["FontFace"] = Font.new([[rbxasset://fonts/families/Roboto.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["c7"]["BackgroundTransparency"] = 0.65;
+G2L["c7"]["Size"] = UDim2.new(0.45171, 0, 0.08773, 0);
+G2L["c7"]["LayoutOrder"] = 6;
+G2L["c7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c7"]["Text"] = [[Script Hub V3]];
+G2L["c7"]["Name"] = [[Button]];
+G2L["c7"]["Position"] = UDim2.new(0.51007, 0, 0.09811, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Extra.Settings.ScrollingFrame.Button.UICorner
+G2L["c8"] = Instance.new("UICorner", G2L["c7"]);
+G2L["c8"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Extra.Settings.ScrollingFrame.Button.UIStroke
+G2L["c9"] = Instance.new("UIStroke", G2L["c7"]);
+G2L["c9"]["Color"] = Color3.fromRGB(148, 203, 59);
+G2L["c9"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Gui.Mint.Holder.Extra.Settings.ScrollingFrame.Button.LocalScript
+G2L["ca"] = Instance.new("LocalScript", G2L["c7"]);
+
+
+
+-- StarterGui.Gui.Mint.Holder.Extra.Settings.ScrollingFrame.Button
+G2L["cb"] = Instance.new("TextButton", G2L["b4"]);
+G2L["cb"]["TextWrapped"] = true;
+G2L["cb"]["BorderSizePixel"] = 0;
+G2L["cb"]["TextSize"] = 14;
+G2L["cb"]["TextScaled"] = true;
+G2L["cb"]["TextColor3"] = Color3.fromRGB(179, 242, 70);
+G2L["cb"]["BackgroundColor3"] = Color3.fromRGB(174, 255, 156);
+G2L["cb"]["FontFace"] = Font.new([[rbxasset://fonts/families/Roboto.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["cb"]["BackgroundTransparency"] = 0.65;
+G2L["cb"]["Size"] = UDim2.new(0.45171, 0, 0.08773, 0);
+G2L["cb"]["LayoutOrder"] = 5;
+G2L["cb"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["cb"]["Text"] = [[HoHo Hub]];
+G2L["cb"]["Name"] = [[Button]];
+G2L["cb"]["Position"] = UDim2.new(0.51007, 0, 0.09811, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Extra.Settings.ScrollingFrame.Button.UICorner
+G2L["cc"] = Instance.new("UICorner", G2L["cb"]);
+G2L["cc"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Extra.Settings.ScrollingFrame.Button.UIStroke
+G2L["cd"] = Instance.new("UIStroke", G2L["cb"]);
+G2L["cd"]["Color"] = Color3.fromRGB(148, 203, 59);
+G2L["cd"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Gui.Mint.Holder.Extra.Settings.ScrollingFrame.Button.LocalScript
+G2L["ce"] = Instance.new("LocalScript", G2L["cb"]);
+
+
+
+-- StarterGui.Gui.Mint.Holder.Extra.Settings.ScrollingFrame.Button
+G2L["cf"] = Instance.new("TextButton", G2L["b4"]);
+G2L["cf"]["TextWrapped"] = true;
+G2L["cf"]["BorderSizePixel"] = 0;
+G2L["cf"]["TextSize"] = 14;
+G2L["cf"]["TextScaled"] = true;
+G2L["cf"]["TextColor3"] = Color3.fromRGB(179, 242, 70);
+G2L["cf"]["BackgroundColor3"] = Color3.fromRGB(174, 255, 156);
+G2L["cf"]["FontFace"] = Font.new([[rbxasset://fonts/families/Roboto.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["cf"]["BackgroundTransparency"] = 0.65;
+G2L["cf"]["Size"] = UDim2.new(0.45171, 0, 0.08773, 0);
+G2L["cf"]["LayoutOrder"] = 7;
+G2L["cf"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["cf"]["Text"] = [[Backdoor]];
+G2L["cf"]["Name"] = [[Button]];
+G2L["cf"]["Position"] = UDim2.new(0.51007, 0, 0.09811, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Extra.Settings.ScrollingFrame.Button.UICorner
+G2L["d0"] = Instance.new("UICorner", G2L["cf"]);
+G2L["d0"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Extra.Settings.ScrollingFrame.Button.UIStroke
+G2L["d1"] = Instance.new("UIStroke", G2L["cf"]);
+G2L["d1"]["Color"] = Color3.fromRGB(148, 203, 59);
+G2L["d1"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Gui.Mint.Holder.Extra.Settings.ScrollingFrame.Button.LocalScript
+G2L["d2"] = Instance.new("LocalScript", G2L["cf"]);
+
+
+
+-- StarterGui.Gui.Mint.Holder.Extra.Settings.ScrollingFrame.Button
+G2L["d3"] = Instance.new("TextButton", G2L["b4"]);
+G2L["d3"]["TextWrapped"] = true;
+G2L["d3"]["BorderSizePixel"] = 0;
+G2L["d3"]["TextSize"] = 14;
+G2L["d3"]["TextScaled"] = true;
+G2L["d3"]["TextColor3"] = Color3.fromRGB(179, 242, 70);
+G2L["d3"]["BackgroundColor3"] = Color3.fromRGB(174, 255, 156);
+G2L["d3"]["FontFace"] = Font.new([[rbxasset://fonts/families/Roboto.json]], Enum.FontWeight.Regular, Enum.FontStyle.Italic);
+G2L["d3"]["BackgroundTransparency"] = 0.65;
+G2L["d3"]["Size"] = UDim2.new(0.45171, 0, 0.08773, 0);
+G2L["d3"]["LayoutOrder"] = 8;
+G2L["d3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d3"]["Text"] = [[MS Paint]];
+G2L["d3"]["Name"] = [[Button]];
+G2L["d3"]["Position"] = UDim2.new(0.51007, 0, 0.09811, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Extra.Settings.ScrollingFrame.Button.UICorner
+G2L["d4"] = Instance.new("UICorner", G2L["d3"]);
+G2L["d4"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Extra.Settings.ScrollingFrame.Button.UIStroke
+G2L["d5"] = Instance.new("UIStroke", G2L["d3"]);
+G2L["d5"]["Color"] = Color3.fromRGB(148, 203, 59);
+G2L["d5"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Gui.Mint.Holder.Extra.Settings.ScrollingFrame.Button.LocalScript
+G2L["d6"] = Instance.new("LocalScript", G2L["d3"]);
+
+
+
+-- StarterGui.Gui.Mint.Holder.Extra.Settings.ScrollingFrame.Button
+G2L["d7"] = Instance.new("TextButton", G2L["b4"]);
+G2L["d7"]["TextWrapped"] = true;
+G2L["d7"]["BorderSizePixel"] = 0;
+G2L["d7"]["TextSize"] = 14;
+G2L["d7"]["TextScaled"] = true;
+G2L["d7"]["TextColor3"] = Color3.fromRGB(179, 242, 70);
+G2L["d7"]["BackgroundColor3"] = Color3.fromRGB(174, 255, 156);
+G2L["d7"]["FontFace"] = Font.new([[rbxasset://fonts/families/Roboto.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["d7"]["BackgroundTransparency"] = 0.65;
+G2L["d7"]["Size"] = UDim2.new(0.45171, 0, 0.08773, 0);
+G2L["d7"]["LayoutOrder"] = 9;
+G2L["d7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d7"]["Text"] = [[Violent GTA Mod Menu]];
+G2L["d7"]["Name"] = [[Button]];
+G2L["d7"]["Position"] = UDim2.new(0.51007, 0, 0.09811, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Extra.Settings.ScrollingFrame.Button.UICorner
+G2L["d8"] = Instance.new("UICorner", G2L["d7"]);
+G2L["d8"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Extra.Settings.ScrollingFrame.Button.UIStroke
+G2L["d9"] = Instance.new("UIStroke", G2L["d7"]);
+G2L["d9"]["Color"] = Color3.fromRGB(148, 203, 59);
+G2L["d9"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Gui.Mint.Holder.Extra.Settings.ScrollingFrame.Button.LocalScript
+G2L["da"] = Instance.new("LocalScript", G2L["d7"]);
+
+
+
+-- StarterGui.Gui.Mint.Holder.Extra.ImageLabel
+G2L["db"] = Instance.new("ImageLabel", G2L["b0"]);
+G2L["db"]["BorderSizePixel"] = 0;
+G2L["db"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["db"]["ImageTransparency"] = 0.2;
+G2L["db"]["Image"] = [[rbxassetid://9368762736]];
+G2L["db"]["Size"] = UDim2.new(0.38835, 0, 0.48855, 0);
+G2L["db"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["db"]["BackgroundTransparency"] = 1;
+G2L["db"]["Position"] = UDim2.new(0.01563, 0, 0.49138, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Extra.ImageLabel.UIStroke
+G2L["dc"] = Instance.new("UIStroke", G2L["db"]);
+G2L["dc"]["Transparency"] = 0.43;
+G2L["dc"]["Color"] = Color3.fromRGB(148, 203, 59);
+G2L["dc"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Gui.Mint.Holder.Extra.ImageLabel.UICorner
+G2L["dd"] = Instance.new("UICorner", G2L["db"]);
+G2L["dd"]["CornerRadius"] = UDim.new(0.01, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Extra.ImageLabel
+G2L["de"] = Instance.new("ImageLabel", G2L["b0"]);
+G2L["de"]["ZIndex"] = 0;
+G2L["de"]["BorderSizePixel"] = 0;
+G2L["de"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["de"]["ImageTransparency"] = 0.88;
+G2L["de"]["Image"] = [[rbxassetid://14070892335]];
+G2L["de"]["Size"] = UDim2.new(1.00176, 0, 1, 0);
+G2L["de"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["de"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.Gui.Mint.Holder.Extra.Notice
+G2L["df"] = Instance.new("Frame", G2L["b0"]);
+G2L["df"]["BorderSizePixel"] = 0;
+G2L["df"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["df"]["Size"] = UDim2.new(0.38835, 0, 0.46031, 0);
+G2L["df"]["Position"] = UDim2.new(0.01563, 0, 0.01977, 0);
+G2L["df"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["df"]["Name"] = [[Notice]];
+G2L["df"]["BackgroundTransparency"] = 0.93;
+
+
+-- StarterGui.Gui.Mint.Holder.Extra.Notice.UICorner
+G2L["e0"] = Instance.new("UICorner", G2L["df"]);
+G2L["e0"]["CornerRadius"] = UDim.new(0.01, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Extra.Notice.UIStroke
+G2L["e1"] = Instance.new("UIStroke", G2L["df"]);
+G2L["e1"]["Transparency"] = 0.43;
+G2L["e1"]["Color"] = Color3.fromRGB(148, 203, 59);
+G2L["e1"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Gui.Mint.Holder.Extra.Notice.TextLabel
+G2L["e2"] = Instance.new("TextLabel", G2L["df"]);
+G2L["e2"]["TextWrapped"] = true;
+G2L["e2"]["ZIndex"] = 2;
+G2L["e2"]["BorderSizePixel"] = 0;
+G2L["e2"]["TextSize"] = 14;
+G2L["e2"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["e2"]["TextScaled"] = true;
+G2L["e2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e2"]["FontFace"] = Font.new([[rbxasset://fonts/families/Roboto.json]], Enum.FontWeight.Bold, Enum.FontStyle.Italic);
+G2L["e2"]["TextColor3"] = Color3.fromRGB(179, 242, 70);
+G2L["e2"]["BackgroundTransparency"] = 1;
+G2L["e2"]["RichText"] = true;
+G2L["e2"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["e2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e2"]["Text"] = [[Extra: Extra tab with loadstrings, and more like farming in yvh, pl, etc]];
+G2L["e2"]["Position"] = UDim2.new(0.01715, 0, 0.00577, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Esp
+G2L["e3"] = Instance.new("Frame", G2L["3f"]);
+G2L["e3"]["Visible"] = false;
+G2L["e3"]["BorderSizePixel"] = 0;
+G2L["e3"]["BackgroundColor3"] = Color3.fromRGB(60, 60, 60);
+G2L["e3"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["e3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e3"]["Name"] = [[Esp]];
+G2L["e3"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.Gui.Mint.Holder.Esp.Toggles
+G2L["e4"] = Instance.new("Frame", G2L["e3"]);
+G2L["e4"]["BorderSizePixel"] = 0;
+G2L["e4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e4"]["Size"] = UDim2.new(0.45332, 0, 0.96082, 0);
+G2L["e4"]["Position"] = UDim2.new(0.01563, 0, 0.01977, 0);
+G2L["e4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e4"]["Name"] = [[Toggles]];
+G2L["e4"]["BackgroundTransparency"] = 0.93;
+
+
+-- StarterGui.Gui.Mint.Holder.Esp.Toggles.UICorner
+G2L["e5"] = Instance.new("UICorner", G2L["e4"]);
+G2L["e5"]["CornerRadius"] = UDim.new(0.01, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Esp.Toggles.UIStroke
+G2L["e6"] = Instance.new("UIStroke", G2L["e4"]);
+G2L["e6"]["Transparency"] = 0.43;
+G2L["e6"]["Color"] = Color3.fromRGB(148, 203, 59);
+G2L["e6"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Gui.Mint.Holder.Esp.Toggles.UIListLayout
+G2L["e7"] = Instance.new("UIListLayout", G2L["e4"]);
+G2L["e7"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["e7"]["Padding"] = UDim.new(0, 5);
+G2L["e7"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+
+-- StarterGui.Gui.Mint.Holder.Esp.Toggles.ESP
+G2L["e8"] = Instance.new("TextButton", G2L["e4"]);
+G2L["e8"]["TextWrapped"] = true;
+G2L["e8"]["BorderSizePixel"] = 0;
+G2L["e8"]["TextSize"] = 14;
+G2L["e8"]["TextScaled"] = true;
+G2L["e8"]["TextColor3"] = Color3.fromRGB(179, 242, 70);
+G2L["e8"]["BackgroundColor3"] = Color3.fromRGB(174, 255, 156);
+G2L["e8"]["FontFace"] = Font.new([[rbxasset://fonts/families/Roboto.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["e8"]["BackgroundTransparency"] = 0.65;
+G2L["e8"]["Size"] = UDim2.new(0.95074, 0, 0.08214, 0);
+G2L["e8"]["LayoutOrder"] = 1;
+G2L["e8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e8"]["Text"] = [[ESP: Off]];
+G2L["e8"]["Name"] = [[ESP]];
+G2L["e8"]["Position"] = UDim2.new(0.02463, 0, 0, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Esp.Toggles.ESP.LocalScript
+G2L["e9"] = Instance.new("LocalScript", G2L["e8"]);
+
+
+
+-- StarterGui.Gui.Mint.Holder.Esp.Toggles.ESP.UICorner
+G2L["ea"] = Instance.new("UICorner", G2L["e8"]);
+G2L["ea"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Esp.Toggles.ESP.UIStroke
+G2L["eb"] = Instance.new("UIStroke", G2L["e8"]);
+G2L["eb"]["Color"] = Color3.fromRGB(148, 203, 59);
+G2L["eb"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Gui.Mint.Holder.Esp.Toggles.UIPadding
+G2L["ec"] = Instance.new("UIPadding", G2L["e4"]);
+G2L["ec"]["PaddingTop"] = UDim.new(0, 6);
+
+
+-- StarterGui.Gui.Mint.Holder.Esp.Toggles.Tracers
+G2L["ed"] = Instance.new("TextButton", G2L["e4"]);
+G2L["ed"]["TextWrapped"] = true;
+G2L["ed"]["BorderSizePixel"] = 0;
+G2L["ed"]["TextSize"] = 14;
+G2L["ed"]["TextScaled"] = true;
+G2L["ed"]["TextColor3"] = Color3.fromRGB(179, 242, 70);
+G2L["ed"]["BackgroundColor3"] = Color3.fromRGB(174, 255, 156);
+G2L["ed"]["FontFace"] = Font.new([[rbxasset://fonts/families/Roboto.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["ed"]["BackgroundTransparency"] = 0.65;
+G2L["ed"]["Size"] = UDim2.new(0.95074, 0, 0.08214, 0);
+G2L["ed"]["LayoutOrder"] = 2;
+G2L["ed"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["ed"]["Text"] = [[Tracers: Off]];
+G2L["ed"]["Name"] = [[Tracers]];
+G2L["ed"]["Position"] = UDim2.new(0.02463, 0, 0, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Esp.Toggles.Tracers.UICorner
+G2L["ee"] = Instance.new("UICorner", G2L["ed"]);
+G2L["ee"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Esp.Toggles.Tracers.UIStroke
+G2L["ef"] = Instance.new("UIStroke", G2L["ed"]);
+G2L["ef"]["Color"] = Color3.fromRGB(148, 203, 59);
+G2L["ef"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Gui.Mint.Holder.Esp.Toggles.Tracers.LocalScript
+G2L["f0"] = Instance.new("LocalScript", G2L["ed"]);
+
+
+
+-- StarterGui.Gui.Mint.Holder.Esp.Toggles.Hitbox
+G2L["f1"] = Instance.new("TextButton", G2L["e4"]);
+G2L["f1"]["TextWrapped"] = true;
+G2L["f1"]["BorderSizePixel"] = 0;
+G2L["f1"]["TextSize"] = 14;
+G2L["f1"]["TextScaled"] = true;
+G2L["f1"]["TextColor3"] = Color3.fromRGB(179, 242, 70);
+G2L["f1"]["BackgroundColor3"] = Color3.fromRGB(174, 255, 156);
+G2L["f1"]["FontFace"] = Font.new([[rbxasset://fonts/families/Roboto.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["f1"]["BackgroundTransparency"] = 0.65;
+G2L["f1"]["Size"] = UDim2.new(0.95074, 0, 0.08214, 0);
+G2L["f1"]["LayoutOrder"] = 3;
+G2L["f1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f1"]["Text"] = [[HitboxEsp: Off]];
+G2L["f1"]["Name"] = [[Hitbox]];
+G2L["f1"]["Position"] = UDim2.new(0.02463, 0, 0, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Esp.Toggles.Hitbox.UICorner
+G2L["f2"] = Instance.new("UICorner", G2L["f1"]);
+G2L["f2"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Esp.Toggles.Hitbox.UIStroke
+G2L["f3"] = Instance.new("UIStroke", G2L["f1"]);
+G2L["f3"]["Color"] = Color3.fromRGB(148, 203, 59);
+G2L["f3"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Gui.Mint.Holder.Esp.Toggles.Hitbox.LocalScript
+G2L["f4"] = Instance.new("LocalScript", G2L["f1"]);
+
+
+
+-- StarterGui.Gui.Mint.Holder.Esp.Toggles.Box
+G2L["f5"] = Instance.new("TextButton", G2L["e4"]);
+G2L["f5"]["TextWrapped"] = true;
+G2L["f5"]["BorderSizePixel"] = 0;
+G2L["f5"]["TextSize"] = 14;
+G2L["f5"]["TextScaled"] = true;
+G2L["f5"]["TextColor3"] = Color3.fromRGB(179, 242, 70);
+G2L["f5"]["BackgroundColor3"] = Color3.fromRGB(174, 255, 156);
+G2L["f5"]["FontFace"] = Font.new([[rbxasset://fonts/families/Roboto.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["f5"]["BackgroundTransparency"] = 0.65;
+G2L["f5"]["Size"] = UDim2.new(0.95074, 0, 0.08214, 0);
+G2L["f5"]["LayoutOrder"] = 4;
+G2L["f5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f5"]["Text"] = [[BoxEsp: Off]];
+G2L["f5"]["Name"] = [[Box]];
+G2L["f5"]["Position"] = UDim2.new(0.02463, 0, 0, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Esp.Toggles.Box.UICorner
+G2L["f6"] = Instance.new("UICorner", G2L["f5"]);
+G2L["f6"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Esp.Toggles.Box.UIStroke
+G2L["f7"] = Instance.new("UIStroke", G2L["f5"]);
+G2L["f7"]["Color"] = Color3.fromRGB(148, 203, 59);
+G2L["f7"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Gui.Mint.Holder.Esp.Toggles.Box.LocalScript
+G2L["f8"] = Instance.new("LocalScript", G2L["f5"]);
+
+
+
+-- StarterGui.Gui.Mint.Holder.Esp.Toggles.Injventory
+G2L["f9"] = Instance.new("TextButton", G2L["e4"]);
+G2L["f9"]["TextWrapped"] = true;
+G2L["f9"]["BorderSizePixel"] = 0;
+G2L["f9"]["TextSize"] = 14;
+G2L["f9"]["TextScaled"] = true;
+G2L["f9"]["TextColor3"] = Color3.fromRGB(179, 242, 70);
+G2L["f9"]["BackgroundColor3"] = Color3.fromRGB(174, 255, 156);
+G2L["f9"]["FontFace"] = Font.new([[rbxasset://fonts/families/Roboto.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["f9"]["BackgroundTransparency"] = 0.65;
+G2L["f9"]["Size"] = UDim2.new(0.95074, 0, 0.08214, 0);
+G2L["f9"]["LayoutOrder"] = 5;
+G2L["f9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f9"]["Text"] = [[InventoryEsp: Off]];
+G2L["f9"]["Name"] = [[Injventory]];
+G2L["f9"]["Position"] = UDim2.new(0.02463, 0, 0, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Esp.Toggles.Injventory.UICorner
+G2L["fa"] = Instance.new("UICorner", G2L["f9"]);
+G2L["fa"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Esp.Toggles.Injventory.UIStroke
+G2L["fb"] = Instance.new("UIStroke", G2L["f9"]);
+G2L["fb"]["Color"] = Color3.fromRGB(148, 203, 59);
+G2L["fb"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Gui.Mint.Holder.Esp.Toggles.Injventory.LocalScript
+G2L["fc"] = Instance.new("LocalScript", G2L["f9"]);
+
+
+
+-- StarterGui.Gui.Mint.Holder.Esp.Toggles.Teamcheck
+G2L["fd"] = Instance.new("TextButton", G2L["e4"]);
+G2L["fd"]["TextWrapped"] = true;
+G2L["fd"]["BorderSizePixel"] = 0;
+G2L["fd"]["TextSize"] = 14;
+G2L["fd"]["TextScaled"] = true;
+G2L["fd"]["TextColor3"] = Color3.fromRGB(179, 242, 70);
+G2L["fd"]["BackgroundColor3"] = Color3.fromRGB(174, 255, 156);
+G2L["fd"]["FontFace"] = Font.new([[rbxasset://fonts/families/Roboto.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["fd"]["BackgroundTransparency"] = 0.65;
+G2L["fd"]["Size"] = UDim2.new(0.95074, 0, 0.08214, 0);
+G2L["fd"]["LayoutOrder"] = 6;
+G2L["fd"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["fd"]["Text"] = [[TeamCheck: Off]];
+G2L["fd"]["Name"] = [[Teamcheck]];
+G2L["fd"]["Position"] = UDim2.new(0.02463, 0, 0, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Esp.Toggles.Teamcheck.UICorner
+G2L["fe"] = Instance.new("UICorner", G2L["fd"]);
+G2L["fe"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Esp.Toggles.Teamcheck.UIStroke
+G2L["ff"] = Instance.new("UIStroke", G2L["fd"]);
+G2L["ff"]["Color"] = Color3.fromRGB(148, 203, 59);
+G2L["ff"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Gui.Mint.Holder.Esp.Toggles.Teamcheck.LocalScript
+G2L["100"] = Instance.new("LocalScript", G2L["fd"]);
+
+
+
+-- StarterGui.Gui.Mint.Holder.Esp.Toggles.Rainbow
+G2L["101"] = Instance.new("TextButton", G2L["e4"]);
+G2L["101"]["TextWrapped"] = true;
+G2L["101"]["BorderSizePixel"] = 0;
+G2L["101"]["TextSize"] = 14;
+G2L["101"]["TextScaled"] = true;
+G2L["101"]["TextColor3"] = Color3.fromRGB(179, 242, 70);
+G2L["101"]["BackgroundColor3"] = Color3.fromRGB(174, 255, 156);
+G2L["101"]["FontFace"] = Font.new([[rbxasset://fonts/families/Roboto.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["101"]["BackgroundTransparency"] = 0.65;
+G2L["101"]["Size"] = UDim2.new(0.95074, 0, 0.08214, 0);
+G2L["101"]["LayoutOrder"] = 7;
+G2L["101"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["101"]["Text"] = [[Rainbow: Off]];
+G2L["101"]["Name"] = [[Rainbow]];
+G2L["101"]["Position"] = UDim2.new(0.02463, 0, 0, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Esp.Toggles.Rainbow.UICorner
+G2L["102"] = Instance.new("UICorner", G2L["101"]);
+G2L["102"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Esp.Toggles.Rainbow.UIStroke
+G2L["103"] = Instance.new("UIStroke", G2L["101"]);
+G2L["103"]["Color"] = Color3.fromRGB(148, 203, 59);
+G2L["103"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Gui.Mint.Holder.Esp.Toggles.Rainbow.LocalScript
+G2L["104"] = Instance.new("LocalScript", G2L["101"]);
+
+
+
+-- StarterGui.Gui.Mint.Holder.Esp.Toggles.Debug
+G2L["105"] = Instance.new("TextButton", G2L["e4"]);
+G2L["105"]["TextWrapped"] = true;
+G2L["105"]["BorderSizePixel"] = 0;
+G2L["105"]["TextSize"] = 14;
+G2L["105"]["TextScaled"] = true;
+G2L["105"]["TextColor3"] = Color3.fromRGB(179, 242, 70);
+G2L["105"]["BackgroundColor3"] = Color3.fromRGB(174, 255, 156);
+G2L["105"]["FontFace"] = Font.new([[rbxasset://fonts/families/Roboto.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["105"]["BackgroundTransparency"] = 0.65;
+G2L["105"]["Size"] = UDim2.new(0.95074, 0, 0.08214, 0);
+G2L["105"]["LayoutOrder"] = 8;
+G2L["105"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["105"]["Text"] = [[Debug: Off]];
+G2L["105"]["Name"] = [[Debug]];
+G2L["105"]["Position"] = UDim2.new(0.02463, 0, 0, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Esp.Toggles.Debug.UICorner
+G2L["106"] = Instance.new("UICorner", G2L["105"]);
+G2L["106"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Esp.Toggles.Debug.UIStroke
+G2L["107"] = Instance.new("UIStroke", G2L["105"]);
+G2L["107"]["Color"] = Color3.fromRGB(148, 203, 59);
+G2L["107"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Gui.Mint.Holder.Esp.Toggles.Debug.LocalScript
+G2L["108"] = Instance.new("LocalScript", G2L["105"]);
+
+
+
+-- StarterGui.Gui.Mint.Holder.Esp.ImageLabel
+G2L["109"] = Instance.new("ImageLabel", G2L["e3"]);
+G2L["109"]["BorderSizePixel"] = 0;
+G2L["109"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["109"]["ImageTransparency"] = 0.2;
+G2L["109"]["Image"] = [[rbxassetid://97619077803360]];
+G2L["109"]["Size"] = UDim2.new(0.49575, 0, 0.958, 0);
+G2L["109"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["109"]["BackgroundTransparency"] = 1;
+G2L["109"]["Position"] = UDim2.new(0.48905, 0, 0.02259, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Esp.ImageLabel.UIStroke
+G2L["10a"] = Instance.new("UIStroke", G2L["109"]);
+G2L["10a"]["Transparency"] = 0.43;
+G2L["10a"]["Color"] = Color3.fromRGB(148, 203, 59);
+G2L["10a"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Gui.Mint.Holder.Esp.ImageLabel.UICorner
+G2L["10b"] = Instance.new("UICorner", G2L["109"]);
+G2L["10b"]["CornerRadius"] = UDim.new(0.01, 0);
+
+
+-- StarterGui.Gui.Mint.Holder.Esp.ImageLabel
+G2L["10c"] = Instance.new("ImageLabel", G2L["e3"]);
+G2L["10c"]["ZIndex"] = 0;
+G2L["10c"]["BorderSizePixel"] = 0;
+G2L["10c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["10c"]["ImageTransparency"] = 0.88;
+G2L["10c"]["Image"] = [[rbxassetid://8168657161]];
+G2L["10c"]["Size"] = UDim2.new(1.00176, 0, 1, 0);
+G2L["10c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["10c"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.Gui.Mint.Buttons
+G2L["10d"] = Instance.new("Frame", G2L["2"]);
+G2L["10d"]["ZIndex"] = 0;
+G2L["10d"]["BorderSizePixel"] = 0;
+G2L["10d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["10d"]["Size"] = UDim2.new(0.11592, 0, 0.92729, 0);
+G2L["10d"]["Position"] = UDim2.new(0.99887, 0, 0.07596, 0);
+G2L["10d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["10d"]["Name"] = [[Buttons]];
+G2L["10d"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.Gui.Mint.Buttons.UIListLayout
+G2L["10e"] = Instance.new("UIListLayout", G2L["10d"]);
+G2L["10e"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["10e"]["Padding"] = UDim.new(0, 5);
+G2L["10e"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+
+-- StarterGui.Gui.Mint.Buttons.Home
+G2L["10f"] = Instance.new("TextButton", G2L["10d"]);
+G2L["10f"]["BorderSizePixel"] = 0;
+G2L["10f"]["TextSize"] = 14;
+G2L["10f"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["10f"]["BackgroundColor3"] = Color3.fromRGB(60, 60, 60);
+G2L["10f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["10f"]["ZIndex"] = 0;
+G2L["10f"]["Size"] = UDim2.new(0.76923, 0, 0.11527, 0);
+G2L["10f"]["LayoutOrder"] = 1;
+G2L["10f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["10f"]["Text"] = [[]];
+G2L["10f"]["Name"] = [[Home]];
+G2L["10f"]["Position"] = UDim2.new(-0.09091, 0, 0, 0);
+
+
+-- StarterGui.Gui.Mint.Buttons.Home.UICorner
+G2L["110"] = Instance.new("UICorner", G2L["10f"]);
+G2L["110"]["CornerRadius"] = UDim.new(0.2, 0);
+
+
+-- StarterGui.Gui.Mint.Buttons.Home.UIStroke
+G2L["111"] = Instance.new("UIStroke", G2L["10f"]);
+G2L["111"]["Color"] = Color3.fromRGB(148, 203, 59);
+G2L["111"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Gui.Mint.Buttons.Home.Icon
+G2L["112"] = Instance.new("ImageLabel", G2L["10f"]);
+G2L["112"]["BorderSizePixel"] = 0;
+G2L["112"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["112"]["Image"] = [[rbxassetid://4034483344]];
+G2L["112"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["112"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["112"]["BackgroundTransparency"] = 1;
+G2L["112"]["Name"] = [[Icon]];
+
+
+-- StarterGui.Gui.Mint.Buttons.Home.LocalScript
+G2L["113"] = Instance.new("LocalScript", G2L["10f"]);
+
+
+
+-- StarterGui.Gui.Mint.Buttons.Aimbot
+G2L["114"] = Instance.new("TextButton", G2L["10d"]);
+G2L["114"]["BorderSizePixel"] = 0;
+G2L["114"]["TextSize"] = 14;
+G2L["114"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["114"]["BackgroundColor3"] = Color3.fromRGB(60, 60, 60);
+G2L["114"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["114"]["ZIndex"] = 0;
+G2L["114"]["Size"] = UDim2.new(0.76923, 0, 0.11527, 0);
+G2L["114"]["LayoutOrder"] = 2;
+G2L["114"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["114"]["Text"] = [[]];
+G2L["114"]["Name"] = [[Aimbot]];
+G2L["114"]["Position"] = UDim2.new(-0.09091, 0, 0, 0);
+
+
+-- StarterGui.Gui.Mint.Buttons.Aimbot.UICorner
+G2L["115"] = Instance.new("UICorner", G2L["114"]);
+G2L["115"]["CornerRadius"] = UDim.new(0.2, 0);
+
+
+-- StarterGui.Gui.Mint.Buttons.Aimbot.UIStroke
+G2L["116"] = Instance.new("UIStroke", G2L["114"]);
+G2L["116"]["Color"] = Color3.fromRGB(148, 203, 59);
+G2L["116"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Gui.Mint.Buttons.Aimbot.Icon
+G2L["117"] = Instance.new("ImageLabel", G2L["114"]);
+G2L["117"]["BorderSizePixel"] = 0;
+G2L["117"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["117"]["Image"] = [[rbxassetid://139650104834071]];
+G2L["117"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["117"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["117"]["BackgroundTransparency"] = 1;
+G2L["117"]["Name"] = [[Icon]];
+
+
+-- StarterGui.Gui.Mint.Buttons.Aimbot.LocalScript
+G2L["118"] = Instance.new("LocalScript", G2L["114"]);
+
+
+
+-- StarterGui.Gui.Mint.Buttons.Carabuse
+G2L["119"] = Instance.new("TextButton", G2L["10d"]);
+G2L["119"]["BorderSizePixel"] = 0;
+G2L["119"]["TextSize"] = 14;
+G2L["119"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["119"]["BackgroundColor3"] = Color3.fromRGB(60, 60, 60);
+G2L["119"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["119"]["ZIndex"] = 0;
+G2L["119"]["Size"] = UDim2.new(0.76923, 0, 0.11527, 0);
+G2L["119"]["LayoutOrder"] = 3;
+G2L["119"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["119"]["Text"] = [[]];
+G2L["119"]["Name"] = [[Carabuse]];
+G2L["119"]["Position"] = UDim2.new(-0.09091, 0, 0, 0);
+
+
+-- StarterGui.Gui.Mint.Buttons.Carabuse.UICorner
+G2L["11a"] = Instance.new("UICorner", G2L["119"]);
+G2L["11a"]["CornerRadius"] = UDim.new(0.2, 0);
+
+
+-- StarterGui.Gui.Mint.Buttons.Carabuse.UIStroke
+G2L["11b"] = Instance.new("UIStroke", G2L["119"]);
+G2L["11b"]["Color"] = Color3.fromRGB(148, 203, 59);
+G2L["11b"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Gui.Mint.Buttons.Carabuse.Icon
+G2L["11c"] = Instance.new("ImageLabel", G2L["119"]);
+G2L["11c"]["BorderSizePixel"] = 0;
+G2L["11c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["11c"]["Image"] = [[rbxassetid://123358713103625]];
+G2L["11c"]["Size"] = UDim2.new(0.8, 0, 0.825, 0);
+G2L["11c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["11c"]["BackgroundTransparency"] = 1;
+G2L["11c"]["Name"] = [[Icon]];
+G2L["11c"]["Position"] = UDim2.new(0.1, 0, 0.075, 0);
+
+
+-- StarterGui.Gui.Mint.Buttons.Carabuse.LocalScript
+G2L["11d"] = Instance.new("LocalScript", G2L["119"]);
+
+
+
+-- StarterGui.Gui.Mint.Buttons.Esp
+G2L["11e"] = Instance.new("TextButton", G2L["10d"]);
+G2L["11e"]["BorderSizePixel"] = 0;
+G2L["11e"]["TextSize"] = 14;
+G2L["11e"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["11e"]["BackgroundColor3"] = Color3.fromRGB(60, 60, 60);
+G2L["11e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["11e"]["ZIndex"] = 0;
+G2L["11e"]["Size"] = UDim2.new(0.76923, 0, 0.11527, 0);
+G2L["11e"]["LayoutOrder"] = 4;
+G2L["11e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["11e"]["Text"] = [[]];
+G2L["11e"]["Name"] = [[Esp]];
+G2L["11e"]["Position"] = UDim2.new(-0.09091, 0, 0, 0);
+
+
+-- StarterGui.Gui.Mint.Buttons.Esp.UICorner
+G2L["11f"] = Instance.new("UICorner", G2L["11e"]);
+G2L["11f"]["CornerRadius"] = UDim.new(0.2, 0);
+
+
+-- StarterGui.Gui.Mint.Buttons.Esp.UIStroke
+G2L["120"] = Instance.new("UIStroke", G2L["11e"]);
+G2L["120"]["Color"] = Color3.fromRGB(148, 203, 59);
+G2L["120"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Gui.Mint.Buttons.Esp.Icon
+G2L["121"] = Instance.new("ImageLabel", G2L["11e"]);
+G2L["121"]["BorderSizePixel"] = 0;
+G2L["121"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["121"]["Image"] = [[rbxassetid://10657365540]];
+G2L["121"]["Size"] = UDim2.new(0.8, 0, 0.825, 0);
+G2L["121"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["121"]["BackgroundTransparency"] = 1;
+G2L["121"]["Name"] = [[Icon]];
+G2L["121"]["Position"] = UDim2.new(0.1, 0, 0.075, 0);
+
+
+-- StarterGui.Gui.Mint.Buttons.Esp.LocalScript
+G2L["122"] = Instance.new("LocalScript", G2L["11e"]);
+
+
+
+-- StarterGui.Gui.Mint.Buttons.Extra
+G2L["123"] = Instance.new("TextButton", G2L["10d"]);
+G2L["123"]["BorderSizePixel"] = 0;
+G2L["123"]["TextSize"] = 14;
+G2L["123"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["123"]["BackgroundColor3"] = Color3.fromRGB(60, 60, 60);
+G2L["123"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["123"]["ZIndex"] = 0;
+G2L["123"]["Size"] = UDim2.new(0.76923, 0, 0.11527, 0);
+G2L["123"]["LayoutOrder"] = 5;
+G2L["123"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["123"]["Text"] = [[]];
+G2L["123"]["Name"] = [[Extra]];
+G2L["123"]["Position"] = UDim2.new(-0.09091, 0, 0, 0);
+
+
+-- StarterGui.Gui.Mint.Buttons.Extra.UICorner
+G2L["124"] = Instance.new("UICorner", G2L["123"]);
+G2L["124"]["CornerRadius"] = UDim.new(0.2, 0);
+
+
+-- StarterGui.Gui.Mint.Buttons.Extra.UIStroke
+G2L["125"] = Instance.new("UIStroke", G2L["123"]);
+G2L["125"]["Color"] = Color3.fromRGB(148, 203, 59);
+G2L["125"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Gui.Mint.Buttons.Extra.Icon
+G2L["126"] = Instance.new("ImageLabel", G2L["123"]);
+G2L["126"]["BorderSizePixel"] = 0;
+G2L["126"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["126"]["Image"] = [[rbxassetid://13518130183]];
+G2L["126"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["126"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["126"]["BackgroundTransparency"] = 1;
+G2L["126"]["Name"] = [[Icon]];
+
+
+-- StarterGui.Gui.Mint.Buttons.Extra.LocalScript
+G2L["127"] = Instance.new("LocalScript", G2L["123"]);
+
+
+
+-- StarterGui.Gui.Mint.Dragify
+G2L["128"] = Instance.new("LocalScript", G2L["2"]);
+G2L["128"]["Name"] = [[Dragify]];
+
+
+-- StarterGui.Gui.Mint-DebugAim
+G2L["129"] = Instance.new("Frame", G2L["1"]);
+G2L["129"]["Visible"] = false;
+G2L["129"]["BorderSizePixel"] = 0;
+G2L["129"]["BackgroundColor3"] = Color3.fromRGB(60, 60, 60);
+G2L["129"]["Size"] = UDim2.new(0, 322, 0, 235);
+G2L["129"]["Position"] = UDim2.new(0.78283, 0, 0.70155, 0);
+G2L["129"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["129"]["Name"] = [[Mint-DebugAim]];
+
+
+-- StarterGui.Gui.Mint-DebugAim.UIStroke
+G2L["12a"] = Instance.new("UIStroke", G2L["129"]);
+G2L["12a"]["Color"] = Color3.fromRGB(148, 203, 59);
+G2L["12a"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.Gui.Mint-DebugAim.text
+G2L["12b"] = Instance.new("TextLabel", G2L["129"]);
+G2L["12b"]["TextWrapped"] = true;
+G2L["12b"]["BorderSizePixel"] = 0;
+G2L["12b"]["TextSize"] = 14;
+G2L["12b"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["12b"]["TextScaled"] = true;
+G2L["12b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["12b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Roboto.json]], Enum.FontWeight.Regular, Enum.FontStyle.Italic);
+G2L["12b"]["TextColor3"] = Color3.fromRGB(179, 242, 70);
+G2L["12b"]["BackgroundTransparency"] = 1;
+G2L["12b"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["12b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["12b"]["Text"] = [[-- waiting for input... Please activate aimbot then use aimbot to enable and activate this debug panel]];
+G2L["12b"]["Name"] = [[text]];
+
+
+-- StarterGui.Gui.Mint-DebugAim.Dragify
+G2L["12c"] = Instance.new("LocalScript", G2L["129"]);
+G2L["12c"]["Name"] = [[Dragify]];
+
+
+-- StarterGui.Gui.injection
+G2L["12d"] = Instance.new("LocalScript", G2L["1"]);
+G2L["12d"]["Name"] = [[injection]];
+
+
+-- StarterGui.Gui.Mint.fol.Scripts.Aimbot
+local function C_16()
+local script = G2L["16"];
+	--// Services
+	local Players = game:GetService("Players")
+	local Player = Players.LocalPlayer
+	local UIS = game:GetService("UserInputService")
+	local RunService = game:GetService("RunService")
+	local camera = workspace.CurrentCamera
+	
+	--// Settings folder
+	local AimSettings = script.Parent.Parent.AimSettings
+	
+	--// Settings values
+	local LegitAim
+	local Accuracy
+	local Smoothness
+	local MouseDetectionKey
+	local Active
+	local PartDetection
+	local Fov
+	local TeamCheck
+	local Prediction
+	local WallCheck
+	local ShakeIntensity
+	
+	--// Runtime state
+	local isAiming = false
+	local currentTarget = nil
+	local targetScreenPos = nil
+	local shiftLockActive = false
+	local shakeOffset = Vector3.new(0,0,0)
+	local lastShakeUpdate = 0
+	
+	--// GUI
+	local screenGui = Instance.new("ScreenGui")
+	screenGui.Name = "AimbotFOV"
+	screenGui.IgnoreGuiInset = true
+	screenGui.ResetOnSpawn = false
+	screenGui.Parent = Player:WaitForChild("PlayerGui")
+	
+	local fovCircle = Instance.new("Frame")
+	fovCircle.AnchorPoint = Vector2.new(0.5, 0.5)
+	fovCircle.BackgroundTransparency = 1
+	fovCircle.BorderSizePixel = 0
+	fovCircle.Parent = screenGui
+	
+	local uiStroke = Instance.new("UIStroke")
+	uiStroke.Color = Color3.fromRGB(255,255,255)
+	uiStroke.Thickness = 2
+	uiStroke.Transparency = 0.5
+	uiStroke.Parent = fovCircle
+	
+	Instance.new("UICorner", fovCircle).CornerRadius = UDim.new(1,0)
+	
+	local targetDot = Instance.new("Frame")
+	targetDot.AnchorPoint = Vector2.new(0.5,0.5)
+	targetDot.Size = UDim2.new(0,8,0,8)
+	targetDot.BackgroundColor3 = Color3.fromRGB(255,0,0)
+	targetDot.BorderSizePixel = 0
+	targetDot.Visible = false
+	targetDot.Parent = screenGui
+	Instance.new("UICorner", targetDot).CornerRadius = UDim.new(1,0)
+	
+	--// Debug
+	local debugframe = script.Parent.Parent.Parent.Parent["Mint-DebugAim"]
+	local debugLabel = script.Parent.Parent.Parent.Parent["Mint-DebugAim"].text
+	debugLabel.Font = Enum.Font.Code
+	debugLabel.TextSize = 14
+	debugLabel.TextXAlignment = Enum.TextXAlignment.Left
+	debugLabel.TextYAlignment = Enum.TextYAlignment.Top
+	
+	--// Cache
+	local cachedCharacters = {}
+	local lastCacheUpdate = 0
+	local CACHE_UPDATE_INTERVAL = 0.3
+	
+	--// Utils
+	local function clamp(v,min,max)
+		return math.min(math.max(v,min),max)
+	end
+	
+	local function GetPlayerFromCharacter(char)
+		for _,plr in ipairs(Players:GetPlayers()) do
+			if plr.Character == char then
+				return plr
+			end
+		end
+		return nil
+	end
+	
+	--// Shake Function
+	local function UpdateShake()
+		local now = tick()
+		if now - lastShakeUpdate < 0.05 then return end -- Update shake every 50ms
+		lastShakeUpdate = now
+	
+		if not currentTarget or not isAiming or ShakeIntensity <= 0 then
+			shakeOffset = Vector3.new(0,0,0)
+			return
+		end
+	
+		-- Small random shake to simulate natural hand movement
+		local intensity = ShakeIntensity * 0.01 -- Scale down the intensity
+		shakeOffset = Vector3.new(
+			(math.random() - 0.5) * intensity,
+			(math.random() - 0.5) * intensity,
+			(math.random() - 0.5) * intensity
+		)
+	end
+	
+	--// Shift Lock Functions
+	local function EnableShiftLock()
+		if shiftLockActive then return end
+	
+		if Player.Character then
+			local humanoid = Player.Character:FindFirstChildOfClass("Humanoid")
+			if humanoid then
+				humanoid.AutoRotate = false
+				UIS.MouseBehavior = Enum.MouseBehavior.LockCenter
+				shiftLockActive = true
+			end
+		end
+	end
+	
+	local function DisableShiftLock()
+		if not shiftLockActive then return end
+	
+		if Player.Character then
+			local humanoid = Player.Character:FindFirstChildOfClass("Humanoid")
+			if humanoid then
+				UIS.MouseBehavior = Enum.MouseBehavior.Default
+				humanoid.AutoRotate = true
+				shiftLockActive = false
+			end
+		end
+	end
+	
+	--// Settings update
+	local function UpdateSettings()
+		LegitAim = AimSettings.Legit.Value
+		Accuracy = tonumber(AimSettings.Accuracy.Value) or 100
+		Smoothness = tonumber(AimSettings.Smoothness.Value) or 0.5
+		MouseDetectionKey = AimSettings.MouseDetection.Value
+		Active = AimSettings.Active.Value
+		PartDetection = AimSettings.PartDetection.Value
+		Fov = tonumber(AimSettings.Fov.Value) or 90
+		TeamCheck = AimSettings.TeamCheck and AimSettings.TeamCheck.Value or false
+		Prediction = tonumber(AimSettings.Prediction.Value) or 0
+		WallCheck = AimSettings.WallCheck and AimSettings.WallCheck.Value or false
+		ShakeIntensity = tonumber(AimSettings.ShakeIntensity and AimSettings.ShakeIntensity.Value or 5)
+	
+		Accuracy = clamp(Accuracy,0,100)
+		Smoothness = clamp(Smoothness,0.01,1)
+		Fov = clamp(Fov,1,180)
+		Prediction = clamp(Prediction,0,5)
+		ShakeIntensity = clamp(ShakeIntensity,0,10)
+	
+		debugframe.Visible = AimSettings.Debug and AimSettings.Debug.Value or false
+	end
+	
+	--// FOV circle
+	local function UpdateFOVCircle()
+		if not Active then
+			fovCircle.Visible = false
+			return
+		end
+	
+		local mousePos = UIS:GetMouseLocation()
+		local radius = (Fov / 180) * (camera.ViewportSize.Y / 2)
+	
+		fovCircle.Position = UDim2.new(0, mousePos.X, 0, mousePos.Y)
+		fovCircle.Size = UDim2.new(0, radius * 2, 0, radius * 2)
+	
+		uiStroke.Color = isAiming and Color3.fromRGB(0,255,0) or Color3.fromRGB(255,255,255)
+		uiStroke.Transparency = isAiming and 0.3 or 0.5
+	
+		fovCircle.Visible = true
+	end
+	
+	--// Character cache
+	local function UpdateCharacterCache()
+		if tick() - lastCacheUpdate < CACHE_UPDATE_INTERVAL then return end
+		lastCacheUpdate = tick()
+		table.clear(cachedCharacters)
+	
+		for _,plr in ipairs(Players:GetPlayers()) do
+			if plr ~= Player and plr.Character then
+				local hum = plr.Character:FindFirstChildOfClass("Humanoid")
+				if hum and hum.Health > 0 then
+					table.insert(cachedCharacters, plr.Character)
+				end
+			end
+		end
+	
+		for _,obj in ipairs(workspace:GetChildren()) do
+			if obj:IsA("Model") and obj ~= Player.Character then
+				local hum = obj:FindFirstChildOfClass("Humanoid")
+				if hum and hum.Health > 0 and not GetPlayerFromCharacter(obj) then
+					table.insert(cachedCharacters, obj)
+				end
+			end
+		end
+	end
+	
+	--// Wall Check Function
+	local function IsTargetVisible(targetPart)
+		if not WallCheck then return true end
+		if not targetPart then return false end
+	
+		local origin = camera.CFrame.Position
+		local targetPos = targetPart.Position
+		local direction = (targetPos - origin)
+	
+		local raycastParams = RaycastParams.new()
+		raycastParams.FilterType = Enum.RaycastFilterType.Exclude
+		raycastParams.FilterDescendantsInstances = {Player.Character, targetPart.Parent}
+		raycastParams.IgnoreWater = true
+	
+		local rayResult = workspace:Raycast(origin, direction, raycastParams)
+	
+		if rayResult then
+			return false
+		end
+	
+		return true
+	end
+	
+	--// Prediction Function
+	local function GetPredictedPosition(part)
+		if not part or Prediction <= 0 then return part.Position end
+	
+		local velocity = Vector3.new(0,0,0)
+	
+		if part:IsA("BasePart") then
+			velocity = part.AssemblyLinearVelocity or part.Velocity or Vector3.new(0,0,0)
+		end
+	
+		if velocity.Magnitude < 0.1 then
+			return part.Position
+		end
+	
+		local predictedPos = part.Position + (velocity * Prediction)
+	
+		return predictedPos
+	end
+	
+	--// FOV check
+	local function IsInFOV(pos)
+		local screen,onScreen = camera:WorldToScreenPoint(pos)
+		if not onScreen then return false end
+	
+		local mousePos = UIS:GetMouseLocation()
+		local dist = (Vector2.new(screen.X,screen.Y) - mousePos).Magnitude
+		local radius = (Fov/180)*(camera.ViewportSize.Y/2)
+		return dist <= radius, Vector2.new(screen.X,screen.Y)
+	end
+	
+	--// Target finder
+	local function GetClosestTarget()
+		UpdateCharacterCache()
+	
+		local closest,closestPos,shortest = nil,nil,math.huge
+		local checked,valid,wallBlocked = 0,0,0
+		local targetTeam = "N/A"
+		local targetDistance = 0
+		local targetRotation = "N/A"
+	
+		local mousePos = UIS:GetMouseLocation()
+	
+		for _,char in ipairs(cachedCharacters) do
+			checked += 1
+			local part = char:FindFirstChild(PartDetection)
+			if part then
+				local plr = GetPlayerFromCharacter(char)
+	
+				if TeamCheck and plr and Player.Team and plr.Team == Player.Team then
+					continue
+				end
+	
+				valid += 1
+	
+				if not IsTargetVisible(part) then
+					wallBlocked += 1
+					continue
+				end
+	
+				local predictedPos = GetPredictedPosition(part)
+				local ok,screenPos = IsInFOV(predictedPos)
+	
+				if ok then
+					local dist = (screenPos - mousePos).Magnitude
+					if dist < shortest then
+						shortest = dist
+						closest = part
+						closestPos = screenPos
+						targetTeam = plr and (plr.Team and plr.Team.Name or "No Team") or "NPC"
+	
+						if Player.Character and Player.Character:FindFirstChild("HumanoidRootPart") then
+							targetDistance = (part.Position - Player.Character.HumanoidRootPart.Position).Magnitude
+						end
+	
+						local hrp = char:FindFirstChild("HumanoidRootPart")
+						if hrp then
+							local _,_,_,r00,r01,r02,r10,r11,r12,r20,r21,r22 = hrp.CFrame:GetComponents()
+							local rotX = math.deg(math.atan2(-r12, r22))
+							local rotY = math.deg(math.asin(r02))
+							local rotZ = math.deg(math.atan2(-r01, r00))
+							targetRotation = string.format("X:%.0f Y:%.0f Z:%.0f", rotX, rotY, rotZ)
+						end
+					end
+				end
+			end
+		end
+	
+		local targetName = closest and closest.Parent.Name or "NONE"
+		if targetDistance > 0 then
+			targetName = string.format("%s - (%.1f studs)", targetName, targetDistance)
+		end
+	
+		debugLabel.Text = string.format(
+			"=== AIMBOT ===\nActive: %s\nAiming: %s\nLegitAim: %s\nSmooth: %.2f\nFOV: %.0f\nPart: %s\nTeamCheck: %s\nPrediction: %.2f\nWallCheck: %s\nShake: %.1f\nChecked: %d\nValid: %d\nWallBlock: %d\nLocked: %s\nTarget: %s\nTeam: %s\nRotation: %s\nShiftLock: %s",
+			tostring(Active),
+			tostring(isAiming),
+			tostring(LegitAim),
+			Smoothness,
+			Fov,
+			PartDetection or "nil",
+			tostring(TeamCheck),
+			Prediction,
+			tostring(WallCheck),
+			ShakeIntensity,
+			checked,
+			valid,
+			wallBlocked,
+			closest and "YES ✓" or "NO",
+			targetName,
+			targetTeam,
+			targetRotation,
+			shiftLockActive and "ENABLED" or "DISABLED"
+		)
+	
+		return closest,closestPos
+	end
+	
+	--// Aim logic
+	local function CharacterLookAtTarget()
+		if not currentTarget then return end
+		local char = Player.Character
+		if not char then return end
+		local hrp = char:FindFirstChild("HumanoidRootPart")
+		if not hrp then return end
+	
+		local targetPos = GetPredictedPosition(currentTarget) + shakeOffset
+		local dir = (targetPos - hrp.Position)
+		dir = Vector3.new(dir.X,0,dir.Z)
+		if dir.Magnitude < 0.01 then return end
+	
+		local targetCF = CFrame.new(hrp.Position, hrp.Position + dir.Unit)
+		hrp.CFrame = hrp.CFrame:Lerp(targetCF, LegitAim and 0.15 or 0.4)
+	end
+	
+	local function CameraFollowTarget()
+		if not currentTarget then return end
+		CharacterLookAtTarget()
+	
+		local targetPos = GetPredictedPosition(currentTarget) + shakeOffset
+		local dir = (targetPos - camera.CFrame.Position)
+		if dir.Magnitude < 0.01 then return end
+		camera.CFrame = camera.CFrame:Lerp(
+			CFrame.new(camera.CFrame.Position, camera.CFrame.Position + dir.Unit),
+			clamp(Smoothness * 0.3,0.01,0.4)
+		)
+	end
+	
+	--// Loop
+	local function AimbotLoop()
+		if not Active or not isAiming then
+			currentTarget = nil
+			targetDot.Visible = false
+			DisableShiftLock()
+			shakeOffset = Vector3.new(0,0,0)
+			return
+		end
+	
+		UpdateShake()
+		local target,screenPos = GetClosestTarget()
+		currentTarget = target
+	
+		if target then
+			targetDot.Position = UDim2.new(0,screenPos.X,0,screenPos.Y)
+			targetDot.Visible = true
+			EnableShiftLock()
+			CameraFollowTarget()
+		else
+			targetDot.Visible = false
+			DisableShiftLock()
+		end
+	end
+	
+	--// Input
+	UIS.InputBegan:Connect(function(i,gp)
+		if gp then return end
+		if i.UserInputType == Enum.UserInputType.MouseButton2 then
+			isAiming = true
+		end
+	end)
+	
+	UIS.InputEnded:Connect(function(i)
+		if i.UserInputType == Enum.UserInputType.MouseButton2 then
+			isAiming = false
+			DisableShiftLock()
+		end
+	end)
+	
+	--// Connections
+	RunService.Heartbeat:Connect(UpdateFOVCircle)
+	RunService.RenderStepped:Connect(AimbotLoop)
+	
+	task.spawn(function()
+		while true do
+			UpdateSettings()
+			task.wait(1)
+		end
+	end)
+	
+	UpdateSettings()
+	print("=== AIMBOT LOADED | CURSOR SHAKE | NO STICKY AIM | PREDICTION + WALLCHECK + SHIFT LOCK ===")
+end;
+task.spawn(C_16);
+-- StarterGui.Gui.Mint.fol.Scripts.Rage
+local function C_17()
+local script = G2L["17"];
+	local Player = game.Players.LocalPlayer
+	local UIS = game:GetService("UserInputService")
+	local RunService = game:GetService("RunService")
+	local camera = workspace.CurrentCamera
+	local AimSettings = script.Parent.Parent.RageSettings
+	
+	local Active
+	local PosAbove
+	local ToggleKey = Enum.KeyCode.T -- Toggle key
+	
+	local isAiming = false
+	local rageActive = false
+	local currentTarget = nil
+	local targetScreenPos = nil
+	
+	-- Cache for performance
+	local cachedCharacters = {}
+	local lastCacheUpdate = 0
+	local CACHE_UPDATE_INTERVAL = 0.3
+	
+	-- Custom clamp function
+	local function clamp(value, min, max)
+		if not value or type(value) ~= "number" then
+			return min
+		end
+		return math.min(math.max(value, min), max)
+	end
+	
+	local function UpdateSettings()
+		Active = AimSettings.Active.Value
+		PosAbove = tonumber(AimSettings.PosAbove.Value) or 10
+	
+		-- Clamp PosAbove to reasonable values
+		PosAbove = clamp(PosAbove, 1, 100)
+	end
+	
+	-- Cache characters to reduce lag
+	local function UpdateCharacterCache()
+		local currentTime = tick()
+		if currentTime - lastCacheUpdate < CACHE_UPDATE_INTERVAL then
+			return
+		end
+	
+		lastCacheUpdate = currentTime
+		cachedCharacters = {}
+	
+		-- Get player characters
+		for _, player in pairs(game.Players:GetPlayers()) do
+			if player ~= Player and player.Character then
+				local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+				if humanoid and humanoid.Health > 0 then
+					table.insert(cachedCharacters, player.Character)
+				end
+			end
+		end
+	
+		-- Get NPCs/Models with Humanoid
+		for _, obj in pairs(workspace:GetChildren()) do
+			if obj:IsA("Model") and obj ~= Player.Character then
+				local humanoid = obj:FindFirstChildOfClass("Humanoid")
+				if humanoid and humanoid.Health > 0 then
+					local alreadyAdded = false
+					for _, char in pairs(cachedCharacters) do
+						if char == obj then
+							alreadyAdded = true
+							break
+						end
+					end
+					if not alreadyAdded then
+						table.insert(cachedCharacters, obj)
+					end
+				end
+			end
+		end
+	end
+	
+	-- Find closest target
+	local function GetClosestTarget()
+		UpdateCharacterCache()
+	
+		local closestTarget = nil
+		local shortestDistance = math.huge
+	
+		local playerChar = Player.Character
+		if not playerChar or not playerChar:FindFirstChild("HumanoidRootPart") then
+			return nil
+		end
+	
+		local playerPos = playerChar.HumanoidRootPart.Position
+	
+		for _, character in pairs(cachedCharacters) do
+			-- Look for HumanoidRootPart or Torso
+			local targetPart = character:FindFirstChild("HumanoidRootPart") or character:FindFirstChild("Torso")
+	
+			if targetPart then
+				local distance = (targetPart.Position - playerPos).Magnitude
+	
+				if distance < shortestDistance then
+					shortestDistance = distance
+					closestTarget = targetPart
+				end
+			end
+		end
+	
+		return closestTarget
+	end
+	
+	-- Teleport player above target and make them look down
+	local function TeleportAboveTarget()
+		if not currentTarget then return end
+	
+		local playerChar = Player.Character
+		if not playerChar then return end
+	
+		local humanoidRootPart = playerChar:FindFirstChild("HumanoidRootPart")
+		if not humanoidRootPart then return end
+	
+		-- Get target position and validate it
+		local targetPos = currentTarget.Position
+	
+		-- Check if target position is valid (not NaN or inf)
+		if targetPos ~= targetPos or math.abs(targetPos.X) == math.huge or math.abs(targetPos.Y) == math.huge or math.abs(targetPos.Z) == math.huge then
+			warn("Invalid target position detected!")
+			currentTarget = nil
+			return
+		end
+	
+		-- Calculate position above target (with safety check)
+		local heightOffset = tonumber(PosAbove) or 10
+		local abovePos = Vector3.new(targetPos.X, targetPos.Y + heightOffset, targetPos.Z)
+	
+		-- Validate the above position
+		if abovePos ~= abovePos or math.abs(abovePos.Y) == math.huge then
+			warn("Invalid above position calculated!")
+			currentTarget = nil
+			return
+		end
+	
+		-- Create CFrame looking down at target
+		local lookAtCFrame = CFrame.new(abovePos, targetPos)
+	
+		-- Teleport player above target (use pcall for safety)
+		local success = pcall(function()
+			humanoidRootPart.CFrame = lookAtCFrame
+		end)
+	
+		if not success then
+			warn("Failed to teleport player!")
+			currentTarget = nil
+		end
+	end
+	
+	-- Force camera to lock on target
+	local function CameraLockOnTarget()
+		if not currentTarget then return end
+	
+		local playerChar = Player.Character
+		if not playerChar then return end
+	
+		local humanoidRootPart = playerChar:FindFirstChild("HumanoidRootPart")
+		if not humanoidRootPart then return end
+	
+		-- Look directly down at target
+		local targetPos = currentTarget.Position
+	
+		-- Validate target position
+		if targetPos ~= targetPos or math.abs(targetPos.X) == math.huge then
+			return
+		end
+	
+		-- Get current camera position
+		local currentCFrame = camera.CFrame
+	
+		-- Create look direction pointing down at target
+		local lookDirection = (targetPos - humanoidRootPart.Position).Unit
+	
+		-- Validate look direction
+		if lookDirection ~= lookDirection then
+			return
+		end
+	
+		-- Create target CFrame looking at target
+		local targetCFrame = CFrame.new(currentCFrame.Position, currentCFrame.Position + lookDirection)
+	
+		-- Instant camera lock (use pcall for safety)
+		pcall(function()
+			camera.CFrame = targetCFrame
+		end)
+	end
+	
+	-- Main RageBot function
+	local function ActivateRageBot()
+		if not Active or not rageActive then
+			currentTarget = nil
+			targetScreenPos = nil
+			return
+		end
+	
+		-- Get closest target
+		local target = GetClosestTarget()
+	
+		if target then
+			-- Validate target exists and has valid position
+			if target.Parent and target.Position == target.Position then
+				currentTarget = target
+	
+				-- Teleport player above target
+				TeleportAboveTarget()
+	
+				-- Force camera lock down at target
+				CameraLockOnTarget()
+			else
+				currentTarget = nil
+			end
+		else
+			currentTarget = nil
+			targetScreenPos = nil
+		end
+	end
+	
+	-- Toggle key handler
+	UIS.InputBegan:Connect(function(input, gameProcessed)
+		if gameProcessed then return end
+	
+		if input.KeyCode == ToggleKey then
+			rageActive = not rageActive
+	
+			if rageActive then
+				print(">>> RAGEBOT ACTIVATED <<<")
+				print("Player will hover above targets!")
+			else
+				print(">>> RAGEBOT DEACTIVATED <<<")
+				currentTarget = nil
+			end
+		end
+	end)
+	
+	-- Main RageBot loop
+	RunService.RenderStepped:Connect(function()
+		ActivateRageBot()
+	end)
+	
+	-- Settings update loop
+	spawn(function()
+		while true do
+			UpdateSettings()
+			wait(10)
+		end
+	end)
+	
+	-- Initial load
+	UpdateSettings()
+	print("=== RAGEBOT LOADED ===")
+	print("Press T to toggle RageBot")
+	print("Player will teleport above targets!")
+	print("PosAbove controls hover height (default: 10)")
+end;
+task.spawn(C_17);
+-- StarterGui.Gui.Mint.fol.Scripts.FunCarStuff
+local function C_18()
+local script = G2L["18"];
+	local Toggles = script.Parent.Parent.CarSillyz
+	local TweenService = game:GetService("TweenService")
+	local RunService = game:GetService("RunService")
+	local UIS = game:GetService("UserInputService")
+	local Player = game:GetService("Players").LocalPlayer
+	
+	local SpinCar
+	local FlyCar
+	local ByeCar
+	local BouncyCar
+	local FlingCarToggle
+	local boosty
+	local GimmieSeat
+	local GetSomeone
+	local Flingcarr
+	
+	local FlySpeed
+	local FlyUp, FlyDown, FlyLeft, FlyRight, FlyForward, FlyBackward = false, false, false, false, false, false
+	
+	local SpinConnection
+	local FlyConnection
+	local InputBeganConnection
+	local InputEndedConnection
+	local BounceConnection
+	local FlingConnection
+	local BoostConnection
+	local BoostInputBeganConnection
+	local BoostInputEndedConnection
+	local FlingInputBeganConnection
+	local FlingInputEndedConnection
+	
+	local HoverConnection = nil
+	local HoverHighlight = nil
+	local HoveredCar = nil
+	local FlingcarConnection = nil
+	
+	local SuscarDebounce = false
+	local BouncyDebounce = false
+	local KidnapDebounce = false
+	local FlingDebounce = false
+	
+	local Flying = false
+	local FlyMovingConnection
+	
+	local function UpdateVals()
+		SpinCar = Toggles.Bools.SpinCar.Value
+		FlyCar = Toggles.Bools.FlyCar.Value
+		ByeCar = Toggles.Bools.ByeCar.Value
+		BouncyCar = Toggles.Bools.Bouncy.Value
+		FlingCarToggle = Toggles.Bools.Fling.Value
+		boosty = Toggles.Bools.Boost.Value
+		FlySpeed = Toggles.FlySpeed.Value
+		GimmieSeat = Toggles.Bools.GetCar.Value
+		GetSomeone = Toggles.Bools.Kidnap.Value
+		Flingcarr = Toggles.Bools.Flingcar.Value
+	end
+	
+	-- ─────────────────────────────────────────────
+	-- SPIN CAR
+	-- ─────────────────────────────────────────────
+	
+	local function StopSpin()
+		if SpinConnection then
+			SpinConnection:Disconnect()
+			SpinConnection = nil
+		end
+	end
+	
+	local function SpinCarFunc()
+		StopSpin()
+		if not SpinCar then return end
+	
+		local character = Player.Character
+		if not character then return end
+	
+		local hrp = character:FindFirstChild("HumanoidRootPart")
+		local humanoid = character:FindFirstChildOfClass("Humanoid")
+		if not hrp or not humanoid then return end
+	
+		local spinSpeed = 0
+	
+		SpinConnection = RunService.RenderStepped:Connect(function(dt)
+			if not Toggles.Bools.SpinCar.Value then
+				StopSpin()
+				return
+			end
+	
+			if not hrp.Parent or not humanoid then
+				StopSpin()
+				return
+			end
+	
+			if humanoid.Sit and humanoid.SeatPart then
+				local seat = humanoid.SeatPart
+				spinSpeed += dt * 2
+				seat.CFrame *= CFrame.Angles(0, math.rad(spinSpeed * 10), 0)
+			else
+				spinSpeed += dt * 2
+				hrp.CFrame *= CFrame.Angles(0, math.rad(spinSpeed * 10), 0)
+			end
+		end)
+	end
+	
+	-- ─────────────────────────────────────────────
+	-- BOUNCY CAR
+	-- ─────────────────────────────────────────────
+	
+	local function StopBouncy()
+		if BounceConnection then
+			BounceConnection:Disconnect()
+			BounceConnection = nil
+		end
+	
+		local character = Player.Character
+		if character then
+			local hrp = character:FindFirstChild("HumanoidRootPart")
+			if hrp then
+				local sound = hrp:FindFirstChild("BounceSound")
+				if sound then sound:Destroy() end
+			end
+	
+			for _, part in pairs(character:GetDescendants()) do
+				if part:IsA("BasePart") and part:GetAttribute("OriginalElasticity") then
+					part.Elasticity = part:GetAttribute("OriginalElasticity")
+					part:SetAttribute("OriginalElasticity", nil)
+				end
+			end
+		end
+	end
+	
+	local function BouncyCarFunc()
+		StopBouncy()
+		if not BouncyCar then return end
+	
+		local character = Player.Character
+		if not character then return end
+	
+		local hrp = character:FindFirstChild("HumanoidRootPart")
+		local humanoid = character:FindFirstChildOfClass("Humanoid")
+		if not hrp or not humanoid then return end
+	
+		local bounceSound = Instance.new("Sound")
+		bounceSound.Name = "BounceSound"
+		bounceSound.SoundId = "rbxassetid://6565266876"
+		bounceSound.Volume = 0.5
+		bounceSound.Parent = hrp
+	
+		local bounceTimer = 0
+		local isGoingUp = true
+		local bounceCount = 1
+		local upVelocity = 80
+		local downVelocity = -100
+	
+		BounceConnection = RunService.Heartbeat:Connect(function(dt)
+			if not Toggles.Bools.Bouncy.Value then
+				StopBouncy()
+				return
+			end
+	
+			if not hrp.Parent or not humanoid then
+				StopBouncy()
+				return
+			end
+	
+			if humanoid.Sit or humanoid.SeatPart then
+				local seat = humanoid.SeatPart
+				if seat and (seat:IsA("VehicleSeat") or seat:IsA("Seat")) then
+					bounceTimer += dt
+	
+					if isGoingUp then
+						seat.AssemblyLinearVelocity = Vector3.new(
+							seat.AssemblyLinearVelocity.X,
+							upVelocity,
+							seat.AssemblyLinearVelocity.Z
+						)
+	
+						if bounceTimer >= 2 then
+							isGoingUp = false
+							bounceTimer = 0
+							bounceSound:Play()
+							upVelocity = upVelocity + 20
+							downVelocity = downVelocity - 20
+							bounceCount += 1
+						end
+					else
+						seat.AssemblyLinearVelocity = Vector3.new(
+							seat.AssemblyLinearVelocity.X,
+							downVelocity,
+							seat.AssemblyLinearVelocity.Z
+						)
+	
+						if bounceTimer >= 2 then
+							isGoingUp = true
+							bounceTimer = 0
+							bounceSound:Play()
+						end
+					end
+				end
+				return
+			end
+	
+			bounceTimer += dt
+	
+			if isGoingUp then
+				hrp.AssemblyLinearVelocity = Vector3.new(
+					hrp.AssemblyLinearVelocity.X,
+					upVelocity,
+					hrp.AssemblyLinearVelocity.Z
+				)
+				humanoid:ChangeState(Enum.HumanoidStateType.Freefall)
+	
+				if bounceTimer >= 2 then
+					isGoingUp = false
+					bounceTimer = 0
+					bounceSound:Play()
+					upVelocity = upVelocity + 20
+					downVelocity = downVelocity - 20
+					bounceCount += 1
+				end
+			else
+				hrp.AssemblyLinearVelocity = Vector3.new(
+					hrp.AssemblyLinearVelocity.X,
+					downVelocity,
+					hrp.AssemblyLinearVelocity.Z
+				)
+	
+				if bounceTimer >= 2 then
+					isGoingUp = true
+					bounceTimer = 0
+					bounceSound:Play()
+				end
+			end
+		end)
+	end
+	
+	-- ─────────────────────────────────────────────
+	-- FLING CAR (while seated)
+	-- ─────────────────────────────────────────────
+	
+	local function StopFling()
+		if FlingConnection then
+			FlingConnection:Disconnect()
+			FlingConnection = nil
+		end
+	end
+	
+	local function FlingCarFunc()
+		StopFling()
+		if not FlingCarToggle then return end
+	
+		local character = Player.Character
+		if not character then return end
+	
+		local hrp = character:FindFirstChild("HumanoidRootPart")
+		local humanoid = character:FindFirstChildOfClass("Humanoid")
+		if not hrp or not humanoid then return end
+	
+		local seat = humanoid.SeatPart
+		if not seat then
+			warn("You need to be in a seat to use Fling Car!")
+			Toggles.Bools.Fling.Value = false
+			return
+		end
+	
+		local flingPower = 200
+		local skyPower = 0
+		local spinSpeed = 0
+		local crazyTimer = 0
+		local phase = 1
+	
+		FlingConnection = RunService.Heartbeat:Connect(function(dt)
+			if not Toggles.Bools.Fling.Value then
+				StopFling()
+				return
+			end
+	
+			if not hrp.Parent or not humanoid then
+				StopFling()
+				return
+			end
+	
+			if not humanoid.Sit or not humanoid.SeatPart then
+				StopFling()
+				return
+			end
+	
+			seat = humanoid.SeatPart
+			crazyTimer += dt
+	
+			if phase == 1 then
+				spinSpeed += dt * 20
+	
+				seat.AssemblyAngularVelocity = Vector3.new(
+					math.random(-50, 50),
+					spinSpeed * 30,
+					math.random(-50, 50)
+				)
+	
+				local shake = math.random(-flingPower, flingPower)
+				seat.AssemblyLinearVelocity = Vector3.new(
+					shake,
+					math.abs(math.sin(crazyTimer * 20)) * 50,
+					shake
+				)
+	
+				if crazyTimer >= 3 then
+					phase = 2
+					crazyTimer = 0
+					skyPower = 0
+				end
+	
+			elseif phase == 2 then
+				skyPower += dt * 100
+	
+				seat.AssemblyAngularVelocity = Vector3.new(
+					math.random(-100, 100),
+					math.random(-100, 100),
+					math.random(-100, 100)
+				)
+	
+				seat.AssemblyLinearVelocity = Vector3.new(
+					math.sin(crazyTimer * 10) * 50,
+					skyPower,
+					math.cos(crazyTimer * 10) * 50
+				)
+	
+				if crazyTimer >= 5 then
+					phase = 3
+					crazyTimer = 0
+				end
+	
+			elseif phase == 3 then
+				seat.AssemblyAngularVelocity = Vector3.new(
+					math.random(-200, 200),
+					math.random(-200, 200),
+					math.random(-200, 200)
+				)
+	
+				local wildX = math.sin(crazyTimer * 15) * 150
+				local wildZ = math.cos(crazyTimer * 15) * 150
+	
+				seat.AssemblyLinearVelocity = Vector3.new(
+					wildX,
+					-50 + math.sin(crazyTimer * 20) * 30,
+					wildZ
+				)
+	
+				if crazyTimer >= 8 then
+					phase = 1
+					crazyTimer = 0
+					spinSpeed = 0
+				end
+			end
+		end)
+	end
+	
+	-- ─────────────────────────────────────────────
+	-- FLY CAR
+	-- ─────────────────────────────────────────────
+	
+	local function StopFly()
+		Flying = false
+	
+		if FlyConnection then
+			FlyConnection:Disconnect()
+			FlyConnection = nil
+		end
+		if InputBeganConnection then
+			InputBeganConnection:Disconnect()
+			InputBeganConnection = nil
+		end
+		if InputEndedConnection then
+			InputEndedConnection:Disconnect()
+			InputEndedConnection = nil
+		end
+		if FlyMovingConnection then
+			FlyMovingConnection:Disconnect()
+			FlyMovingConnection = nil
+		end
+	
+		local character = Player.Character
+		if character then
+			local hrp = character:FindFirstChild("HumanoidRootPart")
+			if hrp then
+				local bv = hrp:FindFirstChild("BodyVelocity")
+				if bv then bv:Destroy() end
+			end
+	
+			local humanoid = character:FindFirstChildOfClass("Humanoid")
+			if humanoid then
+				humanoid:SetStateEnabled(Enum.HumanoidStateType.Running, true)
+				humanoid:SetStateEnabled(Enum.HumanoidStateType.Climbing, true)
+				humanoid:SetStateEnabled(Enum.HumanoidStateType.FallingDown, true)
+				humanoid:SetStateEnabled(Enum.HumanoidStateType.Freefall, true)
+				humanoid:ChangeState(Enum.HumanoidStateType.Freefall)
+	
+				if hrp and hrp:FindFirstChild("Running") then
+					hrp.Running.Volume = 0.65
+				end
+			end
+		end
+	
+		local Camera = workspace.Camera
+		TweenService:Create(Camera, TweenInfo.new(0.5), {FieldOfView = 70}):Play()
+	
+		if script:FindFirstChild("Flymoving") then
+			script.Flymoving.Value = false
+		end
+	
+		local character2 = Player.Character
+		if character2 then
+			local hrp = character2:FindFirstChild("HumanoidRootPart")
+			if hrp then
+				local bg = hrp:FindFirstChild("BodyGyro")
+				if bg then bg.Parent = script end
+				local bv = hrp:FindFirstChild("BodyVelocity")
+				if bv then bv.Parent = script end
+			end
+		end
+	
+		FlyUp, FlyDown, FlyLeft, FlyRight, FlyForward, FlyBackward = false, false, false, false, false, false
+	end
+	
+	local function FlyCarFunc()
+		if not FlyCar then
+			StopFly()
+			return
+		end
+	
+		if FlyConnection then return end
+	
+		local character = Player.Character
+		if not character then return end
+		local hrp = character:FindFirstChild("HumanoidRootPart")
+		local humanoid = character:FindFirstChildOfClass("Humanoid")
+		if not hrp or not humanoid then return end
+	
+		local isflying = script.Flymoving
+		local BodyGyro = nil
+		local BodyVelocity = nil
+		local Camera = workspace.Camera
+	
+		local function u2()
+			if humanoid.MoveDirection == Vector3.new(0, 0, 0) then
+				return humanoid.MoveDirection
+			end
+			local v12 = (Camera.CFrame * CFrame.new((CFrame.new(Camera.CFrame.p, Camera.CFrame.p + Vector3.new(Camera.CFrame.lookVector.x, 0, Camera.CFrame.lookVector.z)):VectorToObjectSpace(humanoid.MoveDirection)))).p - Camera.CFrame.p
+			if v12 == Vector3.new() then
+				return v12
+			end
+			return v12.unit
+		end
+	
+		FlyConnection = RunService.RenderStepped:Connect(function()
+			if not Toggles.Bools.FlyCar.Value then
+				StopFly()
+				return
+			end
+	
+			if not character or not character.Parent then
+				StopFly()
+				return
+			end
+	
+			if Flying == true then
+				humanoid:ChangeState(6)
+				BodyGyro.CFrame = Camera.CFrame
+				if u2() == Vector3.new(0, 0, 0) then
+					isflying.Value = false
+				else
+					isflying.Value = true
+				end
+				TweenService:Create(BodyVelocity, TweenInfo.new(0.3), {Velocity = u2() * 350}):Play()
+			end
+		end)
+	
+		FlyMovingConnection = isflying.Changed:Connect(function(p1)
+			if not Toggles.Bools.FlyCar.Value then return end
+	
+			if p1 == true then
+				TweenService:Create(Camera, TweenInfo.new(0.5), {FieldOfView = 100}):Play()
+			elseif p1 == false then
+				TweenService:Create(Camera, TweenInfo.new(0.5), {FieldOfView = 70}):Play()
+			end
+		end)
+	
+		InputBeganConnection = UIS.InputBegan:Connect(function(key, gameProcessed)
+			if gameProcessed then return end
+			if not Toggles.Bools.FlyCar.Value then return end
+	
+			if key.KeyCode == Enum.KeyCode.F then
+				if Flying == false then
+					Flying = true
+					if character:FindFirstChild("HumanoidRootPart") then
+						humanoid:SetStateEnabled(Enum.HumanoidStateType.Running, false)
+						humanoid:SetStateEnabled(Enum.HumanoidStateType.Climbing, false)
+						humanoid:SetStateEnabled(Enum.HumanoidStateType.FallingDown, false)
+						humanoid:SetStateEnabled(Enum.HumanoidStateType.Freefall, false)
+						if character.HumanoidRootPart:FindFirstChild("Running") then
+							character.HumanoidRootPart.Running.Volume = 0
+						end
+						humanoid:ChangeState(6)
+	
+						local freshBodyVelocity = script.BodyVelocity:Clone()
+						local freshBodyGyro = script.BodyGyro:Clone()
+	
+						freshBodyVelocity.Parent = character.HumanoidRootPart
+						freshBodyGyro.Parent = character.HumanoidRootPart
+	
+						BodyVelocity = freshBodyVelocity
+						BodyGyro = freshBodyGyro
+					end
+				else
+					Flying = false
+					isflying.Value = false
+					humanoid:SetStateEnabled(Enum.HumanoidStateType.Running, true)
+					humanoid:SetStateEnabled(Enum.HumanoidStateType.Climbing, true)
+					humanoid:SetStateEnabled(Enum.HumanoidStateType.FallingDown, true)
+					humanoid:SetStateEnabled(Enum.HumanoidStateType.Freefall, true)
+					if character.HumanoidRootPart:FindFirstChild("Running") then
+						character.HumanoidRootPart.Running.Volume = 0.65
+					end
+					humanoid:ChangeState(8)
+					if BodyVelocity and BodyVelocity.Parent then
+						BodyVelocity:Destroy()
+					end
+					if BodyGyro and BodyGyro.Parent then
+						BodyGyro:Destroy()
+					end
+				end
+			end
+		end)
+	end
+	
+	-- ─────────────────────────────────────────────
+	-- BOOST
+	-- ─────────────────────────────────────────────
+	
+	local function StopBoost()
+		if BoostConnection then BoostConnection:Disconnect() BoostConnection = nil end
+		if BoostInputBeganConnection then BoostInputBeganConnection:Disconnect() BoostInputBeganConnection = nil end
+		if BoostInputEndedConnection then BoostInputEndedConnection:Disconnect() BoostInputEndedConnection = nil end
+	end
+	
+	local function BoostyAhhCar()
+		StopBoost()
+		if not Toggles.Bools.Boost.Value then return end
+	
+		local character = Player.Character
+		if not character then return end
+	
+		local humanoid = character:FindFirstChildOfClass("Humanoid")
+		if not humanoid then return end
+	
+		local boosting = false
+		local boostSpeed = math.random(250, 1000)
+	
+		BoostInputBeganConnection = UIS.InputBegan:Connect(function(input, gp)
+			if gp then return end
+			if input.KeyCode == Enum.KeyCode.B then
+				boosting = true
+			end
+		end)
+	
+		BoostInputEndedConnection = UIS.InputEnded:Connect(function(input)
+			if input.KeyCode == Enum.KeyCode.B then
+				boosting = false
+			end
+		end)
+	
+		BoostConnection = RunService.Heartbeat:Connect(function()
+			if not Toggles.Bools.Boost.Value then
+				StopBoost()
+				return
+			end
+	
+			if not humanoid.Sit or not humanoid.SeatPart then return end
+			local seat = humanoid.SeatPart
+			if not seat or not seat.Parent then return end
+	
+			if boosting then
+				local look = seat.CFrame.LookVector
+				local currentVel = seat.AssemblyLinearVelocity
+	
+				seat.AssemblyLinearVelocity = Vector3.new(
+					look.X * boostSpeed,
+					currentVel.Y,
+					look.Z * boostSpeed
+				)
+			end
+		end)
+	end
+	
+	-- ─────────────────────────────────────────────
+	-- SUS CAR (ByeCar)
+	-- ─────────────────────────────────────────────
+	
+	local function Suscar()
+		if not Toggles.Bools.ByeCar.Value then return end
+		if SuscarDebounce then return end
+		SuscarDebounce = true
+	
+		local character = Player.Character
+		if not character then
+			SuscarDebounce = false
+			return
+		end
+	
+		local hrp = character:FindFirstChild("HumanoidRootPart")
+		local humanoid = character:FindFirstChildOfClass("Humanoid")
+		if not hrp or not humanoid then
+			SuscarDebounce = false
+			return
+		end
+	
+		if humanoid.Sit and humanoid.SeatPart then
+			local seat = humanoid.SeatPart
+			local lastCFrame = seat.CFrame
+	
+			seat.CFrame = CFrame.new(10000, 10000, 10000)
+			task.wait(0.15)
+	
+			seat.CFrame = lastCFrame
+		else
+			local lastCFrame = hrp.CFrame
+	
+			hrp.CFrame = CFrame.new(10000, 10000, 10000)
+			humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	
+			task.wait(0.15)
+	
+			hrp.CFrame = lastCFrame
+		end
+	
+		Toggles.Bools.ByeCar.Value = false
+		SuscarDebounce = false
+	end
+	
+	-- ─────────────────────────────────────────────
+	-- GET SEAT
+	-- ─────────────────────────────────────────────
+	--[[
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	STOP SKIDDING LOSER
+	end...
+	]]
+	local function GetSeats()
+		local seats = {}
+		for _, v in pairs(workspace:GetDescendants()) do
+			if v:IsA("VehicleSeat") then
+				table.insert(seats, v)
+			end
+		end
+		return seats
+	end
+	
+	local function GoToSeat()
+		if not Toggles.Bools.GetCar.Value then return end
+		local character = Player.Character
+		if not character then return end
+		local hrp = character:FindFirstChild("HumanoidRootPart")
+		if not hrp then return end
+	
+		local seats = GetSeats()
+		if #seats == 0 then
+			warn("No vehicle seats found!")
+			return
+		end
+	
+		local targetSeat = seats[math.random(1, #seats)]
+		local targetPos = targetSeat.Position + Vector3.new(0, 5, 0)
+	
+		hrp.CFrame = CFrame.new(targetPos)
+	
+		task.wait(0.1)
+	
+		local humanoid = character:FindFirstChildOfClass("Humanoid")
+		if humanoid then
+			humanoid:ChangeState(Enum.HumanoidStateType.Landed)
+		end
+	end
+	
+	-- ─────────────────────────────────────────────
+	-- KIDNAP
+	-- ─────────────────────────────────────────────
+	
+	local function Kidnap()
+		if not GetSomeone then return end
+		if KidnapDebounce then return end
+		KidnapDebounce = true
+	
+		local character = Player.Character
+		if not character then
+			KidnapDebounce = false
+			return
+		end
+	
+		local humanoid = character:FindFirstChildOfClass("Humanoid")
+		if not humanoid then
+			KidnapDebounce = false
+			return
+		end
+	
+		local hrp = character:FindFirstChild("HumanoidRootPart")
+		if not hrp then
+			KidnapDebounce = false
+			return
+		end
+	
+		if not humanoid.Sit or not humanoid.SeatPart then
+			warn("You need to be in a vehicle to kidnap someone!")
+			Toggles.Bools.Kidnap.Value = false
+			KidnapDebounce = false
+			return
+		end
+	
+		local seat = humanoid.SeatPart
+		if not seat or not seat.Parent then
+			warn("Kidnap: You are not in a valid seat!")
+			Toggles.Bools.Kidnap.Value = false
+			KidnapDebounce = false
+			return
+		end
+	
+		local targetPlayer = game.Players:FindFirstChild(Toggles.KidnapTarget.Value)
+		if not targetPlayer or not targetPlayer:IsA("Player") then
+			warn("No valid target selected!")
+			Toggles.Bools.Kidnap.Value = false
+			KidnapDebounce = false
+			return
+		end
+	
+		if targetPlayer == Player then
+			warn("Can't kidnap yourself!")
+			Toggles.Bools.Kidnap.Value = false
+			KidnapDebounce = false
+			return
+		end
+	
+		local targetChar = workspace:FindFirstChild(targetPlayer.Name)
+		if not targetChar then
+			warn("Target is not in the game!")
+			Toggles.Bools.Kidnap.Value = false
+			KidnapDebounce = false
+			return
+		end
+	
+		local targetHRP = targetChar:FindFirstChild("HumanoidRootPart")
+		if not targetHRP then
+			warn("Target has no HumanoidRootPart!")
+			Toggles.Bools.Kidnap.Value = false
+			KidnapDebounce = false
+			return
+		end
+	
+		local lastPos = seat.CFrame
+		local vehicle = seat.Parent
+		local allSeats = {}
+		for _, obj in pairs(vehicle:GetDescendants()) do
+			if obj:IsA("VehicleSeat") or obj:IsA("Seat") then
+				table.insert(allSeats, obj)
+			end
+		end
+	
+		print(string.format("Kidnapping %s with %d attempts", targetPlayer.Name, 10))
+	
+		for attempt = 1, 10 do
+			seat.CFrame = CFrame.new(targetHRP.Position + Vector3.new(0, 3, 0))
+	
+			task.wait(0.1)
+	
+			local targetHumanoid = targetChar:FindFirstChildOfClass("Humanoid")
+			if targetHumanoid and targetHumanoid.Sit then
+				print(string.format("Success! %s is now in the vehicle!", targetPlayer.Name))
+				break
+			end
+	
+			if attempt == 10 then
+				warn("Failed to kidnap target after 10 attempts")
+			end
+		end
+	
+		task.wait(0.5)
+	
+		seat.CFrame = lastPos
+	
+		Toggles.Bools.Kidnap.Value = false
+		KidnapDebounce = false
+	end
+	
+	-- ─────────────────────────────────────────────
+	-- FLING CAR (Hover + Click, Flingcar toggle)
+	-- ─────────────────────────────────────────────
+	
+	local function StopHovering()
+		if HoverConnection then
+			HoverConnection:Disconnect()
+			HoverConnection = nil
+		end
+		if FlingcarConnection then
+			FlingcarConnection:Disconnect()
+			FlingcarConnection = nil
+		end
+		if HoverHighlight then
+			HoverHighlight:Destroy()
+			HoverHighlight = nil
+		end
+		HoveredCar = nil
+	end
+	
+	local function StartHovering()
+		StopHovering()
+		if not Toggles.Bools.Flingcar.Value then return end
+	
+		local player = game.Players.LocalPlayer
+		local character = player.Character
+		local humanoid = character and character:FindFirstChildOfClass("Humanoid")
+		local hrp = character and character:FindFirstChild("HumanoidRootPart")
+		local Mouse = player:GetMouse()
+	
+		if not humanoid or not hrp then return end
+	
+		-- Walk up hierarchy to find a Model that contains a VehicleSeat
+		local function GetCarFromInstance(instance)
+			local obj = instance
+			while obj and obj ~= workspace do
+				if obj:IsA("Model") then
+					for _, v in pairs(obj:GetDescendants()) do
+						if v:IsA("VehicleSeat") then
+							return obj
+						end
+					end
+				end
+				obj = obj.Parent
+			end
+			return nil
+		end
+	
+		local function RemoveCarHighlights(car)
+			if not car then return end
+			for _, v in pairs(car:GetDescendants()) do
+				if v:IsA("SelectionBox") and v.Name == "FlingcarHighlight" then
+					v:Destroy()
+				end
+			end
+			if HoverHighlight then
+				HoverHighlight:Destroy()
+				HoverHighlight = nil
+			end
+		end
+	
+		local function HighlightCarHover(car)
+			if HoveredCar == car then return end
+			if HoveredCar then RemoveCarHighlights(HoveredCar) end
+	
+			HoveredCar = car
+	
+			local box = Instance.new("SelectionBox")
+			box.Name = "FlingcarHighlight"
+			box.Adornee = car
+			box.Color3 = Color3.fromRGB(255, 50, 50)
+			box.LineThickness = 0.05
+			box.SurfaceTransparency = 0.6
+			box.SurfaceColor3 = Color3.fromRGB(255, 80, 80)
+			box.Parent = car
+	
+			HoverHighlight = box
+		end
+	
+		local function FlingCar(car)
+			if not car then return end
+	
+			local seat = nil
+			for _, v in pairs(car:GetDescendants()) do
+				if v:IsA("VehicleSeat") then
+					seat = v
+					break
+				end
+			end
+			if not seat then return end
+	
+			-- Save player position before flinging
+			local originalCFrame = hrp.CFrame
+	
+			-- Disable character collisions so player can overlap the car
+			for _, part in pairs(character:GetDescendants()) do
+				if part:IsA("BasePart") then
+					part.CanCollide = false
+				end
+			end
+	
+			-- Teleport player behind & slightly above the seat in local space.
+			-- Negative Z = in front of seat's LookVector (away from trigger zone).
+			-- Far enough to not sit, close enough to touch and transfer physics.
+			local offsetX = math.random(-1, 1)
+			hrp.CFrame = seat.CFrame * CFrame.new(offsetX, 1.5, -4)
+			task.wait(0.05)
+	
+			-- Spin & fling the car wildly
+			local flingDuration = 1.5
+			local elapsed = 0
+			local flingConn
+	
+			flingConn = RunService.Heartbeat:Connect(function(dt)
+				if not Toggles.Bools.Flingcar.Value or elapsed >= flingDuration then
+					flingConn:Disconnect()
+	
+					-- Restore character collisions
+					for _, part in pairs(character:GetDescendants()) do
+						if part:IsA("BasePart") then
+							part.CanCollide = true
+						end
+					end
+	
+					-- Return player to original position
+					hrp.CFrame = originalCFrame
+					return
+				end
+	
+				elapsed += dt
+	
+				-- Wild rotational and linear velocity on the car's seat (root part)
+				seat.AssemblyAngularVelocity = Vector3.new(
+					math.random(-300, 300),
+					math.random(-300, 300),
+					math.random(-300, 300)
+				)
+				seat.AssemblyLinearVelocity = Vector3.new(
+					math.random(-200, 200),
+					math.random(100, 300),
+					math.random(-200, 200)
+				)
+	
+				-- Keep player glued just in front of the seat each tick so physics transfers
+				hrp.CFrame = seat.CFrame * CFrame.new(offsetX, 1.5, -4)
+			end)
+		end
+	
+		-- Hover detection loop
+		HoverConnection = RunService.RenderStepped:Connect(function()
+			if not Toggles.Bools.Flingcar.Value then
+				StopHovering()
+				return
+			end
+	
+			local target = Mouse.Target
+			if target then
+				local car = GetCarFromInstance(target)
+				if car then
+					HighlightCarHover(car)
+					return
+				end
+			end
+	
+			-- Mouse is not over a valid car — remove any existing highlight
+			if HoveredCar then
+				RemoveCarHighlights(HoveredCar)
+				HoveredCar = nil
+			end
+		end)
+	
+		-- Click to fling the highlighted car
+		FlingcarConnection = Mouse.Button1Down:Connect(function()
+			if not Toggles.Bools.Flingcar.Value then return end
+			if HoveredCar then
+				local carToFling = HoveredCar
+				RemoveCarHighlights(HoveredCar)
+				HoveredCar = nil
+				FlingCar(carToFling)
+			end
+		end)
+	end
+	
+	-- ─────────────────────────────────────────────
+	-- TOGGLE CONNECTIONS
+	-- ─────────────────────────────────────────────
+	
+	Toggles.Bools.SpinCar.Changed:Connect(function()
+		UpdateVals()
+		SpinCarFunc()
+	end)
+	
+	Toggles.Bools.FlyCar.Changed:Connect(function()
+		UpdateVals()
+		FlyCarFunc()
+	end)
+	
+	Toggles.Bools.ByeCar.Changed:Connect(function(value)
+		if value then
+			Suscar()
+		end
+	end)
+	
+	Toggles.Bools.Bouncy.Changed:Connect(function()
+		UpdateVals()
+		BouncyCarFunc()
+	end)
+	
+	Toggles.Bools.Fling.Changed:Connect(function(value)
+		UpdateVals()
+		if value then
+			FlingCarFunc()
+		else
+			StopFling()
+		end
+	end)
+	
+	Toggles.Bools.Boost.Changed:Connect(function(value)
+		UpdateVals()
+		if value then
+			BoostyAhhCar()
+		else
+			StopBoost()
+		end
+	end)
+	
+	Toggles.Bools.GetCar.Changed:Connect(function(value)
+		UpdateVals()
+		if value then
+			GoToSeat()
+			Toggles.Bools.GetCar.Value = false
+		end
+	end)
+	
+	Toggles.Bools.Kidnap.Changed:Connect(function(value)
+		UpdateVals()
+		if value then
+			Kidnap()
+		end
+	end)
+	
+	Toggles.Bools.Flingcar.Changed:Connect(function(value)
+		UpdateVals()
+		if value then
+			StartHovering()
+		else
+			StopHovering()
+		end
+	end)
+	
+	-- ─────────────────────────────────────────────
+	-- INIT
+	-- ─────────────────────────────────────────────
+	
+	UpdateVals()
+	SpinCarFunc()
+	FlyCarFunc()
+	BouncyCarFunc()
+	
+	while true do
+		UpdateVals()
+		task.wait(2)
+	end
+end;
+task.spawn(C_18);
+-- StarterGui.Gui.Mint.fol.Scripts.AntiHandcuff
+local function C_1c()
+local script = G2L["1c"];
+	local tp = CFrame.new(-923.753784, 99.4347458, 2064.48511, -0.89847815, -4.68718397e-10, -0.43901825, -2.77744716e-10, 1, -4.99229491e-10, 0.43901825, -3.26611793e-10, -0.89847815)
+	local plr = game.Players.LocalPlayer
+	local char = plr.Character or plr.CharacterAdded:Wait()
+	local hum = char:WaitForChild("Humanoid")
+	local root = char:WaitForChild("HumanoidRootPart")
+	local players = game:GetService("Players")
+	local rs = game:GetService("RunService")
+	
+	local HitboxAnti
+	
+	local function CleanHitbox()
+		if HitboxAnti then
+			HitboxAnti:Destroy()
+			HitboxAnti = nil
+		end
+	end
+	
+	local function MakeHitbox()
+		CleanHitbox()
+		if char.Humanoid.WalkSpeed <= 0 then return end
+		if HitboxAnti then return end
+	
+		HitboxAnti = Instance.new("Part")
+		HitboxAnti.Size = Vector3.new(5, 12, 5)
+		HitboxAnti.Transparency = .7
+		HitboxAnti.CanCollide = false
+		HitboxAnti.Anchored = false
+		HitboxAnti.Massless = true
+		HitboxAnti.Parent = char
+	
+		local weld = Instance.new("Weld")
+		weld.Part0 = HitboxAnti
+		weld.Part1 = root
+		weld.Parent = HitboxAnti
+	
+		HitboxAnti.Name = "HitboxAnti"
+	
+		HitboxAnti.Touched:Connect(function(hit)
+			if hit.Parent:IsA("Model") and hit.Parent:FindFirstChild("Humanoid") and hit.Parent:FindFirstChild("HumanoidRootPart") and hit.Parent ~= char then
+				-- Use FindFirstChild instead of WaitForChild to avoid yielding
+				if hit.Parent:FindFirstChild("Handcuffs") then
+					root.CFrame = tp
+					CleanHitbox()
+					MakeHitbox()
+				end
+			end
+		end)
+	end
+	
+	-- Handle character respawn
+	plr.CharacterAdded:Connect(function(newChar)
+		char = newChar
+		hum = char:WaitForChild("Humanoid")
+		root = char:WaitForChild("HumanoidRootPart")
+		CleanHitbox()
+	end)
+	
+	-- Main loop
+	while task.wait(1) do
+		if script.Parent.Parent.CarSillyz.Bools["Anti Handcuff"].Value then
+			MakeHitbox()
+		else
+			CleanHitbox()
+		end
+	end
+end;
+task.spawn(C_1c);
+-- StarterGui.Gui.Mint.fol.Scripts.FarmQuidz
+local function C_1d()
+local script = G2L["1d"];
+	local plr = game.Players.LocalPlayer
+	local char = plr.Character or plr.CharacterAdded:Wait()
+	local hum = char:WaitForChild("Humanoid")
+	local root = char:WaitForChild("HumanoidRootPart")
+	local players = game:GetService("Players")
+	local rs = game:GetService("RunService")
+	
+	
+	
+	local function EndFarm()
+		
+	end
+	
+	local function StartFarm()
+		
+	end
+	
+	-- Main loop
+	while task.wait(1) do
+		if script.Parent.Parent.CarSillyz.Bools["Anti Handcuff"].Value then
+			StartFarm()
+		else
+			EndFarm()
+		end
+	end
+end;
+task.spawn(C_1d);
+-- StarterGui.Gui.Mint.fol.Scripts.Jerk
+local function C_1e()
+local script = G2L["1e"];
+	local Player = game.Players.LocalPlayer
+	local UIS = game:GetService("UserInputService")
+	local RunService = game:GetService("RunService")
+	local camera = workspace.CurrentCamera
+	local AimSettings = script.Parent.Parent.RageSettings
+	local Active
+	local playing
+	local playing2
+	local isjerking = false
+	local bool = script.Parent.Parent.Sussy
+	
+	local function UpdateSettings()
+		Active = bool.Jerk.Value
+	end
+	
+	local function disablejerk()
+		if playing then
+			isjerking = false
+			playing:Stop()
+			playing2:Stop()
+			playing2:Destroy()
+			playing:Destroy()
+			playing = nil
+		end
+	end
+	
+	-- Main function to activate animation
+	local function activatejerk()
+		if not Active or isjerking then return end
+	
+		local anim = Instance.new("Animation")
+		anim.AnimationId = "rbxassetid://168086975"
+		
+		local anim2 = Instance.new("Animation")
+		anim2.AnimationId = "rbxassetid://99198989"
+		
+		local char = Player.Character
+		if not char then return end
+	
+		local hum = char:FindFirstChild("Humanoid")
+		if not hum then return end
+	
+		local animator = hum:FindFirstChild("Animator")
+		if not animator then return end
+	
+		playing = animator:LoadAnimation(anim)
+		playing.Looped = true  -- Enable looping
+		playing:Play()
+		playing:AdjustSpeed(5)
+		
+		playing2 = animator:LoadAnimation(anim2)
+		playing2.Looped = true  -- Enable looping
+		playing2:Play()
+		playing2:AdjustSpeed(5.5)
+		
+		isjerking = true
+	end
+	
+	RunService.RenderStepped:Connect(function()
+		if Active and not isjerking then
+			activatejerk()
+		elseif not Active and isjerking then
+			disablejerk()
+		end
+	end)
+	
+	-- Settings update loop
+	spawn(function()
+		while true do
+			UpdateSettings()
+			wait(1)
+		end
+	end)
+	
+	-- Initial load
+	UpdateSettings()
+end;
+task.spawn(C_1e);
+-- StarterGui.Gui.Mint.fol.Scripts.sp.ESP-CLIENT
+local function C_20()
+local script = G2L["20"];
+	-- Unified ESP Script with Debug Display
+	local players = game:GetService("Players")
+	local workspace = game:GetService("Workspace")
+	local RunService = game:GetService("RunService")
+	local localPlayer = players.LocalPlayer
+	
+	-- Settings (will be updated dynamically)
+	local Settings = {
+		Esp = false,
+		BoxEsp = false,
+		HitboxEsp = false,
+		Tracers = false,
+		Rainbow = false,
+		TeamCheck = false,
+		Debug = false,
+	}
+	
+	local EspSettings = script.Parent.Parent.Parent.EspSettings
+	
+	-- Update Settings function
+	local function UpdateSettings()
+		Settings.Esp = EspSettings.Toggle.Value
+		Settings.BoxEsp = EspSettings.BoxEsp.Value
+		Settings.HitboxEsp = EspSettings["Hitbox Esp"].Value
+		Settings.Tracers = EspSettings.Tracers.Value
+		Settings.Rainbow = EspSettings.Rainbow.Value
+		Settings.TeamCheck = EspSettings.TeamCheck.Value
+		Settings.Debug = EspSettings.Debug.Value
+	end
+	
+	-- Storage tables
+	local LastBoxs = {}
+	local LastHitboxes = {}
+	local LastTracers = {}
+	local highlights = {}
+	local rainbowHue = 0
+	
+	-- Debug GUI Setup
+	local frame = Instance.new("Frame")
+	frame.Name = "DebugFrame"
+	frame.Size = UDim2.new(0, 200, 0, 150)
+	frame.Position = UDim2.new(0, 10, 0, 10)
+	frame.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+	frame.BorderSizePixel = 2
+	frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	frame.Parent = script.Parent.Parent.Parent.Parent
+	frame.BackgroundTransparency = 0.5
+	frame.Visible = false -- Start hidden, will be updated by Settings.Debug
+	
+	local title = Instance.new("TextLabel")
+	title.Name = "Title"
+	title.Size = UDim2.new(1, 0, 0, 25)
+	title.Position = UDim2.new(0, 0, 0, 0)
+	title.BackgroundTransparency = 1
+	title.Text = "ESP Debug"
+	title.TextColor3 = Color3.fromRGB(255, 255, 255)
+	title.TextSize = 16
+	title.Font = Enum.Font.SourceSansBold
+	title.Parent = frame
+	
+	local settingsText = Instance.new("TextLabel")
+	settingsText.Name = "SettingsText"
+	settingsText.Size = UDim2.new(1, -10, 1, -30)
+	settingsText.Position = UDim2.new(0, 5, 0, 25)
+	settingsText.BackgroundTransparency = 1
+	settingsText.TextColor3 = Color3.fromRGB(255, 255, 255)
+	settingsText.TextSize = 14
+	settingsText.Font = Enum.Font.SourceSans
+	settingsText.TextXAlignment = Enum.TextXAlignment.Left
+	settingsText.TextYAlignment = Enum.TextYAlignment.Top
+	settingsText.Parent = frame
+	
+	local debugFrame = frame
+	local debugText = settingsText
+	
+	-- Update Debug Display
+	local function UpdateDebugDisplay()
+		-- Update visibility based on Debug setting
+		debugFrame.Visible = Settings.Debug
+	
+		local text = string.format(
+			"Esp = %s\nBoxEsp = %s\nHitboxEsp = %s\nTracers = %s\nRainbow = %s\nTeamcheck = %s\nDebug = %s",
+			tostring(Settings.Esp),
+			tostring(Settings.BoxEsp),
+			tostring(Settings.HitboxEsp),
+			tostring(Settings.Tracers),
+			tostring(Settings.Rainbow),
+			tostring(Settings.TeamCheck),
+			tostring(Settings.Debug)
+		)
+		debugText.Text = text
+	end
+	
+	-- Helper Functions
+	local function GetPlayerFromCharacter(character)
+		for _, player in pairs(players:GetPlayers()) do
+			if player.Character == character then
+				return player
+			end
+		end
+		return nil
+	end
+	
+	-- Clear Functions
+	local function ClearHighlights()
+		for _, highlightData in pairs(highlights) do
+			if highlightData and highlightData.highlight and highlightData.highlight.Parent then
+				highlightData.highlight:Destroy()
+			end
+		end
+		highlights = {}
+	end
+	
+	local function ClearBoxs()
+		for _, boxData in pairs(LastBoxs) do
+			if boxData and boxData.gui and boxData.gui.Parent then
+				boxData.gui:Destroy()
+			end
+		end
+		LastBoxs = {}
+	end
+	
+	local function ClearHitboxes()
+		for _, box in pairs(LastHitboxes) do
+			if box and box.Parent then
+				box:Destroy()
+			end
+		end
+		LastHitboxes = {}
+	end
+	
+	local function ClearTracers()
+		for _, tracerData in pairs(LastTracers) do
+			if tracerData and tracerData.part and tracerData.part.Parent then
+				tracerData.part:Destroy()
+			end
+		end
+		LastTracers = {}
+	end
+	
+	-- ESP (Highlight) Functions
+	local function UpdateHighlights()
+		if not Settings.Esp then
+			ClearHighlights()
+			return
+		end
+	
+		ClearHighlights()
+	
+		for _, model in pairs(workspace:GetChildren()) do
+			if model:IsA("Model") and model ~= localPlayer.Character then
+				local humanoid = model:FindFirstChildOfClass("Humanoid")
+				local targetRoot = model:FindFirstChild("HumanoidRootPart")
+	
+				if humanoid and humanoid.Health > 0 and targetRoot then
+					local player = GetPlayerFromCharacter(model)
+	
+					local highlight = Instance.new("Highlight")
+					highlight.Name = "ESPHighlight"
+					highlight.Adornee = model
+					highlight.FillTransparency = 0.5
+					highlight.OutlineTransparency = 0
+	
+					if Settings.Rainbow then
+						highlight.FillColor = Color3.fromHSV(rainbowHue, 1, 1)
+						highlight.OutlineColor = Color3.fromHSV(rainbowHue, 1, 1)
+					elseif Settings.TeamCheck then
+						if player and player.Team then
+							highlight.FillColor = player.Team.TeamColor.Color
+							highlight.OutlineColor = player.Team.TeamColor.Color
+						else
+							highlight.FillColor = Color3.fromRGB(255, 0, 0)
+							highlight.OutlineColor = Color3.fromRGB(255, 0, 0)
+						end
+					else
+						highlight.FillColor = Color3.fromRGB(255, 255, 255)
+						highlight.OutlineColor = Color3.fromRGB(255, 255, 255)
+					end
+	
+					highlight.Parent = model
+	
+					table.insert(highlights, {
+						highlight = highlight,
+						target = targetRoot,
+						character = model,
+						player = player
+					})
+				end
+			end
+		end
+	end
+	
+	-- Box ESP Functions
+	local function CreateBox(character, player)
+		local box = Instance.new("BillboardGui")
+		box.Name = "BoxESP"
+		box.Size = UDim2.new(4, 0, 5, 0)
+		box.StudsOffset = Vector3.new(0, 1, 0)
+		box.AlwaysOnTop = true
+		box.MaxDistance = 10000
+	
+		local frame = Instance.new("Frame")
+		frame.Size = UDim2.new(1, 0, 1, 0)
+		frame.BackgroundTransparency = 1
+		frame.Parent = box
+	
+		local topLine = Instance.new("Frame")
+		topLine.Size = UDim2.new(1, 0, 0, 2)
+		topLine.Position = UDim2.new(0, 0, 0, 0)
+		topLine.BorderSizePixel = 0
+		topLine.Parent = frame
+	
+		local bottomLine = Instance.new("Frame")
+		bottomLine.Size = UDim2.new(1, 0, 0, 2)
+		bottomLine.Position = UDim2.new(0, 0, 1, -2)
+		bottomLine.BorderSizePixel = 0
+		bottomLine.Parent = frame
+	
+		local leftLine = Instance.new("Frame")
+		leftLine.Size = UDim2.new(0, 2, 1, 0)
+		leftLine.Position = UDim2.new(0, 0, 0, 0)
+		leftLine.BorderSizePixel = 0
+		leftLine.Parent = frame
+	
+		local rightLine = Instance.new("Frame")
+		rightLine.Size = UDim2.new(0, 2, 1, 0)
+		rightLine.Position = UDim2.new(1, -2, 0, 0)
+		rightLine.BorderSizePixel = 0
+		rightLine.Parent = frame
+	
+		local boxColor = Color3.fromRGB(255, 255, 255)
+	
+		if Settings.Rainbow then
+			boxColor = Color3.fromHSV(rainbowHue, 1, 1)
+		elseif Settings.TeamCheck then
+			if player and player.Team then
+				boxColor = player.Team.TeamColor.Color
+			else
+				boxColor = Color3.fromRGB(255, 0, 0)
+			end
+		end
+	
+		topLine.BackgroundColor3 = boxColor
+		bottomLine.BackgroundColor3 = boxColor
+		leftLine.BackgroundColor3 = boxColor
+		rightLine.BackgroundColor3 = boxColor
+	
+		return box, {topLine, bottomLine, leftLine, rightLine}
+	end
+	
+	local function UpdateBoxes()
+		if not Settings.BoxEsp then
+			ClearBoxs()
+			return
+		end
+	
+		ClearBoxs()
+	
+		for _, model in pairs(workspace:GetChildren()) do
+			if model:IsA("Model") and model ~= localPlayer.Character then
+				local humanoid = model:FindFirstChildOfClass("Humanoid")
+				local hrp = model:FindFirstChild("HumanoidRootPart")
+	
+				if humanoid and humanoid.Health > 0 and hrp then
+					local player = GetPlayerFromCharacter(model)
+	
+					local box, lines = CreateBox(model, player)
+					box.Parent = hrp
+	
+					table.insert(LastBoxs, {
+						gui = box,
+						lines = lines,
+						character = model,
+						player = player,
+						hrp = hrp
+					})
+				end
+			end
+		end
+	end
+	
+	-- Hitbox ESP Functions
+	local function UpdateHitboxes()
+		if not Settings.HitboxEsp then
+			ClearHitboxes()
+			return
+		end
+	
+		ClearHitboxes()
+	
+		for _, character in pairs(workspace:GetChildren()) do
+			if character:IsA("Model") and character ~= localPlayer.Character then
+				local humanoid = character:FindFirstChild("Humanoid")
+				local hrp = character:FindFirstChild("HumanoidRootPart")
+	
+				if humanoid and humanoid.Health > 0 and hrp then
+					local boxPart = Instance.new("Part")
+					boxPart.Name = "HitBox"
+					boxPart.Size = Vector3.new(4, 7, 4)
+					boxPart.Transparency = 0.7
+					boxPart.Anchored = true
+					boxPart.CanCollide = false
+					boxPart.Parent = hrp
+					boxPart.CFrame = hrp.CFrame
+	
+					if Settings.Rainbow then
+						boxPart.Color = Color3.fromHSV(rainbowHue, 1, 1)
+					elseif Settings.TeamCheck then
+						local player = GetPlayerFromCharacter(character)
+						if player and player.Team then
+							boxPart.Color = player.Team.TeamColor.Color
+						else
+							boxPart.Color = Color3.fromRGB(255, 255, 255)
+						end
+					else
+						boxPart.Color = Color3.fromRGB(255, 255, 255)
+					end
+	
+					boxPart.Material = Enum.Material.Neon
+					boxPart.CastShadow = false
+					boxPart.Massless = true
+					boxPart.Locked = true
+	
+					table.insert(LastHitboxes, boxPart)
+				end
+			end
+		end
+	end
+	
+	-- Tracers Functions
+	local function UpdateTracers()
+		if not Settings.Tracers then
+			ClearTracers()
+			return
+		end
+	
+		ClearTracers()
+	
+		local localChar = localPlayer.Character
+		if not localChar or not localChar:FindFirstChild("HumanoidRootPart") then
+			return
+		end
+	
+		local localRoot = localChar.HumanoidRootPart
+	
+		for _, character in pairs(workspace:GetChildren()) do
+			if character:IsA("Model") and character ~= localChar then
+				local humanoid = character:FindFirstChild("Humanoid")
+				local targetRoot = character:FindFirstChild("HumanoidRootPart")
+	
+				if humanoid and humanoid.Health > 0 and targetRoot then
+					local startPos = localRoot.Position
+					local endPos = targetRoot.Position
+					local distance = (startPos - endPos).Magnitude
+					local midPoint = (startPos + endPos) / 2
+	
+					local tracer = Instance.new("Part")
+					tracer.Name = "Tracer"
+					tracer.Anchored = true
+					tracer.CanCollide = false
+					tracer.Material = Enum.Material.Neon
+	
+					if Settings.Rainbow then
+						tracer.Color = Color3.fromHSV(rainbowHue, 1, 1)
+					elseif Settings.TeamCheck then
+						local player = GetPlayerFromCharacter(character)
+						if player and player.Team then
+							tracer.Color = player.Team.TeamColor.Color
+						else
+							tracer.Color = Color3.fromRGB(255, 255, 255)
+						end
+					else
+						tracer.Color = Color3.fromRGB(255, 255, 255)
+					end
+	
+					tracer.Transparency = 0.3
+					tracer.Size = Vector3.new(0.1, 0.1, distance)
+					tracer.CastShadow = false
+					tracer.Massless = true
+					tracer.Locked = true
+	
+					tracer.CFrame = CFrame.new(midPoint, endPos)
+					tracer.Parent = workspace.CurrentCamera
+	
+					table.insert(LastTracers, {part = tracer, target = targetRoot, source = localRoot})
+				end
+			end
+		end
+	end
+	
+	-- Main Update Loop
+	RunService.Heartbeat:Connect(function()
+		rainbowHue = (rainbowHue + 0.005) % 1
+	
+		-- Update rainbow background for debug GUI (only if visible)
+		if Settings.Debug then
+			debugFrame.BackgroundColor3 = Color3.fromHSV(rainbowHue, 1, 1)
+		end
+	
+		-- Update Highlights
+		if Settings.Esp then
+			for i = #highlights, 1, -1 do
+				local highlightData = highlights[i]
+				if highlightData and highlightData.highlight and highlightData.highlight.Parent and highlightData.character and highlightData.character.Parent then
+					local humanoid = highlightData.character:FindFirstChild("Humanoid")
+					if humanoid and humanoid.Health > 0 then
+						if Settings.Rainbow then
+							highlightData.highlight.FillColor = Color3.fromHSV(rainbowHue, 1, 1)
+							highlightData.highlight.OutlineColor = Color3.fromHSV(rainbowHue, 1, 1)
+						end
+					else
+						if highlightData.highlight and highlightData.highlight.Parent then
+							highlightData.highlight:Destroy()
+						end
+						table.remove(highlights, i)
+					end
+				else
+					if highlightData.highlight and highlightData.highlight.Parent then
+						highlightData.highlight:Destroy()
+					end
+					table.remove(highlights, i)
+				end
+			end
+		else
+			ClearHighlights()
+		end
+	
+		-- Update Box ESP
+		if Settings.BoxEsp then
+			for i = #LastBoxs, 1, -1 do
+				local boxData = LastBoxs[i]
+				if boxData and boxData.gui and boxData.gui.Parent and boxData.character and boxData.character.Parent then
+					local humanoid = boxData.character:FindFirstChild("Humanoid")
+					if humanoid and humanoid.Health > 0 then
+						if Settings.Rainbow then
+							local color = Color3.fromHSV(rainbowHue, 1, 1)
+							for _, line in pairs(boxData.lines) do
+								if line and line.Parent then
+									line.BackgroundColor3 = color
+								end
+							end
+						end
+					else
+						if boxData.gui and boxData.gui.Parent then
+							boxData.gui:Destroy()
+						end
+						table.remove(LastBoxs, i)
+					end
+				else
+					if boxData.gui and boxData.gui.Parent then
+						boxData.gui:Destroy()
+					end
+					table.remove(LastBoxs, i)
+				end
+			end
+		else
+			ClearBoxs()
+		end
+	
+		-- Update Hitbox ESP
+		if Settings.HitboxEsp then
+			for i = #LastHitboxes, 1, -1 do
+				local boxPart = LastHitboxes[i]
+				if boxPart and boxPart.Parent and boxPart.Parent.Parent then
+					boxPart.CFrame = boxPart.Parent.CFrame
+					if Settings.Rainbow then
+						boxPart.Color = Color3.fromHSV(rainbowHue, 1, 1)
+					end
+				else
+					if boxPart and boxPart.Parent then
+						boxPart:Destroy()
+					end
+					table.remove(LastHitboxes, i)
+				end
+			end
+		else
+			ClearHitboxes()
+		end
+	
+		-- Update Tracers
+		if Settings.Tracers then
+			local localChar = localPlayer.Character
+			if localChar and localChar:FindFirstChild("HumanoidRootPart") then
+				local localRoot = localChar.HumanoidRootPart
+				for i = #LastTracers, 1, -1 do
+					local tracerData = LastTracers[i]
+					if tracerData and tracerData.part and tracerData.part.Parent and tracerData.target and tracerData.target.Parent then
+						local startPos = localRoot.Position
+						local endPos = tracerData.target.Position
+						local distance = (startPos - endPos).Magnitude
+						local midPoint = (startPos + endPos) / 2
+	
+						tracerData.part.Size = Vector3.new(0.1, 0.1, distance)
+						tracerData.part.CFrame = CFrame.new(midPoint, endPos)
+	
+						if Settings.Rainbow then
+							tracerData.part.Color = Color3.fromHSV(rainbowHue, 1, 1)
+						end
+					else
+						if tracerData.part and tracerData.part.Parent then
+							tracerData.part:Destroy()
+						end
+						table.remove(LastTracers, i)
+					end
+				end
+			end
+		else
+			ClearTracers()
+		end
+	end)
+	
+	-- Periodic Update Loop
+	spawn(function()
+		while true do
+			UpdateSettings() -- Updates settings from EspSettings values
+			UpdateHighlights()
+			UpdateBoxes()
+			UpdateHitboxes()
+			UpdateTracers()
+			UpdateDebugDisplay()
+			task.wait(1)
+		end
+	end)
+	
+	-- Initial update
+	UpdateSettings()
+	UpdateDebugDisplay()
+	
+	print("Unified ESP Script Loaded!")
+end;
+task.spawn(C_20);
+-- StarterGui.Gui.Mint.Holder.Car.Settings.ScrollingFrame.Spinningcar.LocalScript
+local function C_52()
+local script = G2L["52"];
+	script.Parent.Activated:Connect(function()
+		script.Parent.Parent.Parent.Parent.Parent.Parent.fol.CarSillyz.Bools.SpinCar.Value = not script.Parent.Parent.Parent.Parent.Parent.Parent.fol.CarSillyz.Bools.SpinCar.Value
+		if script.Parent.Parent.Parent.Parent.Parent.Parent.fol.CarSillyz.Bools.SpinCar.Value then
+			script.Parent.Text = "Spin Car: On"
+		else
+			script.Parent.Text = "Spin Car: Off"
+		end
+	end)
+end;
+task.spawn(C_52);
+-- StarterGui.Gui.Mint.Holder.Car.Settings.ScrollingFrame.Fly.LocalScript
+local function C_56()
+local script = G2L["56"];
+	script.Parent.Activated:Connect(function()
+		script.Parent.Parent.Parent.Parent.Parent.Parent.fol.CarSillyz.Bools.FlyCar.Value = not script.Parent.Parent.Parent.Parent.Parent.Parent.fol.CarSillyz.Bools.FlyCar.Value
+		if script.Parent.Parent.Parent.Parent.Parent.Parent.fol.CarSillyz.Bools.FlyCar.Value then
+			script.Parent.Text = "Fly Car: On"
+		else
+			script.Parent.Text = "Fly Car: Off"
+		end
+	end)
+end;
+task.spawn(C_56);
+-- StarterGui.Gui.Mint.Holder.Car.Settings.ScrollingFrame.Bye.LocalScript
+local function C_5a()
+local script = G2L["5a"];
+	script.Parent.Activated:Connect(function()
+		script.Parent.Parent.Parent.Parent.Parent.Parent.fol.CarSillyz.Bools.ByeCar.Value = not script.Parent.Parent.Parent.Parent.Parent.Parent.fol.CarSillyz.Bools.ByeCar.Value
+		if script.Parent.Parent.Parent.Parent.Parent.Parent.fol.CarSillyz.Bools.ByeCar.Value then
+			script.Parent.Text = "Bye Bye Car"
+		else
+			script.Parent.Text = "Bye Car"
+		end
+	end)
+end;
+task.spawn(C_5a);
+-- StarterGui.Gui.Mint.Holder.Car.Settings.ScrollingFrame.Fling.LocalScript
+local function C_5e()
+local script = G2L["5e"];
+	script.Parent.Activated:Connect(function()
+		script.Parent.Parent.Parent.Parent.Parent.Parent.fol.CarSillyz.Bools.Fling.Value = not script.Parent.Parent.Parent.Parent.Parent.Parent.fol.CarSillyz.Bools.Fling.Value
+		if script.Parent.Parent.Parent.Parent.Parent.Parent.fol.CarSillyz.Bools.Fling.Value then
+			script.Parent.Text = "Flinging Car"
+		else
+			script.Parent.Text = "Fling Car"
+		end
+	end)
+end;
+task.spawn(C_5e);
+-- StarterGui.Gui.Mint.Holder.Car.Settings.ScrollingFrame.bounce.LocalScript
+local function C_62()
+local script = G2L["62"];
+	script.Parent.Activated:Connect(function()
+		script.Parent.Parent.Parent.Parent.Parent.Parent.fol.CarSillyz.Bools.Bouncy.Value = not script.Parent.Parent.Parent.Parent.Parent.Parent.fol.CarSillyz.Bools.Bouncy.Value
+		if script.Parent.Parent.Parent.Parent.Parent.Parent.fol.CarSillyz.Bools.Bouncy.Value then
+			script.Parent.Text = "Bounce Car: On"
+		else
+			script.Parent.Text = "Bounce Car: Off"
+		end
+	end)
+end;
+task.spawn(C_62);
+-- StarterGui.Gui.Mint.Holder.Car.Settings.ScrollingFrame.Boost.LocalScript
+local function C_66()
+local script = G2L["66"];
+	script.Parent.Activated:Connect(function()
+		script.Parent.Parent.Parent.Parent.Parent.Parent.fol.CarSillyz.Bools.Boost.Value = not script.Parent.Parent.Parent.Parent.Parent.Parent.fol.CarSillyz.Bools.Boost.Value
+		if script.Parent.Parent.Parent.Parent.Parent.Parent.fol.CarSillyz.Bools.Boost.Value then
+			script.Parent.Text = "Boost Car: On"
+		else
+			script.Parent.Text = "Boost Car: Off"
+		end
+	end)
+end;
+task.spawn(C_66);
+-- StarterGui.Gui.Mint.Holder.Car.Settings.ScrollingFrame.TP to a vehicle.LocalScript
+local function C_6a()
+local script = G2L["6a"];
+	script.Parent.Activated:Connect(function()
+		script.Parent.Parent.Parent.Parent.Parent.Parent.fol.CarSillyz.Bools.GetCar.Value = not script.Parent.Parent.Parent.Parent.Parent.Parent.fol.CarSillyz.Bools.GetCar.Value
+		if script.Parent.Parent.Parent.Parent.Parent.Parent.fol.CarSillyz.Bools.GetCar.Value then
+			script.Parent.Text = "Getting Cars..."
+		else
+			script.Parent.Text = "Get Car"
+		end
+	end)
+end;
+task.spawn(C_6a);
+-- StarterGui.Gui.Mint.Holder.Car.Settings.ScrollingFrame.fling.LocalScript
+local function C_6e()
+local script = G2L["6e"];
+	script.Parent.Activated:Connect(function()
+		script.Parent.Parent.Parent.Parent.Parent.Parent.fol.CarSillyz.Bools.Flingcar.Value = not script.Parent.Parent.Parent.Parent.Parent.Parent.fol.CarSillyz.Bools.Flingcar.Value
+		if script.Parent.Parent.Parent.Parent.Parent.Parent.fol.CarSillyz.Bools.Flingcar.Value then
+			script.Parent.Text = "Fling Car: On"
+		else
+			script.Parent.Text = "Fling Car: Off"
+		end
+	end)
+end;
+task.spawn(C_6e);
+-- StarterGui.Gui.Mint.Holder.Aimbot.Toggles.Aimbot.LocalScript
+local function C_80()
+local script = G2L["80"];
+	script.Parent.Activated:Connect(function()
+		script.Parent.Parent.Parent.Parent.Parent.fol.AimSettings.Active.Value = not script.Parent.Parent.Parent.Parent.Parent.fol.AimSettings.Active.Value
+		
+		if script.Parent.Parent.Parent.Parent.Parent.fol.AimSettings.Active.Value then
+			script.Parent.Text = "Aimbot: On"
+			else
+			script.Parent.Text = "Aimbot: Off"
+		end
+	end)
+end;
+task.spawn(C_80);
+-- StarterGui.Gui.Mint.Holder.Aimbot.Toggles.Legit.LocalScript
+local function C_85()
+local script = G2L["85"];
+	script.Parent.Activated:Connect(function()
+		script.Parent.Parent.Parent.Parent.Parent.fol.AimSettings.Legit.Value = not script.Parent.Parent.Parent.Parent.Parent.fol.AimSettings.Legit.Value
+		
+		if script.Parent.Parent.Parent.Parent.Parent.fol.AimSettings.Legit.Value then
+			script.Parent.Text = "Legit: On"
+			else
+			script.Parent.Text = "Legit: Off"
+		end
+	end)
+end;
+task.spawn(C_85);
+-- StarterGui.Gui.Mint.Holder.Aimbot.Toggles.Teamcheck.LocalScript
+local function C_89()
+local script = G2L["89"];
+	script.Parent.Activated:Connect(function()
+		script.Parent.Parent.Parent.Parent.Parent.fol.AimSettings.TeamCheck.Value = not script.Parent.Parent.Parent.Parent.Parent.fol.AimSettings.TeamCheck.Value
+		
+		if script.Parent.Parent.Parent.Parent.Parent.fol.AimSettings.TeamCheck.Value then
+			script.Parent.Text = "Teamcheck: On"
+			else
+			script.Parent.Text = "Teamcheck: Off"
+		end
+	end)
+end;
+task.spawn(C_89);
+-- StarterGui.Gui.Mint.Holder.Aimbot.Toggles.Wallcheck.LocalScript
+local function C_8d()
+local script = G2L["8d"];
+	script.Parent.Activated:Connect(function()
+		script.Parent.Parent.Parent.Parent.Parent.fol.AimSettings.WallCheck.Value = not script.Parent.Parent.Parent.Parent.Parent.fol.AimSettings.WallCheck.Value
+		
+		if script.Parent.Parent.Parent.Parent.Parent.fol.AimSettings.WallCheck.Value then
+			script.Parent.Text = "Wallcheck: On"
+			else
+			script.Parent.Text = "Wallcheck: Off"
+		end
+	end)
+end;
+task.spawn(C_8d);
+-- StarterGui.Gui.Mint.Holder.Aimbot.Toggles.Debug.LocalScript
+local function C_91()
+local script = G2L["91"];
+	script.Parent.Activated:Connect(function()
+		script.Parent.Parent.Parent.Parent.Parent.fol.AimSettings.Debug.Value = not script.Parent.Parent.Parent.Parent.Parent.fol.AimSettings.Debug.Value
+		
+		if script.Parent.Parent.Parent.Parent.Parent.fol.AimSettings.Debug.Value then
+			script.Parent.Text = "Debug: On"
+			else
+			script.Parent.Text = "Debug: Off"
+		end
+	end)
+end;
+task.spawn(C_91);
+-- StarterGui.Gui.Mint.Holder.Aimbot.Settings.Fov.LocalScript
+local function C_9a()
+local script = G2L["9a"];
+	local textBox = script.Parent
+	local aimSettings = script.Parent.Parent.Parent.Parent.Parent.fol.AimSettings
+	
+	-- Function to validate and clamp the input
+	local function ValidateInput(text)
+		-- Remove any non-numeric characters (except decimal point)
+		local cleanText = text:gsub("[^0-9.]", "")
+	
+		-- Convert to number
+		local number = tonumber(cleanText)
+	
+		-- If valid number, clamp between 0 and 180
+		if number then
+			number = math.clamp(number, 0, 180)
+			return number, tostring(number)
+		end
+	
+		return nil, cleanText
+	end
+	
+	textBox:GetPropertyChangedSignal("Text"):Connect(function()
+		local number, cleanText = ValidateInput(textBox.Text)
+	
+		if number then
+			-- Update the setting
+			aimSettings.Fov.Value = number
+	
+			-- Update textbox to show clamped value if it was over 180
+			if textBox.Text ~= cleanText then
+				textBox.Text = cleanText
+			end
+		else
+			-- If invalid input, revert to current setting value
+			textBox.Text = tostring(aimSettings.Fov.Value)
+		end
+	end)
+	
+	-- Set initial value
+	textBox.Text = tostring(aimSettings.Fov.Value)
+end;
+task.spawn(C_9a);
+-- StarterGui.Gui.Mint.Holder.Aimbot.Settings.Accuracy.LocalScript
+local function C_9e()
+local script = G2L["9e"];
+	local textBox = script.Parent
+	local aimSettings = script.Parent.Parent.Parent.Parent.Parent.fol.AimSettings
+	
+	-- Function to validate and clamp the input
+	local function ValidateInput(text)
+		-- Remove any non-numeric characters (except decimal point)
+		local cleanText = text:gsub("[^0-9.]", "")
+	
+		-- Convert to number
+		local number = tonumber(cleanText)
+	
+		-- If valid number, clamp between 0 and 180
+		if number then
+			number = math.clamp(number, 0, 100)
+			return number, tostring(number)
+		end
+	
+		return nil, cleanText
+	end
+	
+	textBox:GetPropertyChangedSignal("Text"):Connect(function()
+		local number, cleanText = ValidateInput(textBox.Text)
+	
+		if number then
+			-- Update the setting
+			aimSettings.Accuracy.Value = number
+	
+			-- Update textbox to show clamped value if it was over 180
+			if textBox.Text ~= cleanText then
+				textBox.Text =  cleanText.. "%"
+			end
+		else
+			-- If invalid input, revert to current setting value
+			textBox.Text = tostring(aimSettings.Accuracy.Value).. "%"
+		end
+	end)
+	
+	-- Set initial value
+	textBox.Text = tostring(aimSettings.Accuracy.Value).. "%"
+end;
+task.spawn(C_9e);
+-- StarterGui.Gui.Mint.Holder.Aimbot.Settings.Prediction.LocalScript
+local function C_a2()
+local script = G2L["a2"];
+	local textBox = script.Parent
+	local aimSettings = script.Parent.Parent.Parent.Parent.Parent.fol.AimSettings
+	
+	-- Function to validate and clamp the input
+	local function ValidateInput(text)
+		-- Remove any non-numeric characters (except decimal point)
+		local cleanText = text:gsub("[^0-9.]", "")
+	
+		-- Convert to number
+		local number = tonumber(cleanText)
+	
+		-- If valid number, clamp between 0 and 180
+		if number then
+			number = math.clamp(number, 0, 5)
+			return number, tostring(number)
+		end
+	
+		return nil, cleanText
+	end
+	
+	textBox:GetPropertyChangedSignal("Text"):Connect(function()
+		local number, cleanText = ValidateInput(textBox.Text)
+	
+		if number then
+			-- Update the setting
+			aimSettings.Prediction.Value = number
+	
+			-- Update textbox to show clamped value if it was over 180
+			if textBox.Text ~= cleanText then
+				textBox.Text = "Prediction: " ..cleanText
+			end
+		else
+			-- If invalid input, revert to current setting value
+			textBox.Text = "Prediction: " ..tostring(aimSettings.Prediction.Value)
+		end
+	end)
+	
+	-- Set initial value
+	textBox.Text = "Prediction: " ..tostring(aimSettings.Prediction.Value)
+end;
+task.spawn(C_a2);
+-- StarterGui.Gui.Mint.Holder.Aimbot.Settings.Smooth.LocalScript
+local function C_a6()
+local script = G2L["a6"];
+	local textBox = script.Parent
+	local aimSettings = script.Parent.Parent.Parent.Parent.Parent.fol.AimSettings
+	
+	-- Function to validate and clamp the input
+	local function ValidateInput(text)
+		-- Remove any non-numeric characters (except decimal point)
+		local cleanText = text:gsub("[^0-9.]", "")
+	
+		-- Convert to number
+		local number = tonumber(cleanText)
+	
+		-- If valid number, clamp between 0 and 180
+		if number then
+			number = math.clamp(number, 0, 5)
+			return number, tostring(number)
+		end
+	
+		return nil, cleanText
+	end
+	
+	textBox:GetPropertyChangedSignal("Text"):Connect(function()
+		local number, cleanText = ValidateInput(textBox.Text)
+	
+		if number then
+			-- Update the setting
+			aimSettings.Smoothness.Value = number
+	
+			-- Update textbox to show clamped value if it was over 180
+			if textBox.Text ~= cleanText then
+				textBox.Text = "Smoothness: " ..cleanText
+			end
+		else
+			-- If invalid input, revert to current setting value
+			textBox.Text = "Smoothness: " ..tostring(aimSettings.Smoothness.Value)
+		end
+	end)
+	
+	-- Set initial value
+	textBox.Text = "Smoothness: " ..tostring(aimSettings.Smoothness.Value)
+end;
+task.spawn(C_a6);
+-- StarterGui.Gui.Mint.Holder.Aimbot.Settings.target.LocalScript
+local function C_aa()
+local script = G2L["aa"];
+	local textBox = script.Parent
+	local aimSettings = script.Parent.Parent.Parent.Parent.Parent.fol.AimSettings
+	
+	textBox:GetPropertyChangedSignal("Text"):Connect(function()
+		aimSettings.PartDetection.Value = textBox.Text
+	end)
+	
+	-- Set initial value
+	textBox.Text = tostring(aimSettings.PartDetection.Value)
+end;
+task.spawn(C_aa);
+-- StarterGui.Gui.Mint.Holder.Extra.Settings.ScrollingFrame.Button.LocalScript
+local function C_ba()
+local script = G2L["ba"];
+	script.Parent.Activated:Connect(function()
+		script.Parent.Parent.Parent.Parent.Parent.Parent.fol.Sussy.Jerk.Value = not script.Parent.Parent.Parent.Parent.Parent.Parent.fol.Sussy.Jerk.Value
+		if script.Parent.Parent.Parent.Parent.Parent.Parent.fol.Sussy.Jerk.Value then
+			
+		else
+			
+		end
+	end)
+end;
+task.spawn(C_ba);
+-- StarterGui.Gui.Mint.Holder.Extra.Settings.ScrollingFrame.Button.LocalScript
+local function C_be()
+local script = G2L["be"];
+	local TweenService = game:GetService("TweenService")
+	local RunService = game:GetService("RunService")
+	local character = game.Players.LocalPlayer.Character
+	local toggle = false
+	local toolRainbowed = nil
+	local toolParts = {}
+	local savedPartColors = {}
+	local rainbowConnection = nil
+	
+	local function RevertTool(tool)
+		if not tool then return end
+		for i, part in ipairs(toolParts) do
+			if part and part.Parent then
+				part.Color = savedPartColors[i] or Color3.fromRGB(255, 255, 255)
+			end
+		end
+		toolParts = {}
+		savedPartColors = {}
+		toolRainbowed = nil
+		if rainbowConnection then
+			rainbowConnection:Disconnect()
+			rainbowConnection = nil
+		end
+	end
+	
+	local function RainbowTool()
+		-- Clear any previous state
+		RevertTool(toolRainbowed)
+	
+		for _, tool in pairs(character:GetChildren()) do
+			if tool:IsA("Tool") then
+				toolRainbowed = tool
+				toolParts = {}
+				savedPartColors = {}
+	
+				for _, part in pairs(tool:GetDescendants()) do
+					if part:IsA("BasePart") then
+						table.insert(toolParts, part)
+						table.insert(savedPartColors, part.Color)
+					end
+				end
+				break -- only rainbow the first/active tool
+			end
+		end
+	
+		if #toolParts == 0 then return end
+	
+		-- Cycle hue over time using RunService
+		rainbowConnection = RunService.RenderStepped:Connect(function()
+			if not toggle then
+				RevertTool(toolRainbowed)
+				return
+			end
+	
+			local hue = (tick() * 0.5) % 1 -- speed: increase 0.5 to go faster
+			local color = Color3.fromHSV(hue, 1, 1)
+	
+			for _, part in ipairs(toolParts) do
+				if part and part.Parent then
+					part.Color = color
+				end
+			end
+		end)
+	end
+	
+	script.Parent.Activated:Connect(function()
+		toggle = not toggle
+		if toggle then
+			RainbowTool()
+		else
+			RevertTool(toolRainbowed)
+		end
+	end)
+end;
+task.spawn(C_be);
+-- StarterGui.Gui.Mint.Holder.Extra.Settings.ScrollingFrame.Button.LocalScript
+local function C_c2()
+local script = G2L["c2"];
+	script.Parent.Activated:Connect(function()
+		loadstring(game:HttpGet("https://luacrack.site/index.php/imaaan00bb/raw/WeldingHub"))()
+	end)
+end;
+task.spawn(C_c2);
+-- StarterGui.Gui.Mint.Holder.Extra.Settings.ScrollingFrame.Button.LocalScript
+local function C_c6()
+local script = G2L["c6"];
+	script.Parent.Activated:Connect(function()
+		loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-coolkid-gui-15453"))()
+	end)
+end;
+task.spawn(C_c6);
+-- StarterGui.Gui.Mint.Holder.Extra.Settings.ScrollingFrame.Button.LocalScript
+local function C_ca()
+local script = G2L["ca"];
+	script.Parent.Activated:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/scripthubekitten/SCRIPTHUBV3/main/SCRIPTHUBV3", true))()
+	end)
+end;
+task.spawn(C_ca);
+-- StarterGui.Gui.Mint.Holder.Extra.Settings.ScrollingFrame.Button.LocalScript
+local function C_ce()
+local script = G2L["ce"];
+	script.Parent.Activated:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+	end)
+end;
+task.spawn(C_ce);
+-- StarterGui.Gui.Mint.Holder.Extra.Settings.ScrollingFrame.Button.LocalScript
+local function C_d2()
+local script = G2L["d2"];
+	script.Parent.Activated:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/k4scripts/backdoor.exe/v8/src/main.lua'))()
+	end)
+end;
+task.spawn(C_d2);
+-- StarterGui.Gui.Mint.Holder.Extra.Settings.ScrollingFrame.Button.LocalScript
+local function C_d6()
+local script = G2L["d6"];
+	script.Parent.Activated:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/mspaint/main/main.lua"))()
+	end)
+end;
+task.spawn(C_d6);
+-- StarterGui.Gui.Mint.Holder.Extra.Settings.ScrollingFrame.Button.LocalScript
+local function C_da()
+local script = G2L["da"];
+	script.Parent.Activated:Connect(function()
+		loadstring(game:HttpGet('https://vt-now.github.io/VIOLENT/vt.lua'))()
+	end)
+end;
+task.spawn(C_da);
+-- StarterGui.Gui.Mint.Holder.Esp.Toggles.ESP.LocalScript
+local function C_e9()
+local script = G2L["e9"];
+	script.Parent.Activated:Connect(function()
+		script.Parent.Parent.Parent.Parent.Parent.fol.EspSettings.Toggle.Value = not script.Parent.Parent.Parent.Parent.Parent.fol.EspSettings.Toggle.Value
+		
+		if script.Parent.Parent.Parent.Parent.Parent.fol.EspSettings.Toggle.Value then
+			script.Parent.Text = "Esp: On"
+			else
+			script.Parent.Text = "Esp: Off"
+		end
+	end)
+end;
+task.spawn(C_e9);
+-- StarterGui.Gui.Mint.Holder.Esp.Toggles.Tracers.LocalScript
+local function C_f0()
+local script = G2L["f0"];
+	script.Parent.Activated:Connect(function()
+		script.Parent.Parent.Parent.Parent.Parent.fol.EspSettings.Tracers.Value = not script.Parent.Parent.Parent.Parent.Parent.fol.EspSettings.Tracers.Value
+		
+		if script.Parent.Parent.Parent.Parent.Parent.fol.EspSettings.Tracers.Value then
+			script.Parent.Text = "Tracers: On"
+			else
+			script.Parent.Text = "Tracers: Off"
+		end
+	end)
+end;
+task.spawn(C_f0);
+-- StarterGui.Gui.Mint.Holder.Esp.Toggles.Hitbox.LocalScript
+local function C_f4()
+local script = G2L["f4"];
+	script.Parent.Activated:Connect(function()
+		script.Parent.Parent.Parent.Parent.Parent.fol.EspSettings["Hitbox Esp"].Value = not script.Parent.Parent.Parent.Parent.Parent.fol.EspSettings["Hitbox Esp"].Value
+		
+		if script.Parent.Parent.Parent.Parent.Parent.fol.EspSettings["Hitbox Esp"].Value then
+			script.Parent.Text = "HitboxEsp: On"
+			else
+			script.Parent.Text = "HitboxEsp: Off"
+		end
+	end)
+end;
+task.spawn(C_f4);
+-- StarterGui.Gui.Mint.Holder.Esp.Toggles.Box.LocalScript
+local function C_f8()
+local script = G2L["f8"];
+	script.Parent.Activated:Connect(function()
+		script.Parent.Parent.Parent.Parent.Parent.fol.EspSettings.BoxEsp.Value = not script.Parent.Parent.Parent.Parent.Parent.fol.EspSettings.BoxEsp.Value
+		
+		if script.Parent.Parent.Parent.Parent.Parent.fol.EspSettings.BoxEsp.Value then
+			script.Parent.Text = "BoxEsp: On"
+			else
+			script.Parent.Text = "BoxEsp: Off"
+		end
+	end)
+end;
+task.spawn(C_f8);
+-- StarterGui.Gui.Mint.Holder.Esp.Toggles.Injventory.LocalScript
+local function C_fc()
+local script = G2L["fc"];
+	script.Parent.Activated:Connect(function()
+		script.Parent.Parent.Parent.Parent.Parent.fol.EspSettings.InventoryEsp.Value = not script.Parent.Parent.Parent.Parent.Parent.fol.EspSettings.InventoryEsp.Value
+		
+		if script.Parent.Parent.Parent.Parent.Parent.fol.EspSettings.InventoryEsp.Value then
+			script.Parent.Text = "InventoryEsp: On"
+			else
+			script.Parent.Text = "InventoryEsp: Off"
+		end
+	end)
+end;
+task.spawn(C_fc);
+-- StarterGui.Gui.Mint.Holder.Esp.Toggles.Teamcheck.LocalScript
+local function C_100()
+local script = G2L["100"];
+	script.Parent.Activated:Connect(function()
+		script.Parent.Parent.Parent.Parent.Parent.fol.EspSettings.TeamCheck.Value = not script.Parent.Parent.Parent.Parent.Parent.fol.EspSettings.TeamCheck.Value
+		
+		if script.Parent.Parent.Parent.Parent.Parent.fol.EspSettings.TeamCheck.Value then
+			script.Parent.Text = "TeamCheck: On"
+			else
+			script.Parent.Text = "TeamCheck: Off"
+		end
+	end)
+end;
+task.spawn(C_100);
+-- StarterGui.Gui.Mint.Holder.Esp.Toggles.Rainbow.LocalScript
+local function C_104()
+local script = G2L["104"];
+	script.Parent.Activated:Connect(function()
+		script.Parent.Parent.Parent.Parent.Parent.fol.EspSettings.Rainbow.Value = not script.Parent.Parent.Parent.Parent.Parent.fol.EspSettings.Rainbow.Value
+		
+		if script.Parent.Parent.Parent.Parent.Parent.fol.EspSettings.Rainbow.Value then
+			script.Parent.Text = "Rainbow: On"
+			else
+			script.Parent.Text = "Rainbow: Off"
+		end
+	end)
+end;
+task.spawn(C_104);
+-- StarterGui.Gui.Mint.Holder.Esp.Toggles.Debug.LocalScript
+local function C_108()
+local script = G2L["108"];
+	script.Parent.Activated:Connect(function()
+		script.Parent.Parent.Parent.Parent.Parent.fol.EspSettings.Debug.Value = not script.Parent.Parent.Parent.Parent.Parent.fol.EspSettings.Debug.Value
+		
+		if script.Parent.Parent.Parent.Parent.Parent.fol.EspSettings.Debug.Value then
+			script.Parent.Text = "Debug: On"
+			else
+			script.Parent.Text = "Debug: Off"
+		end
+	end)
+end;
+task.spawn(C_108);
+-- StarterGui.Gui.Mint.Buttons.Home.LocalScript
+local function C_113()
+local script = G2L["113"];
+	local button = script.Parent
+	
+	local function Closepages()
+		for _, page in script.Parent.Parent.Parent.Holder:GetChildren() do
+			if page:IsA("Frame") then
+				page.Visible = false
+			end
+		end
+	end
+	
+	button.Activated:Connect(function()
+		Closepages()
+		script.Parent.Parent.Parent.Holder.Home.Visible = true
+	end)
+end;
+task.spawn(C_113);
+-- StarterGui.Gui.Mint.Buttons.Aimbot.LocalScript
+local function C_118()
+local script = G2L["118"];
+	local button = script.Parent
+	
+	local function Closepages()
+		for _, page in script.Parent.Parent.Parent.Holder:GetChildren() do
+			if page:IsA("Frame") then
+				page.Visible = false
+			end
+		end
+	end
+	
+	button.Activated:Connect(function()
+		Closepages()
+		script.Parent.Parent.Parent.Holder.Aimbot.Visible = true
+	end)
+end;
+task.spawn(C_118);
+-- StarterGui.Gui.Mint.Buttons.Carabuse.LocalScript
+local function C_11d()
+local script = G2L["11d"];
+	local button = script.Parent
+	
+	local function Closepages()
+		for _, page in script.Parent.Parent.Parent.Holder:GetChildren() do
+			if page:IsA("Frame") then
+				page.Visible = false
+			end
+		end
+	end
+	
+	button.Activated:Connect(function()
+		Closepages()
+		script.Parent.Parent.Parent.Holder.Car.Visible = true
+	end)
+end;
+task.spawn(C_11d);
+-- StarterGui.Gui.Mint.Buttons.Esp.LocalScript
+local function C_122()
+local script = G2L["122"];
+	local button = script.Parent
+	
+	local function Closepages()
+		for _, page in script.Parent.Parent.Parent.Holder:GetChildren() do
+			if page:IsA("Frame") then
+				page.Visible = false
+			end
+		end
+	end
+	
+	button.Activated:Connect(function()
+		Closepages()
+		script.Parent.Parent.Parent.Holder.Esp.Visible = true
+	end)
+end;
+task.spawn(C_122);
+-- StarterGui.Gui.Mint.Buttons.Extra.LocalScript
+local function C_127()
+local script = G2L["127"];
+	local button = script.Parent
+	
+	local function Closepages()
+		for _, page in script.Parent.Parent.Parent.Holder:GetChildren() do
+			if page:IsA("Frame") then
+				page.Visible = false
+			end
+		end
+	end
+	
+	button.Activated:Connect(function()
+		Closepages()
+		script.Parent.Parent.Parent.Holder.Extra.Visible = true
+	end)
+end;
+task.spawn(C_127);
+-- StarterGui.Gui.Mint.Dragify
+local function C_128()
+local script = G2L["128"];
+	--This script has been modified by MetaliumWorks (@jgfuhjkkl_2) [mw/ʍɯ]
+	
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+	    dragToggle = nil
+	    dragSpeed = 0.25
+	    dragInput = nil
+	    dragStart = nil
+	    dragPos = nil
+	    function updateInput(input)
+	        Delta = input.Position - dragStart
+	        Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+	        game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.20, Enum.EasingStyle.Back), {Position = Position}):Play()
+	    end
+	    Frame.InputBegan:Connect(function(input)
+	        if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+	            dragToggle = true
+	            dragStart = input.Position
+	            startPos = Frame.Position
+	            input.Changed:Connect(function()
+	                if input.UserInputState == Enum.UserInputState.End then
+	                    dragToggle = false
+	                end
+	            end)
+	        end
+	    end)
+	    Frame.InputChanged:Connect(function(input)
+	        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+	            dragInput = input
+	        end
+	    end)
+	    game:GetService("UserInputService").InputChanged:Connect(function(input)
+	        if input == dragInput and dragToggle then
+	            updateInput(input)
+	        end
+	    end)
+	end
+	
+	dragify(script.Parent)
+end;
+task.spawn(C_128);
+-- StarterGui.Gui.Mint-DebugAim.Dragify
+local function C_12c()
+local script = G2L["12c"];
+	--This script has been modified by MetaliumWorks (@jgfuhjkkl_2) [mw/ʍɯ]
+	
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+	    dragToggle = nil
+	    dragSpeed = 0.25
+	    dragInput = nil
+	    dragStart = nil
+	    dragPos = nil
+	    function updateInput(input)
+	        Delta = input.Position - dragStart
+	        Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+	        game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.20, Enum.EasingStyle.Back), {Position = Position}):Play()
+	    end
+	    Frame.InputBegan:Connect(function(input)
+	        if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+	            dragToggle = true
+	            dragStart = input.Position
+	            startPos = Frame.Position
+	            input.Changed:Connect(function()
+	                if input.UserInputState == Enum.UserInputState.End then
+	                    dragToggle = false
+	                end
+	            end)
+	        end
+	    end)
+	    Frame.InputChanged:Connect(function(input)
+	        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+	            dragInput = input
+	        end
+	    end)
+	    game:GetService("UserInputService").InputChanged:Connect(function(input)
+	        if input == dragInput and dragToggle then
+	            updateInput(input)
+	        end
+	    end)
+	end
+	
+	dragify(script.Parent)
+end;
+task.spawn(C_12c);
+-- StarterGui.Gui.injection
+local function C_12d()
+local script = G2L["12d"];
+	local coregui = game.CoreGui
+	local HTTPService = game:GetService("HttpService")
+	
+	script.Name = HTTPService:GenerateGUID(true)
+	script.Parent.Name = HTTPService:GenerateGUID(true)
+	
+	if coregui then
+		script.Parent = coregui
+		print("Matcha-Debug: Successfully moved to CoreGui and scrambled name!")
+	else
+		print("Matcha-Debug: Failed please try again.")
+		script.Parent:Destroy()
+		game.Players.LocalPlayer:Kick("Matcha Couldnt Inject To CoreGui For Some Reason?...")
+	end
+end;
+task.spawn(C_12d);
+
+return G2L["1"], require;
